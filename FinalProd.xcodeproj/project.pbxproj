@@ -27,6 +27,7 @@
 		7198FE2E2375CFBD007F7A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7198FE2D2375CFBD007F7A3C /* Assets.xcassets */; };
 		7198FE542375DCE4007F7A3C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE532375DCE4007F7A3C /* User.swift */; };
 		7198FE562375DCF5007F7A3C /* MapIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE552375DCF5007F7A3C /* MapIcon.swift */; };
+		7198FE592375DF73007F7A3C /* uisquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 7198FE582375DF73007F7A3C /* uisquare.png */; };
 		75ABBB682375DDB6006585FA /* CharInspectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ABBB672375DDB6006585FA /* CharInspectViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +117,7 @@
 		7198FE302375CFBD007F7A3C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		7198FE532375DCE4007F7A3C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7198FE552375DCF5007F7A3C /* MapIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapIcon.swift; sourceTree = "<group>"; };
+		7198FE582375DF73007F7A3C /* uisquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uisquare.png; sourceTree = "<group>"; };
 		75ABBB672375DDB6006585FA /* CharInspectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharInspectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,6 +180,7 @@
 		7198FDE92375CFBA007F7A3C /* FinalProd */ = {
 			isa = PBXGroup;
 			children = (
+				7198FE572375DF31007F7A3C /* Assets */,
 				7198FE502375DC74007F7A3C /* Class */,
 				7198FE452375D71A007F7A3C /* Storyboards */,
 				7198FE442375D705007F7A3C /* ViewControllers */,
@@ -265,6 +268,14 @@
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		7198FE572375DF31007F7A3C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7198FE582375DF73007F7A3C /* uisquare.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7198FDF72375CFBB007F7A3C /* LaunchScreen.storyboard in Resources */,
+				7198FE592375DF73007F7A3C /* uisquare.png in Resources */,
 				7198FDF42375CFBB007F7A3C /* Assets.xcassets in Resources */,
 				7198FDF22375CFBA007F7A3C /* Main.storyboard in Resources */,
 			);

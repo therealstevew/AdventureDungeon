@@ -9,5 +9,9 @@
 import UIKit
 
 class MapIcon: NSObject {
-
+    //type
+    
+    
+    
+    
 }
