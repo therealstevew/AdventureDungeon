@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14141E5C2375F4F7009897CF /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E5B2375F4F7009897CF /* Enemy.swift */; };
+		14141E5E2375F725009897CF /* EnemyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E5D2375F725009897CF /* EnemyData.swift */; };
 		412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87C2375DDF5008A1736 /* ShopViewController.swift */; };
 		412DD87F2375E5A7008A1736 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87E2375E5A7008A1736 /* Item.swift */; };
 		412DD8812375E5CA008A1736 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8802375E5CA008A1736 /* Weapon.swift */; };
@@ -98,6 +100,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		14141E5B2375F4F7009897CF /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		14141E5D2375F725009897CF /* EnemyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyData.swift; sourceTree = "<group>"; };
 		412DD87C2375DDF5008A1736 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		412DD87E2375E5A7008A1736 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		412DD8802375E5CA008A1736 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -294,6 +298,8 @@
 				412DD8822375E5E6008A1736 /* Armor.swift */,
 				412DD8842375E650008A1736 /* Accessory.swift */,
 				412DD8862375E711008A1736 /* Consumables.swift */,
+				14141E5B2375F4F7009897CF /* Enemy.swift */,
+				14141E5D2375F725009897CF /* EnemyData.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -514,8 +520,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14141E5E2375F725009897CF /* EnemyData.swift in Sources */,
 				412DD8872375E711008A1736 /* Consumables.swift in Sources */,
 				7198FE542375DCE4007F7A3C /* User.swift in Sources */,
+				14141E5C2375F4F7009897CF /* Enemy.swift in Sources */,
 				412DD8832375E5E6008A1736 /* Armor.swift in Sources */,
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
