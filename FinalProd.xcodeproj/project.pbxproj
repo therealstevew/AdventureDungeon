@@ -24,6 +24,8 @@
 		7198FE2A2375CFBC007F7A3C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE292375CFBC007F7A3C /* NotificationController.swift */; };
 		7198FE2C2375CFBC007F7A3C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE2B2375CFBC007F7A3C /* ComplicationController.swift */; };
 		7198FE2E2375CFBD007F7A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7198FE2D2375CFBD007F7A3C /* Assets.xcassets */; };
+		7198FE4B2375DB46007F7A3C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE4A2375DB46007F7A3C /* User.swift */; };
+		7198FE4D2375DB64007F7A3C /* MapIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE4C2375DB64007F7A3C /* MapIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		7198FE2D2375CFBD007F7A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7198FE2F2375CFBD007F7A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7198FE302375CFBD007F7A3C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		7198FE4A2375DB46007F7A3C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../../../../User.swift; sourceTree = "<group>"; };
+		7198FE4C2375DB64007F7A3C /* MapIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapIcon.swift; path = ../../../../../MapIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +255,8 @@
 		7198FE472375D74E007F7A3C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7198FE4A2375DB46007F7A3C /* User.swift */,
+				7198FE4C2375DB64007F7A3C /* MapIcon.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -447,8 +453,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7198FE4B2375DB46007F7A3C /* User.swift in Sources */,
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
+				7198FE4D2375DB64007F7A3C /* MapIcon.swift in Sources */,
 				7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
