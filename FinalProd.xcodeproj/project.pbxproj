@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		14141E5C2375F4F7009897CF /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E5B2375F4F7009897CF /* Enemy.swift */; };
 		14141E5E2375F725009897CF /* EnemyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E5D2375F725009897CF /* EnemyData.swift */; };
+		14141E602375F833009897CF /* EnemyAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E5F2375F833009897CF /* EnemyAttack.swift */; };
+		14141E632375FA2F009897CF /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E622375FA2F009897CF /* Actor.swift */; };
+		14141E652375FCB4009897CF /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E642375FCB4009897CF /* Treasure.swift */; };
 		412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87C2375DDF5008A1736 /* ShopViewController.swift */; };
 		412DD87F2375E5A7008A1736 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87E2375E5A7008A1736 /* Item.swift */; };
 		412DD8812375E5CA008A1736 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8802375E5CA008A1736 /* Weapon.swift */; };
@@ -102,6 +105,9 @@
 /* Begin PBXFileReference section */
 		14141E5B2375F4F7009897CF /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		14141E5D2375F725009897CF /* EnemyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyData.swift; sourceTree = "<group>"; };
+		14141E5F2375F833009897CF /* EnemyAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyAttack.swift; sourceTree = "<group>"; };
+		14141E622375FA2F009897CF /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		14141E642375FCB4009897CF /* Treasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
 		412DD87C2375DDF5008A1736 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		412DD87E2375E5A7008A1736 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		412DD8802375E5CA008A1736 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -179,6 +185,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14141E612375F999009897CF /* EnemyAttacks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EnemyAttacks;
+			sourceTree = "<group>";
+		};
 		7198FDDE2375CFBA007F7A3C = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +304,7 @@
 		7198FE502375DC74007F7A3C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				14141E622375FA2F009897CF /* Actor.swift */,
 				7198FE532375DCE4007F7A3C /* User.swift */,
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 				412DD87E2375E5A7008A1736 /* Item.swift */,
@@ -300,6 +314,9 @@
 				412DD8862375E711008A1736 /* Consumables.swift */,
 				14141E5B2375F4F7009897CF /* Enemy.swift */,
 				14141E5D2375F725009897CF /* EnemyData.swift */,
+				14141E5F2375F833009897CF /* EnemyAttack.swift */,
+				14141E642375FCB4009897CF /* Treasure.swift */,
+				14141E612375F999009897CF /* EnemyAttacks */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -527,9 +544,12 @@
 				412DD8832375E5E6008A1736 /* Armor.swift in Sources */,
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
+				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
+				14141E632375FA2F009897CF /* Actor.swift in Sources */,
 				7198FE562375DCF5007F7A3C /* MapIcon.swift in Sources */,
 				412DD87F2375E5A7008A1736 /* Item.swift in Sources */,
 				7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */,
+				14141E602375F833009897CF /* EnemyAttack.swift in Sources */,
 				412DD8852375E650008A1736 /* Accessory.swift in Sources */,
 				412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */,
 				75ABBB682375DDB6006585FA /* CharInspectViewController.swift in Sources */,

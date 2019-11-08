@@ -8,13 +8,14 @@
 
 import Foundation
 
-class Enemy {
+class Enemy : Actor {
     
-    public var Status : [String] = [];
-    public var Name : String;
-    public var MaxHealth : Int;
-    public var CurHealth : Int;
-    public var Display : String;
+    
+    var DisplayPic: String
+    var Status : [String] = [];
+    var Name : String;
+    var MaxHealth : Int;
+    var CurHealth : Int;
     
     init(Data : EnemyData) {
         self.Name = Data.Name;

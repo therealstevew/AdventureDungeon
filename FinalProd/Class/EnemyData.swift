@@ -10,9 +10,9 @@ import Foundation
 
 class EnemyData {
     
-    public var Name : String;
-    public var MaxHealth : Int;
-    public var Display : String;
+    var Name : String;
+    var MaxHealth : Int;
+    var Display : String;
     
     init(Name : String, MaxHealth : Int, Display : String) {
         self.Name = Name;
