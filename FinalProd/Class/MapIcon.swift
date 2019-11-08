@@ -9,7 +9,7 @@
 import UIKit
 /// test
 class MapIcon: NSObject {
-    //type
+    //type//meme
     
     
     
