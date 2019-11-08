@@ -7,9 +7,9 @@
 //
 
 import UIKit
-/// test
+///
 class MapIcon: NSObject {
-    //type
+    //type//me
     
     
     
