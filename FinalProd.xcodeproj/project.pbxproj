@@ -170,12 +170,12 @@
 		7198FDE92375CFBA007F7A3C /* FinalProd */ = {
 			isa = PBXGroup;
 			children = (
+				7198FE472375D74E007F7A3C /* Classes */,
+				7198FE452375D71A007F7A3C /* Storyboards */,
+				7198FE442375D705007F7A3C /* ViewControllers */,
 				7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */,
 				7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */,
-				7198FDEE2375CFBA007F7A3C /* ViewController.swift */,
-				7198FDF02375CFBA007F7A3C /* Main.storyboard */,
 				7198FDF32375CFBB007F7A3C /* Assets.xcassets */,
-				7198FDF52375CFBB007F7A3C /* LaunchScreen.storyboard */,
 				7198FDF82375CFBB007F7A3C /* Info.plist */,
 			);
 			path = FinalProd;
@@ -212,15 +212,47 @@
 		7198FE242375CFBC007F7A3C /* FinalProd WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				7198FE252375CFBC007F7A3C /* InterfaceController.swift */,
+				7198FE462375D738007F7A3C /* Controllers */,
 				7198FE272375CFBC007F7A3C /* ExtensionDelegate.swift */,
-				7198FE292375CFBC007F7A3C /* NotificationController.swift */,
-				7198FE2B2375CFBC007F7A3C /* ComplicationController.swift */,
 				7198FE2D2375CFBD007F7A3C /* Assets.xcassets */,
 				7198FE2F2375CFBD007F7A3C /* Info.plist */,
 				7198FE302375CFBD007F7A3C /* PushNotificationPayload.apns */,
 			);
 			path = "FinalProd WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		7198FE442375D705007F7A3C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7198FDEE2375CFBA007F7A3C /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7198FE452375D71A007F7A3C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7198FDF52375CFBB007F7A3C /* LaunchScreen.storyboard */,
+				7198FDF02375CFBA007F7A3C /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7198FE462375D738007F7A3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7198FE2B2375CFBC007F7A3C /* ComplicationController.swift */,
+				7198FE292375CFBC007F7A3C /* NotificationController.swift */,
+				7198FE252375CFBC007F7A3C /* InterfaceController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7198FE472375D74E007F7A3C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
