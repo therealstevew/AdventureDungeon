@@ -28,6 +28,8 @@
 		7198FE542375DCE4007F7A3C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE532375DCE4007F7A3C /* User.swift */; };
 		7198FE562375DCF5007F7A3C /* MapIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE552375DCF5007F7A3C /* MapIcon.swift */; };
 		7198FE592375DF73007F7A3C /* uisquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 7198FE582375DF73007F7A3C /* uisquare.png */; };
+		7198FE5C2375E1E8007F7A3C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */; };
+		7198FE5E2375E2DB007F7A3C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198FE5D2375E2DB007F7A3C /* MapKit.framework */; };
 		75ABBB682375DDB6006585FA /* CharInspectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ABBB672375DDB6006585FA /* CharInspectViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +120,8 @@
 		7198FE532375DCE4007F7A3C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7198FE552375DCF5007F7A3C /* MapIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapIcon.swift; sourceTree = "<group>"; };
 		7198FE582375DF73007F7A3C /* uisquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uisquare.png; sourceTree = "<group>"; };
+		7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7198FE5D2375E2DB007F7A3C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		75ABBB672375DDB6006585FA /* CharInspectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharInspectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +130,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7198FE5E2375E2DB007F7A3C /* MapKit.framework in Frameworks */,
+				7198FE5C2375E1E8007F7A3C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +168,7 @@
 				7198FE152375CFBB007F7A3C /* FinalProd WatchKit App */,
 				7198FE242375CFBC007F7A3C /* FinalProd WatchKit Extension */,
 				7198FDE82375CFBA007F7A3C /* Products */,
+				7198FE5A2375E1E7007F7A3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +283,15 @@
 				7198FE582375DF73007F7A3C /* uisquare.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		7198FE5A2375E1E7007F7A3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7198FE5D2375E2DB007F7A3C /* MapKit.framework */,
+				7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
