@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87C2375DDF5008A1736 /* ShopViewController.swift */; };
 		7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */; };
 		7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */; };
 		7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEE2375CFBA007F7A3C /* ViewController.swift */; };
@@ -86,6 +87,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		412DD87C2375DDF5008A1736 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		7198FDE72375CFBA007F7A3C /* FinalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			children = (
 				7198FDEE2375CFBA007F7A3C /* ViewController.swift */,
 				75ABBB672375DDB6006585FA /* CharInspectViewController.swift */,
+				412DD87C2375DDF5008A1736 /* ShopViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
 				7198FE562375DCF5007F7A3C /* MapIcon.swift in Sources */,
 				7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */,
+				412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */,
 				75ABBB682375DDB6006585FA /* CharInspectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
