@@ -40,8 +40,8 @@
 		7198FE592375DF73007F7A3C /* uisquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 7198FE582375DF73007F7A3C /* uisquare.png */; };
 		7198FE5C2375E1E8007F7A3C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */; };
 		7198FE5E2375E2DB007F7A3C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198FE5D2375E2DB007F7A3C /* MapKit.framework */; };
-		753C7A69239C352E00E782FF /* CharacterScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A68239C352E00E782FF /* CharacterScreen.storyboard */; };
 		753C7A6B239C356200E782FF /* InventoryScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A6A239C356200E782FF /* InventoryScreen.storyboard */; };
+		753C7A6E239C368100E782FF /* CharListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C7A6D239C368100E782FF /* CharListViewController.swift */; };
 		75ABBB682375DDB6006585FA /* CharInspectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ABBB672375DDB6006585FA /* CharInspectViewController.swift */; };
 		75ABBB922375E379006585FA /* plank.png in Resources */ = {isa = PBXBuildFile; fileRef = 75ABBB912375E379006585FA /* plank.png */; };
 		75ABBB942375E45C006585FA /* Chars.png in Resources */ = {isa = PBXBuildFile; fileRef = 75ABBB932375E45C006585FA /* Chars.png */; };
@@ -147,8 +147,8 @@
 		7198FE582375DF73007F7A3C /* uisquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uisquare.png; sourceTree = "<group>"; };
 		7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7198FE5D2375E2DB007F7A3C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		753C7A68239C352E00E782FF /* CharacterScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CharacterScreen.storyboard; sourceTree = "<group>"; };
 		753C7A6A239C356200E782FF /* InventoryScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InventoryScreen.storyboard; sourceTree = "<group>"; };
+		753C7A6D239C368100E782FF /* CharListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharListViewController.swift; sourceTree = "<group>"; };
 		75ABBB672375DDB6006585FA /* CharInspectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharInspectViewController.swift; sourceTree = "<group>"; };
 		75ABBB912375E379006585FA /* plank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plank.png; sourceTree = "<group>"; };
 		75ABBB932375E45C006585FA /* Chars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chars.png; sourceTree = "<group>"; };
@@ -282,6 +282,7 @@
 				7198FDEE2375CFBA007F7A3C /* ViewController.swift */,
 				75ABBB672375DDB6006585FA /* CharInspectViewController.swift */,
 				412DD87C2375DDF5008A1736 /* ShopViewController.swift */,
+				753C7A6D239C368100E782FF /* CharListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -291,7 +292,6 @@
 			children = (
 				7198FDF52375CFBB007F7A3C /* LaunchScreen.storyboard */,
 				7198FDF02375CFBA007F7A3C /* Main.storyboard */,
-				753C7A68239C352E00E782FF /* CharacterScreen.storyboard */,
 				753C7A6A239C356200E782FF /* InventoryScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -502,7 +502,6 @@
 				7198FE592375DF73007F7A3C /* uisquare.png in Resources */,
 				753C7A6B239C356200E782FF /* InventoryScreen.storyboard in Resources */,
 				7198FDF42375CFBB007F7A3C /* Assets.xcassets in Resources */,
-				753C7A69239C352E00E782FF /* CharacterScreen.storyboard in Resources */,
 				7198FDF22375CFBA007F7A3C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +550,7 @@
 				14141E5C2375F4F7009897CF /* Enemy.swift in Sources */,
 				412DD8832375E5E6008A1736 /* Armor.swift in Sources */,
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
+				753C7A6E239C368100E782FF /* CharListViewController.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
 				14141E632375FA2F009897CF /* Actor.swift in Sources */,

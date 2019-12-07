@@ -8,6 +8,50 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="eza-4b-HUx">
+            <objects>
+                <viewController id="14x-zr-r9E" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IZU-bi-fOc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="b6q-vE-iLQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbp-1Q-Mrg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1347" y="140"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8nC-AH-CDg">
+            <objects>
+                <viewController id="4XI-Tw-gVb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dBP-b4-nXJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plank.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ldx-ng-db8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TUv-Ge-NRE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Back To Menu" id="nO4-D4-AvC"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rZt-qd-ssc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Sn-tD-egH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="270-QZ-XZR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-676.81159420289862" y="140.625"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalProd" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,7 +81,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Chars.png"/>
                                 <connections>
-                                    <segue destination="dTd-V6-K8v" kind="presentation" id="gWU-bA-7vL"/>
+                                    <segue destination="4XI-Tw-gVb" kind="presentation" id="QYA-BL-byg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -48,14 +92,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
-        </scene>
-        <!--CharacterScreen-->
-        <scene sceneID="GSu-Fv-rKX">
-            <objects>
-                <viewControllerPlaceholder storyboardName="CharacterScreen" id="dTd-V6-K8v" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="teb-KR-Rkm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="741" y="112"/>
         </scene>
     </scenes>
     <resources>
