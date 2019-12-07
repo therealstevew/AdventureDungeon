@@ -12,6 +12,10 @@
 		14141E602375F833009897CF /* EnemyAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E5F2375F833009897CF /* EnemyAttack.swift */; };
 		14141E632375FA2F009897CF /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E622375FA2F009897CF /* Actor.swift */; };
 		14141E652375FCB4009897CF /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E642375FCB4009897CF /* Treasure.swift */; };
+		1443F06B239C359D008CB82A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1443F06A239C359D008CB82A /* GameKit.framework */; };
+		1443F06D239C35FC008CB82A /* BattleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */; };
+		1443F072239C36C2008CB82A /* BattleScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1443F071239C36C2008CB82A /* BattleScreen.sks */; };
+		1443F074239C383B008CB82A /* dungeon_floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1443F073239C383B008CB82A /* dungeon_floor.jpg */; };
 		412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87C2375DDF5008A1736 /* ShopViewController.swift */; };
 		412DD87F2375E5A7008A1736 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87E2375E5A7008A1736 /* Item.swift */; };
 		412DD8812375E5CA008A1736 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8802375E5CA008A1736 /* Weapon.swift */; };
@@ -108,6 +112,10 @@
 		14141E5F2375F833009897CF /* EnemyAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyAttack.swift; sourceTree = "<group>"; };
 		14141E622375FA2F009897CF /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		14141E642375FCB4009897CF /* Treasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
+		1443F06A239C359D008CB82A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleScreenViewController.swift; sourceTree = "<group>"; };
+		1443F071239C36C2008CB82A /* BattleScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BattleScreen.sks; sourceTree = "<group>"; };
+		1443F073239C383B008CB82A /* dungeon_floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dungeon_floor.jpg; sourceTree = "<group>"; };
 		412DD87C2375DDF5008A1736 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		412DD87E2375E5A7008A1736 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		412DD8802375E5CA008A1736 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -156,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1443F06B239C359D008CB82A /* GameKit.framework in Frameworks */,
 				7198FE5E2375E2DB007F7A3C /* MapKit.framework in Frameworks */,
 				7198FE5C2375E1E8007F7A3C /* CoreLocation.framework in Frameworks */,
 			);
@@ -192,6 +201,29 @@
 			path = EnemyAttacks;
 			sourceTree = "<group>";
 		};
+		1443F06E239C3646008CB82A /* BattleScene */ = {
+			isa = PBXGroup;
+			children = (
+				1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */,
+				1443F071239C36C2008CB82A /* BattleScreen.sks */,
+			);
+			path = BattleScene;
+			sourceTree = "<group>";
+		};
+		1443F075239C38C6008CB82A /* Enemies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enemies;
+			sourceTree = "<group>";
+		};
+		1443F076239C38CC008CB82A /* Heroes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Heroes;
+			sourceTree = "<group>";
+		};
 		7198FDDE2375CFBA007F7A3C = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +252,7 @@
 		7198FDE92375CFBA007F7A3C /* FinalProd */ = {
 			isa = PBXGroup;
 			children = (
+				1443F06E239C3646008CB82A /* BattleScene */,
 				7198FE572375DF31007F7A3C /* Assets */,
 				7198FE502375DC74007F7A3C /* Class */,
 				7198FE452375D71A007F7A3C /* Storyboards */,
@@ -324,6 +357,9 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1443F076239C38CC008CB82A /* Heroes */,
+				1443F075239C38C6008CB82A /* Enemies */,
+				1443F073239C383B008CB82A /* dungeon_floor.jpg */,
 				75ABBB912375E379006585FA /* plank.png */,
 				75ABBB952375E634006585FA /* bag.png */,
 				75ABBB932375E45C006585FA /* Chars.png */,
@@ -335,6 +371,7 @@
 		7198FE5A2375E1E7007F7A3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1443F06A239C359D008CB82A /* GameKit.framework */,
 				7198FE5D2375E2DB007F7A3C /* MapKit.framework */,
 				7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */,
 			);
@@ -492,10 +529,12 @@
 				75ABBB922375E379006585FA /* plank.png in Resources */,
 				75ABBB962375E634006585FA /* bag.png in Resources */,
 				75ABBB942375E45C006585FA /* Chars.png in Resources */,
+				1443F072239C36C2008CB82A /* BattleScreen.sks in Resources */,
 				7198FDF72375CFBB007F7A3C /* LaunchScreen.storyboard in Resources */,
 				7198FE592375DF73007F7A3C /* uisquare.png in Resources */,
 				7198FDF42375CFBB007F7A3C /* Assets.xcassets in Resources */,
 				7198FDF22375CFBA007F7A3C /* Main.storyboard in Resources */,
+				1443F074239C383B008CB82A /* dungeon_floor.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,6 +586,7 @@
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
 				14141E632375FA2F009897CF /* Actor.swift in Sources */,
 				7198FE562375DCF5007F7A3C /* MapIcon.swift in Sources */,
+				1443F06D239C35FC008CB82A /* BattleScreenViewController.swift in Sources */,
 				412DD87F2375E5A7008A1736 /* Item.swift in Sources */,
 				7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */,
 				14141E602375F833009897CF /* EnemyAttack.swift in Sources */,
