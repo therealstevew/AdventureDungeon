@@ -14,8 +14,8 @@ protocol EnemyAttack {
     func ShouldUse() -> Int
     
     //Return The Intended Target
-    func Target() -> Character
+    func Target() -> Actor
     
     //What the move does
-    func OnUse(Target : Character, User : Character)
+    func OnUse(Target : Actor, User : Actor)
 }

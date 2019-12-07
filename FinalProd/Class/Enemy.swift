@@ -21,7 +21,7 @@ class Enemy : Actor {
         self.Name = Data.Name;
         self.MaxHealth = Data.MaxHealth;
         self.CurHealth = Data.MaxHealth;
-        self.Display = Data.Display;
+        self.DisplayPic = Data.DisplayPic;
     }
 
 }

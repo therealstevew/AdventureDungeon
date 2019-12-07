@@ -12,11 +12,11 @@ class EnemyData {
     
     var Name : String;
     var MaxHealth : Int;
-    var Display : String;
+    var DisplayPic : String;
     
-    init(Name : String, MaxHealth : Int, Display : String) {
+    init(Name : String, MaxHealth : Int, DisplayPic : String) {
         self.Name = Name;
         self.MaxHealth = MaxHealth;
-        self.Display = Display;
+        self.DisplayPic = DisplayPic;
     }
 }
