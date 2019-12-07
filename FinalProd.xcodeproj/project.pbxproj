@@ -630,7 +630,6 @@
 				14762BFB239C6B1400A1254F /* 4Back.png in Resources */,
 				753C7A6B239C356200E782FF /* InventoryScreen.storyboard in Resources */,
 				7198FDF42375CFBB007F7A3C /* Assets.xcassets in Resources */,
-<<<<<<< HEAD
 				14762C13239C6B3800A1254F /* Furry.png in Resources */,
 				753C7A69239C352E00E782FF /* CharacterScreen.storyboard in Resources */,
 				14762BFE239C6B1400A1254F /* 3Back.png in Resources */,
@@ -638,8 +637,6 @@
 				14762BFA239C6B1400A1254F /* 7Front.png in Resources */,
 				14762C00239C6B1400A1254F /* 8Back.png in Resources */,
 				14762C04239C6B1400A1254F /* 6Back.png in Resources */,
-=======
->>>>>>> cbab5a69a8148b5803abb91be76b1324e76c6984
 				7198FDF22375CFBA007F7A3C /* Main.storyboard in Resources */,
 				1443F074239C383B008CB82A /* dungeon_floor.jpg in Resources */,
 			);
