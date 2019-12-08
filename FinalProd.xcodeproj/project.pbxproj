@@ -53,6 +53,14 @@
 		412DD8832375E5E6008A1736 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8822375E5E6008A1736 /* Armor.swift */; };
 		412DD8872375E711008A1736 /* Consumables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8862375E711008A1736 /* Consumables.swift */; };
 		4144FCE5239C9DD5003339C1 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCE4239C9DD5003339C1 /* UserInfo.swift */; };
+		4144FCEB239CB91D003339C1 /* Excalibur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCEA239CB91D003339C1 /* Excalibur.swift */; };
+		4144FCED239D75B2003339C1 /* Dou.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCEC239D75B2003339C1 /* Dou.swift */; };
+		4144FCEF239D7840003339C1 /* Durandal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCEE239D7840003339C1 /* Durandal.swift */; };
+		4144FCF1239D7861003339C1 /* Karuta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCF0239D7861003339C1 /* Karuta.swift */; };
+		7117BB96239C88EC005BEC6B /* redcross.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB92239C88EC005BEC6B /* redcross.png */; };
+		7117BB97239C88EC005BEC6B /* vendor.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB93239C88EC005BEC6B /* vendor.png */; };
+		7117BB98239C88EC005BEC6B /* tavern.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB94239C88EC005BEC6B /* tavern.png */; };
+		7117BB99239C88EC005BEC6B /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB95239C88EC005BEC6B /* battle.png */; };
 		7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */; };
 		7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */; };
 		7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEE2375CFBA007F7A3C /* ViewController.swift */; };
@@ -191,6 +199,18 @@
 		412DD8822375E5E6008A1736 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		412DD8862375E711008A1736 /* Consumables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumables.swift; sourceTree = "<group>"; };
 		4144FCE4239C9DD5003339C1 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		4144FCEA239CB91D003339C1 /* Excalibur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excalibur.swift; sourceTree = "<group>"; };
+		4144FCEC239D75B2003339C1 /* Dou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dou.swift; sourceTree = "<group>"; };
+		4144FCEE239D7840003339C1 /* Durandal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Durandal.swift; sourceTree = "<group>"; };
+		4144FCF0239D7861003339C1 /* Karuta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Karuta.swift; sourceTree = "<group>"; };
+		7117BB7A239C834C005BEC6B /* tavern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tavern.png; sourceTree = "<group>"; };
+		7117BB7C239C839E005BEC6B /* vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendor.png; sourceTree = "<group>"; };
+		7117BB7E239C8419005BEC6B /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
+		7117BB80239C8456005BEC6B /* redcross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redcross.png; sourceTree = "<group>"; };
+		7117BB92239C88EC005BEC6B /* redcross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redcross.png; sourceTree = "<group>"; };
+		7117BB93239C88EC005BEC6B /* vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendor.png; sourceTree = "<group>"; };
+		7117BB94239C88EC005BEC6B /* tavern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tavern.png; sourceTree = "<group>"; };
+		7117BB95239C88EC005BEC6B /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
 		7198FDE72375CFBA007F7A3C /* FinalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -328,6 +348,67 @@
 			path = Heroes;
 			sourceTree = "<group>";
 		};
+		4144FCE6239CB62D003339C1 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				412DD8822375E5E6008A1736 /* Armor.swift */,
+				412DD8862375E711008A1736 /* Consumables.swift */,
+				412DD87E2375E5A7008A1736 /* Item.swift */,
+				412DD8802375E5CA008A1736 /* Weapon.swift */,
+				4144FCE9239CB6E2003339C1 /* Consumables */,
+				4144FCE8239CB6B4003339C1 /* Armours */,
+				4144FCE7239CB69E003339C1 /* Weapons */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		4144FCE7239CB69E003339C1 /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				4144FCEA239CB91D003339C1 /* Excalibur.swift */,
+				4144FCEE239D7840003339C1 /* Durandal.swift */,
+			);
+			path = Weapons;
+			sourceTree = "<group>";
+		};
+		4144FCE8239CB6B4003339C1 /* Armours */ = {
+			isa = PBXGroup;
+			children = (
+				4144FCEC239D75B2003339C1 /* Dou.swift */,
+				4144FCF0239D7861003339C1 /* Karuta.swift */,
+			);
+			path = Armours;
+			sourceTree = "<group>";
+		};
+		4144FCE9239CB6E2003339C1 /* Consumables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Consumables;
+			sourceTree = "<group>";
+		};
+		7117BB83239C8572005BEC6B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				7117BB7C239C839E005BEC6B /* vendor.png */,
+				7117BB80239C8456005BEC6B /* redcross.png */,
+				7117BB7A239C834C005BEC6B /* tavern.png */,
+				7117BB7E239C8419005BEC6B /* battle.png */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		7117BB91239C88D3005BEC6B /* MapIcons */ = {
+			isa = PBXGroup;
+			children = (
+				7117BB95239C88EC005BEC6B /* battle.png */,
+				7117BB92239C88EC005BEC6B /* redcross.png */,
+				7117BB94239C88EC005BEC6B /* tavern.png */,
+				7117BB93239C88EC005BEC6B /* vendor.png */,
+			);
+			path = MapIcons;
+			sourceTree = "<group>";
+		};
 		7198FDDE2375CFBA007F7A3C = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +419,7 @@
 				7198FE242375CFBC007F7A3C /* FinalProd WatchKit Extension */,
 				7198FDE82375CFBA007F7A3C /* Products */,
 				7198FE5A2375E1E7007F7A3C /* Frameworks */,
+				7117BB83239C8572005BEC6B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -356,8 +438,8 @@
 		7198FDE92375CFBA007F7A3C /* FinalProd */ = {
 			isa = PBXGroup;
 			children = (
-				1443F06E239C3646008CB82A /* BattleScene */,
 				7198FE572375DF31007F7A3C /* Assets */,
+				1443F06E239C3646008CB82A /* BattleScene */,
 				7198FE502375DC74007F7A3C /* Class */,
 				7198FE452375D71A007F7A3C /* Storyboards */,
 				7198FE442375D705007F7A3C /* ViewControllers */,
@@ -443,23 +525,24 @@
 		7198FE502375DC74007F7A3C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				4144FCE6239CB62D003339C1 /* Items */,
 				14141E612375F999009897CF /* Attacks */,
 				14141E622375FA2F009897CF /* Actor.swift */,
-				412DD8822375E5E6008A1736 /* Armor.swift */,
 				14141E5F2375F833009897CF /* Attack.swift */,
 				14A88452239C74AF00169433 /* Battlefield.swift */,
-				412DD8862375E711008A1736 /* Consumables.swift */,
-				14A88456239C80E000169433 /* DataStore.swift */,
 				14141E5B2375F4F7009897CF /* Enemy.swift */,
 				14141E5D2375F725009897CF /* EnemyData.swift */,
 				14A88454239C772600169433 /* Hero.swift */,
-				412DD87E2375E5A7008A1736 /* Item.swift */,
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 				14141E642375FCB4009897CF /* Treasure.swift */,
 				412DD8802375E5CA008A1736 /* Weapon.swift */, 
 				14A88456239C80E000169433 /* DataStore.swift */,
 				753C7A95239C93D100E782FF /* CharCell.swift */,
 				4144FCE4239C9DD5003339C1 /* UserInfo.swift */
+				14A88456239C80E000169433 /* DataStore.swift */,
+				753C7A95239C93D100E782FF /* CharCell.swift */,
+				4144FCE4239C9DD5003339C1 /* UserInfo.swift */,
+				4b4c00287375059501da76d3ef63daccd1483069
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -467,6 +550,7 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7117BB91239C88D3005BEC6B /* MapIcons */,
 				753C7A88239C8DB500E782FF /* update.png */,
 				753C7A8C239C8EC300E782FF /* InfoButton.png */,
 				753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */,
@@ -641,6 +725,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7117BB99239C88EC005BEC6B /* battle.png in Resources */,
+				7117BB96239C88EC005BEC6B /* redcross.png in Resources */,
+				7117BB98239C88EC005BEC6B /* tavern.png in Resources */,
+				7117BB97239C88EC005BEC6B /* vendor.png in Resources */,
 				14762C01239C6B1400A1254F /* 1Front.png in Resources */,
 				753C7A8B239C8E2D00E782FF /* UpdatePartyButton.png in Resources */,
 				14762BFD239C6B1400A1254F /* 4Front.png in Resources */,
@@ -726,7 +814,9 @@
 				412DD8872375E711008A1736 /* Consumables.swift in Sources */,
 				14A8845D239C8E1400169433 /* HealAlly.swift in Sources */,
 				14141E5C2375F4F7009897CF /* Enemy.swift in Sources */,
+				4144FCEF239D7840003339C1 /* Durandal.swift in Sources */,
 				4144FCE5239C9DD5003339C1 /* UserInfo.swift in Sources */,
+				4144FCED239D75B2003339C1 /* Dou.swift in Sources */,
 				753C7A87239C879400E782FF /* CharViewController.swift in Sources */,
 				14A88453239C74AF00169433 /* Battlefield.swift in Sources */,
 				412DD8832375E5E6008A1736 /* Armor.swift in Sources */,
@@ -734,6 +824,7 @@
 				14A88457239C80E000169433 /* DataStore.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
 				14A88459239C86EA00169433 /* AttackLowest.swift in Sources */,
+				4144FCF1239D7861003339C1 /* Karuta.swift in Sources */,
 				143C5601239C9B56005BE4D4 /* AttackSteal.swift in Sources */,
 				14A8845F239C91FA00169433 /* AttackAll.swift in Sources */,
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
@@ -743,6 +834,7 @@
 				1443F06D239C35FC008CB82A /* BattleScreenViewController.swift in Sources */,
 				412DD87F2375E5A7008A1736 /* Item.swift in Sources */,
 				7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */,
+				4144FCEB239CB91D003339C1 /* Excalibur.swift in Sources */,
 				14141E602375F833009897CF /* Attack.swift in Sources */,
 				412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */,
 				412DD8812375E5CA008A1736 /* Weapon.swift in Sources */,
