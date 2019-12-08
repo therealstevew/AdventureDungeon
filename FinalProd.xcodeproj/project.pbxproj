@@ -52,14 +52,11 @@
 		412DD8812375E5CA008A1736 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8802375E5CA008A1736 /* Weapon.swift */; };
 		412DD8832375E5E6008A1736 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8822375E5E6008A1736 /* Armor.swift */; };
 		412DD8872375E711008A1736 /* Consumables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8862375E711008A1736 /* Consumables.swift */; };
-<<<<<<< HEAD
 		7117BB96239C88EC005BEC6B /* redcross.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB92239C88EC005BEC6B /* redcross.png */; };
 		7117BB97239C88EC005BEC6B /* vendor.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB93239C88EC005BEC6B /* vendor.png */; };
 		7117BB98239C88EC005BEC6B /* tavern.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB94239C88EC005BEC6B /* tavern.png */; };
 		7117BB99239C88EC005BEC6B /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB95239C88EC005BEC6B /* battle.png */; };
-=======
 		4144FCE5239C9DD5003339C1 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCE4239C9DD5003339C1 /* UserInfo.swift */; };
->>>>>>> master
 		7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */; };
 		7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */; };
 		7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEE2375CFBA007F7A3C /* ViewController.swift */; };
@@ -197,7 +194,6 @@
 		412DD8802375E5CA008A1736 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		412DD8822375E5E6008A1736 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		412DD8862375E711008A1736 /* Consumables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumables.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
 		7117BB7A239C834C005BEC6B /* tavern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tavern.png; sourceTree = "<group>"; };
 		7117BB7C239C839E005BEC6B /* vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendor.png; sourceTree = "<group>"; };
 		7117BB7E239C8419005BEC6B /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
@@ -206,9 +202,7 @@
 		7117BB93239C88EC005BEC6B /* vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendor.png; sourceTree = "<group>"; };
 		7117BB94239C88EC005BEC6B /* tavern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tavern.png; sourceTree = "<group>"; };
 		7117BB95239C88EC005BEC6B /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
-=======
 		4144FCE4239C9DD5003339C1 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
->>>>>>> master
 		7198FDE72375CFBA007F7A3C /* FinalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -346,7 +340,7 @@
 			path = Heroes;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
+
 		14819FFF239C730000AFE48F /* HeroAttacks */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,8 +370,6 @@
 			path = MapIcons;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> master
 		7198FDDE2375CFBA007F7A3C = {
 			isa = PBXGroup;
 			children = (
@@ -508,12 +500,9 @@
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 				14141E642375FCB4009897CF /* Treasure.swift */,
 				412DD8802375E5CA008A1736 /* Weapon.swift */,
-<<<<<<< HEAD
 				14A88456239C80E000169433 /* DataStore.swift */,
 				753C7A95239C93D100E782FF /* CharCell.swift */,
-=======
 				4144FCE4239C9DD5003339C1 /* UserInfo.swift */,
->>>>>>> master
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -521,15 +510,12 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				7117BB91239C88D3005BEC6B /* MapIcons */,
-=======
 				753C7A88239C8DB500E782FF /* update.png */,
 				753C7A8C239C8EC300E782FF /* InfoButton.png */,
 				753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */,
 				753C7A80239C86A600E782FF /* stoneBack.jpg */,
 				753C7A8A239C8E2D00E782FF /* UpdatePartyButton.png */,
->>>>>>> master
 				1443F076239C38CC008CB82A /* Heroes */,
 				1443F075239C38C6008CB82A /* Enemies */,
 				1443F073239C383B008CB82A /* dungeon_floor.jpg */,

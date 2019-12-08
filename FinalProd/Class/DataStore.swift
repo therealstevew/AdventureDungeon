@@ -9,8 +9,9 @@
 import UIKit
 
 class DataStore {
-    static func getHero(Which: Int) -> Hero {
-        let heroData : Hero = Hero()
+   // static func getHero(Which: Int) -> Hero {
+        //let heroData : Hero = Hero()
+        /*
         switch Which{
         case 0: //Dan
             heroData.Attack = 6
@@ -19,7 +20,7 @@ class DataStore {
             heroData.Name = "Dan"
             heroData.DisplayPic = "1Back.png"
             heroData.ViewPic = "1Front.png"
-            heroData.Abilities = [Jab()]
+            //heroData.Abilities = [Jab()]
             break
         case 1: //Bre
             heroData.Attack = 8
@@ -28,7 +29,7 @@ class DataStore {
             heroData.Name = "Bre"
             heroData.DisplayPic = "2Back.png"
             heroData.ViewPic = "2Front.png"
-            heroData.Abilities = [TextSteven()]
+            //heroData.Abilities = [TextSteven()]
             break
         case 2: //
             heroData.Attack = 4
@@ -37,7 +38,7 @@ class DataStore {
             heroData.Name = "Ricard"
             heroData.DisplayPic = "3Back.png"
             heroData.ViewPic = "3Front.png"
-            heroData.Abilities = [Bolster()]
+           // heroData.Abilities = [Bolster()]
             break
         case 3: //
             heroData.Attack = 7
@@ -46,7 +47,7 @@ class DataStore {
             heroData.Name = "Fundee"
             heroData.DisplayPic = "4Back.png"
             heroData.ViewPic = "4Front.png"
-            heroData.Abilities = [Bash()]
+           // heroData.Abilities = [Bash()]
             break
         case 4: //
             heroData.Attack = 3
@@ -55,7 +56,7 @@ class DataStore {
             heroData.Name = "Babtet"
             heroData.DisplayPic = "5Back.png"
             heroData.ViewPic = "5Front.png"
-            heroData.Abilities = [Pray()]
+            //heroData.Abilities = [Pray()]
             break
         case 5: //
             heroData.Attack = 5
@@ -64,7 +65,7 @@ class DataStore {
             heroData.Name = "Marina"
             heroData.DisplayPic = "6Back.png"
             heroData.ViewPic = "6Front.png"
-            heroData.Abilities = [Heal()]
+           // heroData.Abilities = [Heal()]
             break
         case 6: //
             heroData.Attack = 12
@@ -73,7 +74,7 @@ class DataStore {
             heroData.Name = "Zoro"
             heroData.DisplayPic = "7Back.png"
             heroData.ViewPic = "7Front.png"
-            heroData.Abilities = [Slash()]
+            //heroData.Abilities = [Slash()]
             break
         case 7: //
             heroData.Attack = 12
@@ -82,7 +83,7 @@ class DataStore {
             heroData.Name = "Handcock"
             heroData.DisplayPic = "8Back.png"
             heroData.ViewPic = "8Front.png"
-            heroData.Abilities = [Fireball()]
+            //heroData.Abilities = [Fireball()]
             break
         default: //Yikes
             heroData.Name = "Bongo"
@@ -94,7 +95,8 @@ class DataStore {
         }
         
         return Hero(Data: heroData);
-    }
+ */
+    //}
     
     static func getEnemy(Which : Int) -> Enemy {
         let enemyData : EnemyData = EnemyData()

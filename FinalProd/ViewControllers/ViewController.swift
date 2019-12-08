@@ -48,8 +48,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         print("locations = \(locValue.latitude) \(locValue.longitude)")
-        for n in 0...19 {
-            if(mapIcons.count <= 20){
+        for n in 0...7 {
+            if(mapIcons.count <= 7){
                 mapIcons.append(MapIcon.init(coordLat: Float(locValue.latitude), coordLong: Float(locValue.longitude)))
             }
         }
