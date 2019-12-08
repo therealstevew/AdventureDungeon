@@ -12,6 +12,7 @@ class UserInfo: NSObject {
     
     var Heroes : [Hero] = []
     var Items : [Item] = []
+    var Party : [Hero] = []
     
     func Saveuser(Name : String, Password : String, Hero1 : Int, Hero2 : Int, Hero3 : Int, Hero4 : Int, Weapon1 : Int, Weapon2 : Int, Weapon3 : Int, Weapon4 : Int, Armour1 : Int, Armour2 : Int, Armour3 : Int, Armour4 : Int){
         print("Saving the user data probally.")

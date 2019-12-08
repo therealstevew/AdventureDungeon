@@ -13,6 +13,7 @@
 		14141E632375FA2F009897CF /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E622375FA2F009897CF /* Actor.swift */; };
 		14141E652375FCB4009897CF /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E642375FCB4009897CF /* Treasure.swift */; };
 		1438E8D3239D883500238BC6 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438E8D2239D883500238BC6 /* Weapon.swift */; };
+		1438E8D5239D8AF200238BC6 /* BattleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438E8D4239D8AF200238BC6 /* BattleScene.swift */; };
 		143C5601239C9B56005BE4D4 /* AttackSteal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C5600239C9B56005BE4D4 /* AttackSteal.swift */; };
 		1443F06B239C359D008CB82A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1443F06A239C359D008CB82A /* GameKit.framework */; };
 		1443F06D239C35FC008CB82A /* BattleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */; };
@@ -169,6 +170,7 @@
 		14141E622375FA2F009897CF /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		14141E642375FCB4009897CF /* Treasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
 		1438E8D2239D883500238BC6 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		1438E8D4239D8AF200238BC6 /* BattleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleScene.swift; sourceTree = "<group>"; };
 		143C5600239C9B56005BE4D4 /* AttackSteal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackSteal.swift; sourceTree = "<group>"; };
 		1443F06A239C359D008CB82A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleScreenViewController.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 			children = (
 				1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */,
 				1443F071239C36C2008CB82A /* BattleScreen.sks */,
+				1438E8D4239D8AF200238BC6 /* BattleScene.swift */,
 			);
 			path = BattleScene;
 			sourceTree = "<group>";
@@ -857,6 +860,7 @@
 				4144FCF1239D7861003339C1 /* Karuta.swift in Sources */,
 				4144FD03239D851D003339C1 /* Caliburn.swift in Sources */,
 				143C5601239C9B56005BE4D4 /* AttackSteal.swift in Sources */,
+				1438E8D5239D8AF200238BC6 /* BattleScene.swift in Sources */,
 				14A8845F239C91FA00169433 /* AttackAll.swift in Sources */,
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
 				14141E632375FA2F009897CF /* Actor.swift in Sources */,
@@ -872,10 +876,8 @@
 				14141E602375F833009897CF /* Attack.swift in Sources */,
 				4144FCFF239D8500003339C1 /* Usumidori.swift in Sources */,
 				412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */,
-				412DD8812375E5CA008A1736 /* Weapon.swift in Sources */,
 				4144FCF5239D847C003339C1 /* Kusanagi.swift in Sources */,
 				753C7A96239C93D100E782FF /* CharCell.swift in Sources */,
-				4609e1581eab08aae9d5893842ca211630d1163b
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
