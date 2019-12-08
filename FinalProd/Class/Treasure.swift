@@ -10,9 +10,5 @@ import Foundation
 
 class Treasure {
     
-    public var Items : [Item];
-    
-    init(Items : [Item]){
-        self.Items = Items;
-    }
+    public var Items : [Item] = [];
 }

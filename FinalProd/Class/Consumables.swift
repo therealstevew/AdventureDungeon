@@ -9,5 +9,5 @@
 import UIKit
 
 class Consumables: Item {
-
+    func onUse(User : Hero) -> Void {} 
 }
