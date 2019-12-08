@@ -42,6 +42,7 @@
 		14762C15239C6B3800A1254F /* Ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = 14762C0D239C6B3800A1254F /* Ghost.png */; };
 		14A88453239C74AF00169433 /* Battlefield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88452239C74AF00169433 /* Battlefield.swift */; };
 		14A88455239C772600169433 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88454239C772600169433 /* Hero.swift */; };
+		14A88457239C80E000169433 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88456239C80E000169433 /* DataStore.swift */; };
 		412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87C2375DDF5008A1736 /* ShopViewController.swift */; };
 		412DD87F2375E5A7008A1736 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87E2375E5A7008A1736 /* Item.swift */; };
 		412DD8812375E5CA008A1736 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8802375E5CA008A1736 /* Weapon.swift */; };
@@ -169,6 +170,7 @@
 		14762C0D239C6B3800A1254F /* Ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ghost.png; sourceTree = "<group>"; };
 		14A88452239C74AF00169433 /* Battlefield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battlefield.swift; sourceTree = "<group>"; };
 		14A88454239C772600169433 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		14A88456239C80E000169433 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		412DD87C2375DDF5008A1736 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		412DD87E2375E5A7008A1736 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		412DD8802375E5CA008A1736 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -439,6 +441,7 @@
 				14141E642375FCB4009897CF /* Treasure.swift */,
 				7198FE532375DCE4007F7A3C /* User.swift */,
 				412DD8802375E5CA008A1736 /* Weapon.swift */,
+				14A88456239C80E000169433 /* DataStore.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -697,6 +700,7 @@
 				14A88453239C74AF00169433 /* Battlefield.swift in Sources */,
 				412DD8832375E5E6008A1736 /* Armor.swift in Sources */,
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
+				14A88457239C80E000169433 /* DataStore.swift in Sources */,
 				753C7A6E239C368100E782FF /* CharListViewController.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
