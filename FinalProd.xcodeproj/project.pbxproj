@@ -53,6 +53,7 @@
 		412DD8832375E5E6008A1736 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8822375E5E6008A1736 /* Armor.swift */; };
 		412DD8872375E711008A1736 /* Consumables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8862375E711008A1736 /* Consumables.swift */; };
 		4144FCE5239C9DD5003339C1 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCE4239C9DD5003339C1 /* UserInfo.swift */; };
+		4144FCEB239CB91D003339C1 /* Excalibur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCEA239CB91D003339C1 /* Excalibur.swift */; };
 		7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */; };
 		7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */; };
 		7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEE2375CFBA007F7A3C /* ViewController.swift */; };
@@ -191,6 +192,7 @@
 		412DD8822375E5E6008A1736 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		412DD8862375E711008A1736 /* Consumables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumables.swift; sourceTree = "<group>"; };
 		4144FCE4239C9DD5003339C1 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		4144FCEA239CB91D003339C1 /* Excalibur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excalibur.swift; sourceTree = "<group>"; };
 		7198FDE72375CFBA007F7A3C /* FinalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -328,6 +330,39 @@
 			path = Heroes;
 			sourceTree = "<group>";
 		};
+		4144FCE6239CB62D003339C1 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				412DD87E2375E5A7008A1736 /* Item.swift */,
+				4144FCE9239CB6E2003339C1 /* Consumables */,
+				4144FCE8239CB6B4003339C1 /* Armours */,
+				4144FCE7239CB69E003339C1 /* Weapons */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		4144FCE7239CB69E003339C1 /* Weapons */ = {
+			isa = PBXGroup;
+			children = (
+				4144FCEA239CB91D003339C1 /* Excalibur.swift */,
+			);
+			path = Weapons;
+			sourceTree = "<group>";
+		};
+		4144FCE8239CB6B4003339C1 /* Armours */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Armours;
+			sourceTree = "<group>";
+		};
+		4144FCE9239CB6E2003339C1 /* Consumables */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Consumables;
+			sourceTree = "<group>";
+		};
 		7198FDDE2375CFBA007F7A3C = {
 			isa = PBXGroup;
 			children = (
@@ -443,26 +478,22 @@
 		7198FE502375DC74007F7A3C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				4144FCE6239CB62D003339C1 /* Items */,
 				14141E612375F999009897CF /* Attacks */,
 				14141E622375FA2F009897CF /* Actor.swift */,
-				412DD8822375E5E6008A1736 /* Armor.swift */,
 				14141E5F2375F833009897CF /* Attack.swift */,
+				412DD8822375E5E6008A1736 /* Armor.swift */,
 				14A88452239C74AF00169433 /* Battlefield.swift */,
 				412DD8862375E711008A1736 /* Consumables.swift */,
-				14A88456239C80E000169433 /* DataStore.swift */,
 				14141E5B2375F4F7009897CF /* Enemy.swift */,
+				412DD8802375E5CA008A1736 /* Weapon.swift */,
 				14141E5D2375F725009897CF /* EnemyData.swift */,
 				14A88454239C772600169433 /* Hero.swift */,
-				412DD87E2375E5A7008A1736 /* Item.swift */,
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 				14141E642375FCB4009897CF /* Treasure.swift */,
-				412DD8802375E5CA008A1736 /* Weapon.swift */,
-<<<<<<< HEAD
 				14A88456239C80E000169433 /* DataStore.swift */,
 				753C7A95239C93D100E782FF /* CharCell.swift */,
-=======
 				4144FCE4239C9DD5003339C1 /* UserInfo.swift */,
->>>>>>> master
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -746,6 +777,7 @@
 				1443F06D239C35FC008CB82A /* BattleScreenViewController.swift in Sources */,
 				412DD87F2375E5A7008A1736 /* Item.swift in Sources */,
 				7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */,
+				4144FCEB239CB91D003339C1 /* Excalibur.swift in Sources */,
 				14141E602375F833009897CF /* Attack.swift in Sources */,
 				412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */,
 				412DD8812375E5CA008A1736 /* Weapon.swift in Sources */,
