@@ -93,7 +93,7 @@ class DataStore {
             heroData.Defense = 1000
         }
         
-        return Hero(Data: heroData);
+        return heroData;
     }
     
     static func getEnemy(Which : Int) -> Enemy {
