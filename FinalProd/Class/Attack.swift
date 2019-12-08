@@ -17,5 +17,16 @@ class Attack : NSObject {
     func Target(Data : Battlefield) -> Int {return 0}
     
     //What the move does
-    func OnUse(Data : Battlefield) -> Void {}
+    func OnUse(User : Actor, Data : Battlefield) -> Void {
+        var TargetUnit : Actor
+        if(User is Enemy){
+            TargetUnit = Data.Heroes[Target(Data:Data)]
+            
+        } else {
+            TargetUnit = Data.Enemies[Target(Data:Data)]
+        }
+        if(TargetUnit.Defense < User.Attack){
+            Data.Heroes[Target(Data:Data)].CurHealth -= User.Attack - TargetUnit.Defense
+        }
+    }
 }

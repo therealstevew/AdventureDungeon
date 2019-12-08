@@ -13,4 +13,30 @@ class DataStore {
         var dab : Hero = Hero()
         return dab;
     }
+    
+    static func getEnemy(Which : Int) -> Enemy {
+        let enemyData : EnemyData = EnemyData()
+        switch Which{
+        case 0: //Beak Thing
+            enemyData.Name = "Beak Thing"
+            enemyData.DisplayPic = "BeakThing.png"
+            enemyData.MaxHealth = 25
+            enemyData.Attack = 12
+            enemyData.Defense = 0
+            enemyData.Abilities = [Peck()]
+            break
+        case 1: // Clown
+            enemyData.Name = "Clown Boy"
+            enemyData.DisplayPic = "Clown.png"
+            enemyData.MaxHealth = 10
+            enemyData.Attack = 5
+            enemyData.Defense = 2
+            enemyData.Abilities = []
+        default: //Code Broke
+            enemyData.Name = "Glitch Boy"
+            enemyData.DisplayPic = "Front1"
+            enemyData.MaxHealth = 999
+        }
+        return Enemy(Data: enemyData)
+    }
 }
