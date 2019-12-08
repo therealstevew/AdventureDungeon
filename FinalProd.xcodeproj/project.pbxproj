@@ -456,13 +456,10 @@
 				412DD87E2375E5A7008A1736 /* Item.swift */,
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 				14141E642375FCB4009897CF /* Treasure.swift */,
-				412DD8802375E5CA008A1736 /* Weapon.swift */,
-<<<<<<< HEAD
+				412DD8802375E5CA008A1736 /* Weapon.swift */, 
 				14A88456239C80E000169433 /* DataStore.swift */,
 				753C7A95239C93D100E782FF /* CharCell.swift */,
-=======
-				4144FCE4239C9DD5003339C1 /* UserInfo.swift */,
->>>>>>> master
+				4144FCE4239C9DD5003339C1 /* UserInfo.swift */
 			);
 			path = Class;
 			sourceTree = "<group>";
