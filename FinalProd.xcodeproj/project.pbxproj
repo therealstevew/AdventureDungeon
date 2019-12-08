@@ -72,7 +72,8 @@
 		7117BB97239C88EC005BEC6B /* vendor.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB93239C88EC005BEC6B /* vendor.png */; };
 		7117BB98239C88EC005BEC6B /* tavern.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB94239C88EC005BEC6B /* tavern.png */; };
 		7117BB99239C88EC005BEC6B /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB95239C88EC005BEC6B /* battle.png */; };
-		4144FCE5239C9DD5003339C1 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCE4239C9DD5003339C1 /* UserInfo.swift */; };
+		7117BBA3239DA9F2005BEC6B /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7117BBA2239DA9F2005BEC6B /* AlertView.xib */; };
+		7117BBA5239DACF1005BEC6B /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117BBA4239DACF1005BEC6B /* AlertView.swift */; };
 		7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */; };
 		7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */; };
 		7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEE2375CFBA007F7A3C /* ViewController.swift */; };
@@ -236,7 +237,8 @@
 		7117BB93239C88EC005BEC6B /* vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendor.png; sourceTree = "<group>"; };
 		7117BB94239C88EC005BEC6B /* tavern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tavern.png; sourceTree = "<group>"; };
 		7117BB95239C88EC005BEC6B /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
-		4144FCE4239C9DD5003339C1 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		7117BBA2239DA9F2005BEC6B /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		7117BBA4239DACF1005BEC6B /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		7198FDE72375CFBA007F7A3C /* FinalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -548,6 +550,7 @@
 				7198FDF02375CFBA007F7A3C /* Main.storyboard */,
 				753C7A6A239C356200E782FF /* InventoryScreen.storyboard */,
 				753C7A84239C873D00E782FF /* Party.storyboard */,
+				7117BBA2239DA9F2005BEC6B /* AlertView.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -575,10 +578,10 @@
 				14A88454239C772600169433 /* Hero.swift */,
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 				14141E642375FCB4009897CF /* Treasure.swift */,
-				412DD8802375E5CA008A1736 /* Weapon.swift */,
 				14A88456239C80E000169433 /* DataStore.swift */,
 				753C7A95239C93D100E782FF /* CharCell.swift */,
 				4144FCE4239C9DD5003339C1 /* UserInfo.swift */,
+				7117BBA4239DACF1005BEC6B /* AlertView.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -783,6 +786,7 @@
 				753C7A85239C873D00E782FF /* Party.storyboard in Resources */,
 				14762C12239C6B3800A1254F /* BeakThing.png in Resources */,
 				75165B49239D89320039B966 /* Loading.png in Resources */,
+				7117BBA3239DA9F2005BEC6B /* AlertView.xib in Resources */,
 				14762C0E239C6B3800A1254F /* Ninja.png in Resources */,
 				14762C14239C6B3800A1254F /* Vamp.png in Resources */,
 				14762C10239C6B3800A1254F /* Skele.png in Resources */,
@@ -871,6 +875,7 @@
 				4144FCF1239D7861003339C1 /* Karuta.swift in Sources */,
 				4144FD03239D851D003339C1 /* Caliburn.swift in Sources */,
 				143C5601239C9B56005BE4D4 /* AttackSteal.swift in Sources */,
+				7117BBA5239DACF1005BEC6B /* AlertView.swift in Sources */,
 				1438E8D5239D8AF200238BC6 /* BattleScene.swift in Sources */,
 				14A8845F239C91FA00169433 /* AttackAll.swift in Sources */,
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
