@@ -19,11 +19,9 @@ class DataStore {
             heroData.Name = "Dan"
             heroData.DisplayPic = "1Back.png"
             heroData.ViewPic = "1Front.png"
-<<<<<<< HEAD
             heroData.Abilities = [Attack()]
-=======
-            //heroData.Abilities = [Jab()]
->>>>>>> d3be7ea37338e3c2848456c3db2c1400f21e6aa7
+
+
             break
         case 1: //Bre
             heroData.Attack = 5
@@ -151,6 +149,7 @@ class DataStore {
             enemyData.Attack = 10
             enemyData.Defense = 5
             enemyData.Abilities = [AttackLowest()]
+            break
         case 6: // Skele
             enemyData.Name = "Flying Boner"
             enemyData.DisplayPic = "Skele.png"
@@ -158,6 +157,7 @@ class DataStore {
             enemyData.Attack = 10
             enemyData.Defense = 0
             enemyData.Abilities = [AttackAll(),HealAlly()]
+            break
         case 7: // Vamp
             enemyData.Name = "Vampire"
             enemyData.DisplayPic = "Vamp.png"
@@ -165,6 +165,7 @@ class DataStore {
             enemyData.Attack = 10
             enemyData.Defense = 0
             enemyData.Abilities = [AttackSteal()]
+            break
         default: //Code Broke
             enemyData.Name = "Glitch Boy"
             enemyData.DisplayPic = "Front1"
@@ -174,5 +175,23 @@ class DataStore {
             enemyData.Abilities = [AttackAll()]
         }
         return Enemy(Data: enemyData)
+    }
+    
+    static func getitem(Which : Int) -> Item {
+        let itemData : Item?
+        switch Which{
+        case 0:
+            itemData = Excalibur()
+            break
+        case 1:
+            itemData = Durandal()
+            break
+        case 2:
+            itemData = Kusanagi()
+            break
+        default:
+            itemData = Sword()
+        }
+        return itemData;
     }
 }
