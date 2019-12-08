@@ -12,6 +12,7 @@
 		14141E602375F833009897CF /* Attack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E5F2375F833009897CF /* Attack.swift */; };
 		14141E632375FA2F009897CF /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E622375FA2F009897CF /* Actor.swift */; };
 		14141E652375FCB4009897CF /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E642375FCB4009897CF /* Treasure.swift */; };
+		143C5601239C9B56005BE4D4 /* AttackSteal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C5600239C9B56005BE4D4 /* AttackSteal.swift */; };
 		1443F06B239C359D008CB82A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1443F06A239C359D008CB82A /* GameKit.framework */; };
 		1443F06D239C35FC008CB82A /* BattleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */; };
 		1443F072239C36C2008CB82A /* BattleScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1443F071239C36C2008CB82A /* BattleScreen.sks */; };
@@ -43,7 +44,9 @@
 		14A88453239C74AF00169433 /* Battlefield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88452239C74AF00169433 /* Battlefield.swift */; };
 		14A88455239C772600169433 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88454239C772600169433 /* Hero.swift */; };
 		14A88457239C80E000169433 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88456239C80E000169433 /* DataStore.swift */; };
-		14A88459239C86EA00169433 /* Peck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88458239C86EA00169433 /* Peck.swift */; };
+		14A88459239C86EA00169433 /* AttackLowest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88458239C86EA00169433 /* AttackLowest.swift */; };
+		14A8845D239C8E1400169433 /* HealAlly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A8845C239C8E1400169433 /* HealAlly.swift */; };
+		14A8845F239C91FA00169433 /* AttackAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A8845E239C91FA00169433 /* AttackAll.swift */; };
 		412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87C2375DDF5008A1736 /* ShopViewController.swift */; };
 		412DD87F2375E5A7008A1736 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87E2375E5A7008A1736 /* Item.swift */; };
 		412DD8812375E5CA008A1736 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8802375E5CA008A1736 /* Weapon.swift */; };
@@ -66,7 +69,6 @@
 		7198FE2A2375CFBC007F7A3C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE292375CFBC007F7A3C /* NotificationController.swift */; };
 		7198FE2C2375CFBC007F7A3C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE2B2375CFBC007F7A3C /* ComplicationController.swift */; };
 		7198FE2E2375CFBD007F7A3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7198FE2D2375CFBD007F7A3C /* Assets.xcassets */; };
-		7198FE542375DCE4007F7A3C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE532375DCE4007F7A3C /* User.swift */; };
 		7198FE562375DCF5007F7A3C /* MapIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FE552375DCF5007F7A3C /* MapIcon.swift */; };
 		7198FE592375DF73007F7A3C /* uisquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 7198FE582375DF73007F7A3C /* uisquare.png */; };
 		7198FE5C2375E1E8007F7A3C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */; };
@@ -143,6 +145,7 @@
 		14141E5F2375F833009897CF /* Attack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attack.swift; sourceTree = "<group>"; };
 		14141E622375FA2F009897CF /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		14141E642375FCB4009897CF /* Treasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
+		143C5600239C9B56005BE4D4 /* AttackSteal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackSteal.swift; sourceTree = "<group>"; };
 		1443F06A239C359D008CB82A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleScreenViewController.swift; sourceTree = "<group>"; };
 		1443F071239C36C2008CB82A /* BattleScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BattleScreen.sks; sourceTree = "<group>"; };
@@ -174,7 +177,9 @@
 		14A88452239C74AF00169433 /* Battlefield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battlefield.swift; sourceTree = "<group>"; };
 		14A88454239C772600169433 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		14A88456239C80E000169433 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		14A88458239C86EA00169433 /* Peck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peck.swift; sourceTree = "<group>"; };
+		14A88458239C86EA00169433 /* AttackLowest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackLowest.swift; sourceTree = "<group>"; };
+		14A8845C239C8E1400169433 /* HealAlly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealAlly.swift; sourceTree = "<group>"; };
+		14A8845E239C91FA00169433 /* AttackAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackAll.swift; sourceTree = "<group>"; };
 		412DD87C2375DDF5008A1736 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		412DD87E2375E5A7008A1736 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		412DD8802375E5CA008A1736 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -206,7 +211,6 @@
 		7198FE2D2375CFBD007F7A3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7198FE2F2375CFBD007F7A3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7198FE302375CFBD007F7A3C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		7198FE532375DCE4007F7A3C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7198FE552375DCF5007F7A3C /* MapIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapIcon.swift; sourceTree = "<group>"; };
 		7198FE582375DF73007F7A3C /* uisquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uisquare.png; sourceTree = "<group>"; };
 		7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -256,12 +260,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14141E612375F999009897CF /* EnemyAttacks */ = {
+		14141E612375F999009897CF /* Attacks */ = {
 			isa = PBXGroup;
 			children = (
-				14A88458239C86EA00169433 /* Peck.swift */,
+				14A88458239C86EA00169433 /* AttackLowest.swift */,
+				14A8845C239C8E1400169433 /* HealAlly.swift */,
+				14A8845E239C91FA00169433 /* AttackAll.swift */,
+				143C5600239C9B56005BE4D4 /* AttackSteal.swift */,
 			);
-			path = EnemyAttacks;
+			path = Attacks;
 			sourceTree = "<group>";
 		};
 		1443F06E239C3646008CB82A /* BattleScene */ = {
@@ -309,13 +316,6 @@
 				14762BE6239C6B1300A1254F /* 8Front.png */,
 			);
 			path = Heroes;
-			sourceTree = "<group>";
-		};
-		14819FFF239C730000AFE48F /* HeroAttacks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HeroAttacks;
 			sourceTree = "<group>";
 		};
 		7198FDDE2375CFBA007F7A3C = {
@@ -433,22 +433,20 @@
 		7198FE502375DC74007F7A3C /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				14819FFF239C730000AFE48F /* HeroAttacks */,
-				14141E612375F999009897CF /* EnemyAttacks */,
+				14141E612375F999009897CF /* Attacks */,
 				14141E622375FA2F009897CF /* Actor.swift */,
 				412DD8822375E5E6008A1736 /* Armor.swift */,
 				14141E5F2375F833009897CF /* Attack.swift */,
 				14A88452239C74AF00169433 /* Battlefield.swift */,
 				412DD8862375E711008A1736 /* Consumables.swift */,
+				14A88456239C80E000169433 /* DataStore.swift */,
 				14141E5B2375F4F7009897CF /* Enemy.swift */,
 				14141E5D2375F725009897CF /* EnemyData.swift */,
 				14A88454239C772600169433 /* Hero.swift */,
 				412DD87E2375E5A7008A1736 /* Item.swift */,
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 				14141E642375FCB4009897CF /* Treasure.swift */,
-				7198FE532375DCE4007F7A3C /* User.swift */,
 				412DD8802375E5CA008A1736 /* Weapon.swift */,
-				14A88456239C80E000169433 /* DataStore.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -707,7 +705,7 @@
 			files = (
 				14141E5E2375F725009897CF /* EnemyData.swift in Sources */,
 				412DD8872375E711008A1736 /* Consumables.swift in Sources */,
-				7198FE542375DCE4007F7A3C /* User.swift in Sources */,
+				14A8845D239C8E1400169433 /* HealAlly.swift in Sources */,
 				14141E5C2375F4F7009897CF /* Enemy.swift in Sources */,
 				753C7A87239C879400E782FF /* CharViewController.swift in Sources */,
 				14A88453239C74AF00169433 /* Battlefield.swift in Sources */,
@@ -715,7 +713,9 @@
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
 				14A88457239C80E000169433 /* DataStore.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
-				14A88459239C86EA00169433 /* Peck.swift in Sources */,
+				14A88459239C86EA00169433 /* AttackLowest.swift in Sources */,
+				143C5601239C9B56005BE4D4 /* AttackSteal.swift in Sources */,
+				14A8845F239C91FA00169433 /* AttackAll.swift in Sources */,
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
 				14141E632375FA2F009897CF /* Actor.swift in Sources */,
 				14A88455239C772600169433 /* Hero.swift in Sources */,

@@ -11,22 +11,22 @@ import Foundation
 class Attack : NSObject {
     
     //Returns a 1-10 score of whether or not this move should be used
-    func ShouldUse() -> Int {return 0}
+    func ShouldUse(User: Actor, Data : Battlefield) -> Int {return 0}
     
     //Return The Intended Target
-    func Target(Data : Battlefield) -> Int {return 0}
+    func Target(User: Actor, Data : Battlefield) -> Int {return 0}
     
     //What the move does
     func OnUse(User : Actor, Data : Battlefield) -> Void {
         var TargetUnit : Actor
         if(User is Enemy){
-            TargetUnit = Data.Heroes[Target(Data:Data)]
+            TargetUnit = Data.Heroes[Target(User:User, Data:Data)]
             
         } else {
-            TargetUnit = Data.Enemies[Target(Data:Data)]
+            TargetUnit = Data.Enemies[Target(User:User, Data:Data)]
         }
         if(TargetUnit.Defense < User.Attack){
-            Data.Heroes[Target(Data:Data)].CurHealth -= User.Attack - TargetUnit.Defense
+            Data.Heroes[Target(User:User, Data:Data)].CurHealth -= User.Attack - TargetUnit.Defense
         }
     }
 }
