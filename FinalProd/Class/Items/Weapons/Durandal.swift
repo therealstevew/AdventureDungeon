@@ -1,20 +1,20 @@
 //
-//  Excalibur.swift
+//  Durandal.swift
 //  FinalProd
 //
-//  Created by Andrew Mckie on 2019-12-07.
+//  Created by Andrew Mckie on 2019-12-08.
 //  Copyright © 2019 Steven Winstanley. All rights reserved.
 //
 
 import UIKit
 
-class Excalibur: Weapon {
+class Durandal: Weapon {
 
-    let stat = 30
+    let stat = 15
     
     override init(){
         super.init()
-        self.Name = "Excalibur"
+        self.Name = "Durandal"
     }
     
     override func onEquip(User: Hero) {
