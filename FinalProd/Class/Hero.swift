@@ -14,6 +14,7 @@ class Hero: Actor {
     var MaxHealth: Int = 1
     var CurHealth: Int = 1
     var DisplayPic: String = ""
+    var ViewPic: String = ""
     var Name: String = ""
     var Status: [String] = []
     var Abilities: [Attack] = []

@@ -43,6 +43,7 @@
 		14A88453239C74AF00169433 /* Battlefield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88452239C74AF00169433 /* Battlefield.swift */; };
 		14A88455239C772600169433 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88454239C772600169433 /* Hero.swift */; };
 		14A88457239C80E000169433 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88456239C80E000169433 /* DataStore.swift */; };
+		14A88459239C86EA00169433 /* Peck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88458239C86EA00169433 /* Peck.swift */; };
 		412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87C2375DDF5008A1736 /* ShopViewController.swift */; };
 		412DD87F2375E5A7008A1736 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87E2375E5A7008A1736 /* Item.swift */; };
 		412DD8812375E5CA008A1736 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8802375E5CA008A1736 /* Weapon.swift */; };
@@ -177,6 +178,7 @@
 		14A88452239C74AF00169433 /* Battlefield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battlefield.swift; sourceTree = "<group>"; };
 		14A88454239C772600169433 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		14A88456239C80E000169433 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		14A88458239C86EA00169433 /* Peck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peck.swift; sourceTree = "<group>"; };
 		412DD87C2375DDF5008A1736 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		412DD87E2375E5A7008A1736 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		412DD8802375E5CA008A1736 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 		14141E612375F999009897CF /* EnemyAttacks */ = {
 			isa = PBXGroup;
 			children = (
+				14A88458239C86EA00169433 /* Peck.swift */,
 			);
 			path = EnemyAttacks;
 			sourceTree = "<group>";
@@ -727,6 +730,7 @@
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
 				14A88457239C80E000169433 /* DataStore.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
+				14A88459239C86EA00169433 /* Peck.swift in Sources */,
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
 				14141E632375FA2F009897CF /* Actor.swift in Sources */,
 				14A88455239C772600169433 /* Hero.swift in Sources */,

@@ -13,5 +13,7 @@ class EnemyData {
     var Name : String = ""
     var MaxHealth : Int = 0
     var DisplayPic : String = ""
-
+    var Attack : Int = 0
+    var Defense : Int = 0
+    var Abilities : [Attack] = []
 }
