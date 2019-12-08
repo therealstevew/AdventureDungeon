@@ -9,9 +9,14 @@
 import UIKit
 ///
 class MapIcon: NSObject {
-    //type//me
+    //0 Dungeon
+    //1 Tavern
+    //2 Vender
+    //3 Healer
+    var type : Int = 1;
     
-    
-    
+    override init() {
+        type = Int.random(in: 0 ..< 4)
+    }
     
 }

@@ -46,6 +46,10 @@
 		412DD8832375E5E6008A1736 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8822375E5E6008A1736 /* Armor.swift */; };
 		412DD8852375E650008A1736 /* Accessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8842375E650008A1736 /* Accessory.swift */; };
 		412DD8872375E711008A1736 /* Consumables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8862375E711008A1736 /* Consumables.swift */; };
+		7117BB7B239C834C005BEC6B /* tavern.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB7A239C834C005BEC6B /* tavern.png */; };
+		7117BB7D239C839E005BEC6B /* vendor.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB7C239C839E005BEC6B /* vendor.png */; };
+		7117BB7F239C8419005BEC6B /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB7E239C8419005BEC6B /* battle.png */; };
+		7117BB81239C8456005BEC6B /* redcross.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB80239C8456005BEC6B /* redcross.png */; };
 		7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */; };
 		7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */; };
 		7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEE2375CFBA007F7A3C /* ViewController.swift */; };
@@ -172,6 +176,10 @@
 		412DD8822375E5E6008A1736 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		412DD8842375E650008A1736 /* Accessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessory.swift; sourceTree = "<group>"; };
 		412DD8862375E711008A1736 /* Consumables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumables.swift; sourceTree = "<group>"; };
+		7117BB7A239C834C005BEC6B /* tavern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tavern.png; sourceTree = "<group>"; };
+		7117BB7C239C839E005BEC6B /* vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendor.png; sourceTree = "<group>"; };
+		7117BB7E239C8419005BEC6B /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
+		7117BB80239C8456005BEC6B /* redcross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redcross.png; sourceTree = "<group>"; };
 		7198FDE72375CFBA007F7A3C /* FinalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -298,6 +306,17 @@
 				14762BE6239C6B1300A1254F /* 8Front.png */,
 			);
 			path = Heroes;
+			sourceTree = "<group>";
+		};
+		7117BB79239C8240005BEC6B /* MapIcons */ = {
+			isa = PBXGroup;
+			children = (
+				7117BB80239C8456005BEC6B /* redcross.png */,
+				7117BB7E239C8419005BEC6B /* battle.png */,
+				7117BB7C239C839E005BEC6B /* vendor.png */,
+				7117BB7A239C834C005BEC6B /* tavern.png */,
+			);
+			path = MapIcons;
 			sourceTree = "<group>";
 		};
 		7198FDDE2375CFBA007F7A3C = {
@@ -435,6 +454,7 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7117BB79239C8240005BEC6B /* MapIcons */,
 				1443F076239C38CC008CB82A /* Heroes */,
 				1443F075239C38C6008CB82A /* Enemies */,
 				1443F073239C383B008CB82A /* dungeon_floor.jpg */,
@@ -611,12 +631,14 @@
 				14762BFC239C6B1400A1254F /* 2Front.png in Resources */,
 				14762BF9239C6B1400A1254F /* 6Front.png in Resources */,
 				14762BF8239C6B1400A1254F /* 5Back.png in Resources */,
+				7117BB7D239C839E005BEC6B /* vendor.png in Resources */,
 				14762C02239C6B1400A1254F /* 2Back.png in Resources */,
 				75ABBB942375E45C006585FA /* Chars.png in Resources */,
 				14762C0F239C6B3800A1254F /* Samurai.png in Resources */,
 				14762BF7239C6B1400A1254F /* 5Front.png in Resources */,
 				1443F072239C36C2008CB82A /* BattleScreen.sks in Resources */,
 				14762BFF239C6B1400A1254F /* 3Front.png in Resources */,
+				7117BB81239C8456005BEC6B /* redcross.png in Resources */,
 				14762C12239C6B3800A1254F /* BeakThing.png in Resources */,
 				14762C0E239C6B3800A1254F /* Ninja.png in Resources */,
 				14762C14239C6B3800A1254F /* Vamp.png in Resources */,
@@ -627,17 +649,18 @@
 				7198FE592375DF73007F7A3C /* uisquare.png in Resources */,
 				14762C05239C6B1400A1254F /* 1Back.png in Resources */,
 				14762BF6239C6B1400A1254F /* 8Front.png in Resources */,
+				7117BB7B239C834C005BEC6B /* tavern.png in Resources */,
 				14762BFB239C6B1400A1254F /* 4Back.png in Resources */,
 				753C7A6B239C356200E782FF /* InventoryScreen.storyboard in Resources */,
 				7198FDF42375CFBB007F7A3C /* Assets.xcassets in Resources */,
 				14762C13239C6B3800A1254F /* Furry.png in Resources */,
-				753C7A69239C352E00E782FF /* CharacterScreen.storyboard in Resources */,
 				14762BFE239C6B1400A1254F /* 3Back.png in Resources */,
 				14762C11239C6B3800A1254F /* Clown.png in Resources */,
 				14762BFA239C6B1400A1254F /* 7Front.png in Resources */,
 				14762C00239C6B1400A1254F /* 8Back.png in Resources */,
 				14762C04239C6B1400A1254F /* 6Back.png in Resources */,
 				7198FDF22375CFBA007F7A3C /* Main.storyboard in Resources */,
+				7117BB7F239C8419005BEC6B /* battle.png in Resources */,
 				1443F074239C383B008CB82A /* dungeon_floor.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
