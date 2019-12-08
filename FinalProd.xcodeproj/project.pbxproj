@@ -52,6 +52,7 @@
 		412DD8812375E5CA008A1736 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8802375E5CA008A1736 /* Weapon.swift */; };
 		412DD8832375E5E6008A1736 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8822375E5E6008A1736 /* Armor.swift */; };
 		412DD8872375E711008A1736 /* Consumables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8862375E711008A1736 /* Consumables.swift */; };
+		4144FCE5239C9DD5003339C1 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCE4239C9DD5003339C1 /* UserInfo.swift */; };
 		7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */; };
 		7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */; };
 		7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEE2375CFBA007F7A3C /* ViewController.swift */; };
@@ -185,6 +186,7 @@
 		412DD8802375E5CA008A1736 /* Weapon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		412DD8822375E5E6008A1736 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
 		412DD8862375E711008A1736 /* Consumables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumables.swift; sourceTree = "<group>"; };
+		4144FCE4239C9DD5003339C1 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		7198FDE72375CFBA007F7A3C /* FinalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -447,6 +449,7 @@
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 				14141E642375FCB4009897CF /* Treasure.swift */,
 				412DD8802375E5CA008A1736 /* Weapon.swift */,
+				4144FCE4239C9DD5003339C1 /* UserInfo.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -707,6 +710,7 @@
 				412DD8872375E711008A1736 /* Consumables.swift in Sources */,
 				14A8845D239C8E1400169433 /* HealAlly.swift in Sources */,
 				14141E5C2375F4F7009897CF /* Enemy.swift in Sources */,
+				4144FCE5239C9DD5003339C1 /* UserInfo.swift in Sources */,
 				753C7A87239C879400E782FF /* CharViewController.swift in Sources */,
 				14A88453239C74AF00169433 /* Battlefield.swift in Sources */,
 				412DD8832375E5E6008A1736 /* Armor.swift in Sources */,
