@@ -19,11 +19,7 @@ class DataStore {
             heroData.Name = "Dan"
             heroData.DisplayPic = "1Back.png"
             heroData.ViewPic = "1Front.png"
-<<<<<<< HEAD
             heroData.Abilities = [Attack()]
-=======
-            //heroData.Abilities = [Jab()]
->>>>>>> d3be7ea37338e3c2848456c3db2c1400f21e6aa7
             break
         case 1: //Bre
             heroData.Attack = 5

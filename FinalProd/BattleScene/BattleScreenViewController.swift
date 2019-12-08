@@ -30,7 +30,7 @@ class BattleScreenViewController: UIViewController {
                 }
                 AppDelegateRef.currentBattlefield = battleData
                 scene.scaleMode = .aspectFill
-                view.presentScene(scene: scene)
+                view.presentScene(scene)
                 
             }
         }
