@@ -92,6 +92,8 @@
 		7198FE592375DF73007F7A3C /* uisquare.png in Resources */ = {isa = PBXBuildFile; fileRef = 7198FE582375DF73007F7A3C /* uisquare.png */; };
 		7198FE5C2375E1E8007F7A3C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */; };
 		7198FE5E2375E2DB007F7A3C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198FE5D2375E2DB007F7A3C /* MapKit.framework */; };
+		75165B49239D89320039B966 /* Loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B48239D89320039B966 /* Loading.png */; };
+		75165B4B239D89B10039B966 /* Bolster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75165B4A239D89B10039B966 /* Bolster.swift */; };
 		753C7A6B239C356200E782FF /* InventoryScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A6A239C356200E782FF /* InventoryScreen.storyboard */; };
 		753C7A81239C86A600E782FF /* stoneBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A80239C86A600E782FF /* stoneBack.jpg */; };
 		753C7A83239C86AB00E782FF /* Old_Paper_PNG_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */; };
@@ -261,6 +263,8 @@
 		7198FE582375DF73007F7A3C /* uisquare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uisquare.png; sourceTree = "<group>"; };
 		7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7198FE5D2375E2DB007F7A3C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		75165B48239D89320039B966 /* Loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loading.png; sourceTree = "<group>"; };
+		75165B4A239D89B10039B966 /* Bolster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bolster.swift; sourceTree = "<group>"; };
 		753C7A6A239C356200E782FF /* InventoryScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InventoryScreen.storyboard; sourceTree = "<group>"; };
 		753C7A80239C86A600E782FF /* stoneBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stoneBack.jpg; sourceTree = "<group>"; };
 		753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Old_Paper_PNG_Image.png; sourceTree = "<group>"; };
@@ -317,6 +321,7 @@
 				14A8845C239C8E1400169433 /* HealAlly.swift */,
 				14A8845E239C91FA00169433 /* AttackAll.swift */,
 				143C5600239C9B56005BE4D4 /* AttackSteal.swift */,
+				75165B4A239D89B10039B966 /* Bolster.swift */,
 			);
 			path = Attacks;
 			sourceTree = "<group>";
@@ -575,6 +580,7 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				75165B48239D89320039B966 /* Loading.png */,
 				7117BB91239C88D3005BEC6B /* MapIcons */,
 				753C7A88239C8DB500E782FF /* update.png */,
 				753C7A8C239C8EC300E782FF /* InfoButton.png */,
@@ -770,6 +776,7 @@
 				14762BFF239C6B1400A1254F /* 3Front.png in Resources */,
 				753C7A85239C873D00E782FF /* Party.storyboard in Resources */,
 				14762C12239C6B3800A1254F /* BeakThing.png in Resources */,
+				75165B49239D89320039B966 /* Loading.png in Resources */,
 				14762C0E239C6B3800A1254F /* Ninja.png in Resources */,
 				14762C14239C6B3800A1254F /* Vamp.png in Resources */,
 				14762C10239C6B3800A1254F /* Skele.png in Resources */,
@@ -846,6 +853,7 @@
 				4144FCED239D75B2003339C1 /* Dou.swift in Sources */,
 				753C7A87239C879400E782FF /* CharViewController.swift in Sources */,
 				14A88453239C74AF00169433 /* Battlefield.swift in Sources */,
+				75165B4B239D89B10039B966 /* Bolster.swift in Sources */,
 				4144FD01239D850D003339C1 /* Zulfiqar.swift in Sources */,
 				412DD8832375E5E6008A1736 /* Armor.swift in Sources */,
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
@@ -872,10 +880,8 @@
 				14141E602375F833009897CF /* Attack.swift in Sources */,
 				4144FCFF239D8500003339C1 /* Usumidori.swift in Sources */,
 				412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */,
-				412DD8812375E5CA008A1736 /* Weapon.swift in Sources */,
 				4144FCF5239D847C003339C1 /* Kusanagi.swift in Sources */,
 				753C7A96239C93D100E782FF /* CharCell.swift in Sources */,
-				4609e1581eab08aae9d5893842ca211630d1163b
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

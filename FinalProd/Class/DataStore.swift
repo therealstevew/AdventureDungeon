@@ -13,31 +13,31 @@ class DataStore {
         let heroData : Hero = Hero()
         switch Which{
         case 0: //Dan
-            heroData.Attack = 6
+            heroData.Attack = 8
             heroData.MaxHealth = 35
-            heroData.Defense = 2
+            heroData.Defense = 3
             heroData.Name = "Dan"
             heroData.DisplayPic = "1Back.png"
             heroData.ViewPic = "1Front.png"
-            heroData.Abilities = [Jab()]
+            heroData.Abilities = [Attack()]
             break
         case 1: //Bre
-            heroData.Attack = 8
+            heroData.Attack = 5
             heroData.MaxHealth = 25
-            heroData.Defense = 1
+            heroData.Defense = 2
             heroData.Name = "Bre"
             heroData.DisplayPic = "2Back.png"
             heroData.ViewPic = "2Front.png"
-            heroData.Abilities = [TextSteven()]
+            heroData.Abilities = [AttackAll()]
             break
         case 2: //
-            heroData.Attack = 4
+            heroData.Attack = 6
             heroData.MaxHealth = 50
-            heroData.Defense = 3
+            heroData.Defense = 4
             heroData.Name = "Ricard"
             heroData.DisplayPic = "3Back.png"
             heroData.ViewPic = "3Front.png"
-            heroData.Abilities = [Bolster()]
+            heroData.Abilities = [Attack()]
             break
         case 3: //
             heroData.Attack = 7
@@ -46,7 +46,7 @@ class DataStore {
             heroData.Name = "Fundee"
             heroData.DisplayPic = "4Back.png"
             heroData.ViewPic = "4Front.png"
-            heroData.Abilities = [Bash()]
+            heroData.Abilities = [AttackSteal()]
             break
         case 4: //
             heroData.Attack = 3
@@ -55,7 +55,7 @@ class DataStore {
             heroData.Name = "Babtet"
             heroData.DisplayPic = "5Back.png"
             heroData.ViewPic = "5Front.png"
-            heroData.Abilities = [Pray()]
+            heroData.Abilities = [Bolster()]
             break
         case 5: //
             heroData.Attack = 5
@@ -64,7 +64,7 @@ class DataStore {
             heroData.Name = "Marina"
             heroData.DisplayPic = "6Back.png"
             heroData.ViewPic = "6Front.png"
-            heroData.Abilities = [Heal()]
+            heroData.Abilities = [HealAlly()]
             break
         case 6: //
             heroData.Attack = 12
@@ -73,7 +73,7 @@ class DataStore {
             heroData.Name = "Zoro"
             heroData.DisplayPic = "7Back.png"
             heroData.ViewPic = "7Front.png"
-            heroData.Abilities = [Slash()]
+            heroData.Abilities = [AttackAll(),AttackLowest()]
             break
         case 7: //
             heroData.Attack = 12
@@ -82,7 +82,7 @@ class DataStore {
             heroData.Name = "Handcock"
             heroData.DisplayPic = "8Back.png"
             heroData.ViewPic = "8Front.png"
-            heroData.Abilities = [Fireball()]
+            heroData.Abilities = [AttackAll(),AttackLowest()]
             break
         default: //Yikes
             heroData.Name = "Bongo"
@@ -91,6 +91,7 @@ class DataStore {
             heroData.MaxHealth = 420
             heroData.Attack = 420
             heroData.Defense = 1000
+            heroData.Abilities = [AttackSteal()]
         }
         
         return heroData;
