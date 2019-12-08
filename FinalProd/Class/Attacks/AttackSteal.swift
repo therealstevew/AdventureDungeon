@@ -11,10 +11,25 @@ import UIKit
 class AttackSteal: AttackLowest {
 
     override func OnUse(User: Actor, Data: Battlefield) {
-        //User.CurHealth = User.CurHealth + User.Attack/2
-        if(User.CurHealth > User.MaxHealth){
-            //User.CurHealth = User.MaxHealth
+        super.OnUse(User: User, Data: Data)
+        var lowest : Actor = Hero()
+        var lowestValue : Int = 999
+        if(User is Enemy){
+            for Dude in Data.Enemies {
+                if Dude.CurHealth < lowestValue {
+                    lowest = Dude
+                    lowestValue = Dude.CurHealth
+                }
+            }
+        } else {
+            for Dude in Data.Heroes {
+                if Dude.CurHealth < lowestValue {
+                    lowest = Dude
+                    lowestValue = Dude.CurHealth
+                }
+            }
         }
+        lowest.CurHealth += User.Attack/2
     }
     
 }
