@@ -10,6 +10,17 @@ import UIKit
 
 class CharViewController: UIViewController {
 
+    @IBOutlet var lblOne : UILabel!
+    @IBOutlet var lblTwo : UILabel!
+    @IBOutlet var lblThree : UILabel!
+    @IBOutlet var lblFour : UILabel!
+    
+    @IBOutlet var imgOne : UIImageView!
+    @IBOutlet var imgTwo : UIImageView!
+    @IBOutlet var imgThree : UIImageView!
+    @IBOutlet var imgFour : UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
