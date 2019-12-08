@@ -57,6 +57,16 @@
 		4144FCED239D75B2003339C1 /* Dou.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCEC239D75B2003339C1 /* Dou.swift */; };
 		4144FCEF239D7840003339C1 /* Durandal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCEE239D7840003339C1 /* Durandal.swift */; };
 		4144FCF1239D7861003339C1 /* Karuta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCF0239D7861003339C1 /* Karuta.swift */; };
+		4144FCF3239D82FC003339C1 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCF2239D82FC003339C1 /* Health.swift */; };
+		4144FCF5239D847C003339C1 /* Kusanagi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCF4239D847C003339C1 /* Kusanagi.swift */; };
+		4144FCF7239D848B003339C1 /* Asi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCF6239D848B003339C1 /* Asi.swift */; };
+		4144FCF9239D84A5003339C1 /* Chrysaor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCF8239D84A5003339C1 /* Chrysaor.swift */; };
+		4144FCFB239D84B6003339C1 /* Harpe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCFA239D84B6003339C1 /* Harpe.swift */; };
+		4144FCFD239D84C7003339C1 /* Secace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCFC239D84C7003339C1 /* Secace.swift */; };
+		4144FCFF239D8500003339C1 /* Usumidori.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCFE239D8500003339C1 /* Usumidori.swift */; };
+		4144FD01239D850D003339C1 /* Zulfiqar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FD00239D850D003339C1 /* Zulfiqar.swift */; };
+		4144FD03239D851D003339C1 /* Caliburn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FD02239D851D003339C1 /* Caliburn.swift */; };
+		4144FD05239D861E003339C1 /* Muramasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FD04239D861E003339C1 /* Muramasa.swift */; };
 		7117BB96239C88EC005BEC6B /* redcross.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB92239C88EC005BEC6B /* redcross.png */; };
 		7117BB97239C88EC005BEC6B /* vendor.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB93239C88EC005BEC6B /* vendor.png */; };
 		7117BB98239C88EC005BEC6B /* tavern.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB94239C88EC005BEC6B /* tavern.png */; };
@@ -203,6 +213,16 @@
 		4144FCEC239D75B2003339C1 /* Dou.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dou.swift; sourceTree = "<group>"; };
 		4144FCEE239D7840003339C1 /* Durandal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Durandal.swift; sourceTree = "<group>"; };
 		4144FCF0239D7861003339C1 /* Karuta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Karuta.swift; sourceTree = "<group>"; };
+		4144FCF2239D82FC003339C1 /* Health.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		4144FCF4239D847C003339C1 /* Kusanagi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kusanagi.swift; sourceTree = "<group>"; };
+		4144FCF6239D848B003339C1 /* Asi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asi.swift; sourceTree = "<group>"; };
+		4144FCF8239D84A5003339C1 /* Chrysaor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chrysaor.swift; sourceTree = "<group>"; };
+		4144FCFA239D84B6003339C1 /* Harpe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Harpe.swift; sourceTree = "<group>"; };
+		4144FCFC239D84C7003339C1 /* Secace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secace.swift; sourceTree = "<group>"; };
+		4144FCFE239D8500003339C1 /* Usumidori.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usumidori.swift; sourceTree = "<group>"; };
+		4144FD00239D850D003339C1 /* Zulfiqar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zulfiqar.swift; sourceTree = "<group>"; };
+		4144FD02239D851D003339C1 /* Caliburn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Caliburn.swift; sourceTree = "<group>"; };
+		4144FD04239D861E003339C1 /* Muramasa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muramasa.swift; sourceTree = "<group>"; };
 		7117BB7A239C834C005BEC6B /* tavern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tavern.png; sourceTree = "<group>"; };
 		7117BB7C239C839E005BEC6B /* vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendor.png; sourceTree = "<group>"; };
 		7117BB7E239C8419005BEC6B /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
@@ -367,6 +387,15 @@
 			children = (
 				4144FCEA239CB91D003339C1 /* Excalibur.swift */,
 				4144FCEE239D7840003339C1 /* Durandal.swift */,
+				4144FCF4239D847C003339C1 /* Kusanagi.swift */,
+				4144FCF6239D848B003339C1 /* Asi.swift */,
+				4144FCF8239D84A5003339C1 /* Chrysaor.swift */,
+				4144FCFA239D84B6003339C1 /* Harpe.swift */,
+				4144FCFC239D84C7003339C1 /* Secace.swift */,
+				4144FCFE239D8500003339C1 /* Usumidori.swift */,
+				4144FD00239D850D003339C1 /* Zulfiqar.swift */,
+				4144FD02239D851D003339C1 /* Caliburn.swift */,
+				4144FD04239D861E003339C1 /* Muramasa.swift */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -383,6 +412,7 @@
 		4144FCE9239CB6E2003339C1 /* Consumables */ = {
 			isa = PBXGroup;
 			children = (
+				4144FCF2239D82FC003339C1 /* Health.swift */,
 			);
 			path = Consumables;
 			sourceTree = "<group>";
@@ -806,6 +836,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14141E5E2375F725009897CF /* EnemyData.swift in Sources */,
+				4144FCF7239D848B003339C1 /* Asi.swift in Sources */,
 				412DD8872375E711008A1736 /* Consumables.swift in Sources */,
 				14A8845D239C8E1400169433 /* HealAlly.swift in Sources */,
 				14141E5C2375F4F7009897CF /* Enemy.swift in Sources */,
@@ -815,12 +846,16 @@
 				4144FCED239D75B2003339C1 /* Dou.swift in Sources */,
 				753C7A87239C879400E782FF /* CharViewController.swift in Sources */,
 				14A88453239C74AF00169433 /* Battlefield.swift in Sources */,
+				4144FD01239D850D003339C1 /* Zulfiqar.swift in Sources */,
 				412DD8832375E5E6008A1736 /* Armor.swift in Sources */,
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
 				14A88457239C80E000169433 /* DataStore.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
+				4144FCFD239D84C7003339C1 /* Secace.swift in Sources */,
+				4144FCF3239D82FC003339C1 /* Health.swift in Sources */,
 				14A88459239C86EA00169433 /* AttackLowest.swift in Sources */,
 				4144FCF1239D7861003339C1 /* Karuta.swift in Sources */,
+				4144FD03239D851D003339C1 /* Caliburn.swift in Sources */,
 				143C5601239C9B56005BE4D4 /* AttackSteal.swift in Sources */,
 				14A8845F239C91FA00169433 /* AttackAll.swift in Sources */,
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
@@ -828,12 +863,19 @@
 				14A88455239C772600169433 /* Hero.swift in Sources */,
 				7198FE562375DCF5007F7A3C /* MapIcon.swift in Sources */,
 				1443F06D239C35FC008CB82A /* BattleScreenViewController.swift in Sources */,
+				4144FCFB239D84B6003339C1 /* Harpe.swift in Sources */,
 				412DD87F2375E5A7008A1736 /* Item.swift in Sources */,
+				4144FCF9239D84A5003339C1 /* Chrysaor.swift in Sources */,
+				4144FD05239D861E003339C1 /* Muramasa.swift in Sources */,
 				7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */,
 				4144FCEB239CB91D003339C1 /* Excalibur.swift in Sources */,
 				14141E602375F833009897CF /* Attack.swift in Sources */,
+				4144FCFF239D8500003339C1 /* Usumidori.swift in Sources */,
 				412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */,
+				412DD8812375E5CA008A1736 /* Weapon.swift in Sources */,
+				4144FCF5239D847C003339C1 /* Kusanagi.swift in Sources */,
 				753C7A96239C93D100E782FF /* CharCell.swift in Sources */,
+				4609e1581eab08aae9d5893842ca211630d1163b
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
