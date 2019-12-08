@@ -66,6 +66,9 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Sx-Ws-H6t">
                                 <rect key="frame" x="-17" y="-48" width="449" height="801"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="WYh-zU-1yq"/>
+                                </connections>
                             </mapView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plank.png" translatesAutoresizingMaskIntoConstraints="NO" id="fMT-mm-jT7">
                                 <rect key="frame" x="-6" y="750" width="420" height="74"/>
@@ -89,7 +92,7 @@
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="0Sx-Ws-H6t" id="wci-Ei-2wO"/>
+                        <outlet property="mapView" destination="0Sx-Ws-H6t" id="2Fs-ep-GBJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
