@@ -72,8 +72,10 @@
 		7198FE5C2375E1E8007F7A3C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */; };
 		7198FE5E2375E2DB007F7A3C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198FE5D2375E2DB007F7A3C /* MapKit.framework */; };
 		753C7A6B239C356200E782FF /* InventoryScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A6A239C356200E782FF /* InventoryScreen.storyboard */; };
-		753C7A6E239C368100E782FF /* CharListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C7A6D239C368100E782FF /* CharListViewController.swift */; };
-		75ABBB682375DDB6006585FA /* CharInspectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ABBB672375DDB6006585FA /* CharInspectViewController.swift */; };
+		753C7A81239C86A600E782FF /* stoneBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A80239C86A600E782FF /* stoneBack.jpg */; };
+		753C7A83239C86AB00E782FF /* Old_Paper_PNG_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */; };
+		753C7A85239C873D00E782FF /* Party.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A84239C873D00E782FF /* Party.storyboard */; };
+		753C7A87239C879400E782FF /* CharViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753C7A86239C879400E782FF /* CharViewController.swift */; };
 		75ABBB922375E379006585FA /* plank.png in Resources */ = {isa = PBXBuildFile; fileRef = 75ABBB912375E379006585FA /* plank.png */; };
 		75ABBB942375E45C006585FA /* Chars.png in Resources */ = {isa = PBXBuildFile; fileRef = 75ABBB932375E45C006585FA /* Chars.png */; };
 		75ABBB962375E634006585FA /* bag.png in Resources */ = {isa = PBXBuildFile; fileRef = 75ABBB952375E634006585FA /* bag.png */; };
@@ -210,8 +212,10 @@
 		7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7198FE5D2375E2DB007F7A3C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		753C7A6A239C356200E782FF /* InventoryScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InventoryScreen.storyboard; sourceTree = "<group>"; };
-		753C7A6D239C368100E782FF /* CharListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharListViewController.swift; sourceTree = "<group>"; };
-		75ABBB672375DDB6006585FA /* CharInspectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharInspectViewController.swift; sourceTree = "<group>"; };
+		753C7A80239C86A600E782FF /* stoneBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stoneBack.jpg; sourceTree = "<group>"; };
+		753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Old_Paper_PNG_Image.png; sourceTree = "<group>"; };
+		753C7A84239C873D00E782FF /* Party.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Party.storyboard; sourceTree = "<group>"; };
+		753C7A86239C879400E782FF /* CharViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharViewController.swift; sourceTree = "<group>"; };
 		75ABBB912375E379006585FA /* plank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plank.png; sourceTree = "<group>"; };
 		75ABBB932375E45C006585FA /* Chars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chars.png; sourceTree = "<group>"; };
 		75ABBB952375E634006585FA /* bag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bag.png; sourceTree = "<group>"; };
@@ -399,9 +403,8 @@
 			isa = PBXGroup;
 			children = (
 				7198FDEE2375CFBA007F7A3C /* ViewController.swift */,
-				75ABBB672375DDB6006585FA /* CharInspectViewController.swift */,
 				412DD87C2375DDF5008A1736 /* ShopViewController.swift */,
-				753C7A6D239C368100E782FF /* CharListViewController.swift */,
+				753C7A86239C879400E782FF /* CharViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				7198FDF52375CFBB007F7A3C /* LaunchScreen.storyboard */,
 				7198FDF02375CFBA007F7A3C /* Main.storyboard */,
 				753C7A6A239C356200E782FF /* InventoryScreen.storyboard */,
+				753C7A84239C873D00E782FF /* Party.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -452,6 +456,8 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */,
+				753C7A80239C86A600E782FF /* stoneBack.jpg */,
 				1443F076239C38CC008CB82A /* Heroes */,
 				1443F075239C38C6008CB82A /* Enemies */,
 				1443F073239C383B008CB82A /* dungeon_floor.jpg */,
@@ -634,6 +640,7 @@
 				14762BF7239C6B1400A1254F /* 5Front.png in Resources */,
 				1443F072239C36C2008CB82A /* BattleScreen.sks in Resources */,
 				14762BFF239C6B1400A1254F /* 3Front.png in Resources */,
+				753C7A85239C873D00E782FF /* Party.storyboard in Resources */,
 				14762C12239C6B3800A1254F /* BeakThing.png in Resources */,
 				14762C0E239C6B3800A1254F /* Ninja.png in Resources */,
 				14762C14239C6B3800A1254F /* Vamp.png in Resources */,
@@ -649,7 +656,9 @@
 				7198FDF42375CFBB007F7A3C /* Assets.xcassets in Resources */,
 				14762C13239C6B3800A1254F /* Furry.png in Resources */,
 				14762BFE239C6B1400A1254F /* 3Back.png in Resources */,
+				753C7A81239C86A600E782FF /* stoneBack.jpg in Resources */,
 				14762C11239C6B3800A1254F /* Clown.png in Resources */,
+				753C7A83239C86AB00E782FF /* Old_Paper_PNG_Image.png in Resources */,
 				14762BFA239C6B1400A1254F /* 7Front.png in Resources */,
 				14762C00239C6B1400A1254F /* 8Back.png in Resources */,
 				14762C04239C6B1400A1254F /* 6Back.png in Resources */,
@@ -700,11 +709,11 @@
 				412DD8872375E711008A1736 /* Consumables.swift in Sources */,
 				7198FE542375DCE4007F7A3C /* User.swift in Sources */,
 				14141E5C2375F4F7009897CF /* Enemy.swift in Sources */,
+				753C7A87239C879400E782FF /* CharViewController.swift in Sources */,
 				14A88453239C74AF00169433 /* Battlefield.swift in Sources */,
 				412DD8832375E5E6008A1736 /* Armor.swift in Sources */,
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
 				14A88457239C80E000169433 /* DataStore.swift in Sources */,
-				753C7A6E239C368100E782FF /* CharListViewController.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
 				14A88459239C86EA00169433 /* Peck.swift in Sources */,
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
@@ -716,7 +725,6 @@
 				7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */,
 				14141E602375F833009897CF /* Attack.swift in Sources */,
 				412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */,
-				75ABBB682375DDB6006585FA /* CharInspectViewController.swift in Sources */,
 				412DD8812375E5CA008A1736 /* Weapon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
