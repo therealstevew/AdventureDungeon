@@ -48,6 +48,7 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let rowNum = indexPath.row
         let name = mainDelegate.UserData.Heroes[rowNum].Name
         let imgName = UIImage(named:mainDelegate.UserData.Heroes[rowNum].ViewPic)
+        let idHero = mainDelegate.UserData.Heroes[rowNum].id
         
         tableCharCell.primaryLabel.text = name
         tableCharCell.myImageView.image = imgName
@@ -69,7 +70,7 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
         imgOne.image = image
         if partyHeroes.count == 4{
             partyHeroes.removeFirst()
-            //partyHeroes.append(DataStore.getHero(Which: <#T##Int#>))
+            partyHeroes.append(DataStore.getHero(Which: mainDelegate.UserData.Heroes[indexPath.row].id))
         } else {
             //partyHeroes.append()
         }
