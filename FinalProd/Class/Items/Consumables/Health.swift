@@ -10,4 +10,20 @@ import UIKit
 
 class Health: Consumables {
 
+    let stat = 10
+    
+    override init(){
+        super.init()
+        self.Name = "Health Potion"
+    }
+    override func onUse(User: Hero) {
+        let hero = User
+        
+        hero.CurHealth += stat
+        
+        if hero.CurHealth > hero.MaxHealth{
+            hero.CurHealth = hero.MaxHealth
+        }
+    }
+
 }

@@ -10,4 +10,21 @@ import UIKit
 
 class Chrysaor: Weapon {
 
+    let stat = 30
+    
+    override init(){
+        super.init()
+        self.Name = "Chrysaor"
+    }
+    
+    override func onEquip(User: Hero) {
+        let hero = User
+        
+        hero.Attack += stat
+    }
+    override func onUnequip(User: Hero) {
+        let hero = User
+        
+        hero.Attack -= stat
+    }
 }
