@@ -9,5 +9,6 @@
 import UIKit
 
 class Armor: Item {
-
+    func onEquip(User: Hero ) -> Void { }
+    func onUnequip(User: Hero ) -> Void { }
 }

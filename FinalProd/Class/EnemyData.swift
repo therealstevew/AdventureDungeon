@@ -10,13 +10,8 @@ import Foundation
 
 class EnemyData {
     
-    var Name : String;
-    var MaxHealth : Int;
-    var DisplayPic : String;
-    
-    init(Name : String, MaxHealth : Int, DisplayPic : String) {
-        self.Name = Name;
-        self.MaxHealth = MaxHealth;
-        self.DisplayPic = DisplayPic;
-    }
+    var Name : String = ""
+    var MaxHealth : Int = 0
+    var DisplayPic : String = ""
+
 }

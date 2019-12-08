@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol EnemyAttack {
+class Attack : NSObject {
     
     //Returns a 1-10 score of whether or not this move should be used
-    func ShouldUse() -> Int
+    func ShouldUse() -> Int {return 0}
     
     //Return The Intended Target
-    func Target() -> Actor
+    func Target(Data : Battlefield) -> Int {return 0}
     
     //What the move does
-    func OnUse(Target : Actor, User : Actor)
+    func OnUse(Data : Battlefield) -> Void {}
 }

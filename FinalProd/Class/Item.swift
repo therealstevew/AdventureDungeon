@@ -9,7 +9,6 @@
 import UIKit
 
 class Item: NSObject {
-    
-    
-
+    var Name : String = ""
+    var Quantity : Int = 1
 }

@@ -15,5 +15,8 @@ protocol Actor {
     var DisplayPic : String {get set};
     var Name : String {get set};
     var Status : [String] {get set};
+    var Abilities : [Attack] {get set};
+    var Attack : Int {get set};
+    var Defense : Int {get set};
     
 }

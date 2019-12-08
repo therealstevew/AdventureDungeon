@@ -10,12 +10,14 @@ import Foundation
 
 class Enemy : Actor {
     
-    
-    var DisplayPic: String
-    var Status : [String] = [];
-    var Name : String;
-    var MaxHealth : Int;
-    var CurHealth : Int;
+    var Abilities: [Attack] = []
+    var DisplayPic: String = ""
+    var Status : [String] = []
+    var Name : String = ""
+    var MaxHealth : Int = 0
+    var CurHealth : Int = 0
+    var Defense : Int = 0
+    var Attack : Int = 0
     
     init(Data : EnemyData) {
         self.Name = Data.Name;
