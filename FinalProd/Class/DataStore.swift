@@ -19,6 +19,10 @@ class DataStore {
             heroData.Name = "Dan"
             heroData.DisplayPic = "1Back.png"
             heroData.ViewPic = "1Front.png"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 369dc907f5f044fb4b4d3f010c60dca2866a1e7d
             heroData.Abilities = [Attack()]
 
 

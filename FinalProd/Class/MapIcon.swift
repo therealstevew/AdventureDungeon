@@ -21,12 +21,12 @@ class MapIcon: NSObject {
      init(coordLat: Float, coordLong: Float) {
         lat = coordLat
         long = coordLong
-        var rand = Float.random(in: 0 ..< 0.0006)
+        var rand = Float.random(in: 0 ..< 0.0018)
         type = Int.random(in: 0 ..< 4)
-        lat -= 0.0003
+        lat -= 0.0009
         lat += rand
-        rand = Float.random(in: 0 ..< 0.0006)
-        long -= 0.0003
+        rand = Float.random(in: 0 ..< 0.0018)
+        long -= 0.0009
         long += rand
         
         

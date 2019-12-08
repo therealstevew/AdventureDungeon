@@ -57,13 +57,35 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         
         
     }
+    
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {
 
         if control == view.rightCalloutAccessoryView {
             print(view.annotation?.subtitle!!)
+            let pointBLocation = CLLocation(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
+            let distance = Double((mapView.userLocation.location?.distance(from: pointBLocation))!)
+            if (distance < 50){
+                annotationShowView(type: ((view.annotation?.subtitle)!)!)
+            }else{
+                print("To far")
+            }
         }
 
+    }
+    func annotationShowView(type : String){
+        switch type {
+        case "0":
+            print("Dungeon")
+        case "1":
+            print("Tavern")
+        case "2":
+            print("Vendor")
+        case "3":
+            print("Healer")
+        default:
+            print("Uh oh Stinky")
+        }
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
@@ -104,7 +126,18 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             print (mapicons.long)
             let annotation = MKPointAnnotation()
                 annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(mapicons.lat), longitude: CLLocationDegrees(mapicons.long))
-                annotation.title = "buttplay"
+            switch mapicons.type {
+            case 0:
+                annotation.title = "Dungeon"
+            case 1:
+                annotation.title = "Tavern"
+            case 2:
+                annotation.title = "Vendor"
+            case 3:
+                annotation.title = "Healer"
+            default:
+                print("Uh oh Stinky")
+            }
                 annotation.subtitle = String(mapicons.type)
             
                 mapView.addAnnotation(annotation)
