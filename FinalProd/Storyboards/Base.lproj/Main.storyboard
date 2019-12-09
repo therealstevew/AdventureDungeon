@@ -51,7 +51,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="whM-km-H8g" kind="presentation" id="JjP-WE-KJx"/>
+                                    <segue destination="whM-km-H8g" kind="presentation" identifier="battleScreen" id="JjP-WE-KJx"/>
                                 </connections>
                             </button>
                         </subviews>

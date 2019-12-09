@@ -32,10 +32,15 @@ class ExpandViewController: UIViewController, UITableViewDataSource, UITableView
         lblHealth.text = String(mainDelegate.UserData.Party![0].MaxHealth)
         lblAttack.text = String(mainDelegate.UserData.Party![0].Attack)
         lblDefense.text = String(mainDelegate.UserData.Party![0].Defense)
+<<<<<<< HEAD
         lblWeapon.text = String(mainDelegate.UserData.Party![0].Weapon?.Name ?? "None Eqipped")
         lblArmour.text = String(mainDelegate.UserData.Party![0].Armor?.Name ?? "None Eqipped")
         imgIcon.image = UIImage(named: mainDelegate.UserData.Party![0].ViewPic)
         
+=======
+        let image: UIImage = UIImage(named: mainDelegate.UserData.Heroes![0].ViewPic)!
+        imgIcon.image = image
+>>>>>>> 2ff64592e96cdb5be5153b36614d2842598d026b
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mainDelegate.UserData.Items!.count
