@@ -25,15 +25,13 @@ class BattleScreenViewController: UIViewController {
                 let AppDelegateRef : AppDelegate = UIApplication.shared.delegate as! AppDelegate
                 let battleData = Battlefield()
                 
-                battleData.Heroes = AppDelegateRef.UserData.Party!
+                
                 let numEnemies = Int.random(in: 2...4)
                 for number in 0..<numEnemies {
                     battleData.Enemies.append(DataStore.getEnemy(Which: Int.random(in: 0...7)))
                 }
-                for numHeroes in 0..<4 {
-                    print("Adding hero")
-                    print(numHeroes)
-                    battleData.Heroes.append(DataStore.getHero(Which: Int.random(in: 0...7)))
+                for numHeroes in 0..<AppDelegateRef.UserData.Party!.count {
+                    battleData.Heroes.append(DataStore.getHero(Which: AppDelegateRef.UserData.Party![numHeroes].id))
                 }
                 AppDelegateRef.currentBattlefield = battleData
 

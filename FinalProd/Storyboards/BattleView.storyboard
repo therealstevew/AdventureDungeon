@@ -17,10 +17,38 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="PhE-uJ-ri1"/>
                     </view>
+                    <connections>
+                        <segue destination="kxg-1C-MHi" kind="presentation" identifier="WinScreen" id="eI6-60-Wsi"/>
+                        <segue destination="FrP-IG-bV6" kind="presentation" identifier="LoseScreen" id="bFX-TT-ayt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fup-uI-mNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-129" y="19"/>
+        </scene>
+        <!--WinScreen-->
+        <scene sceneID="KRX-gc-BAf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WinLoss" referencedIdentifier="WinScreen" id="kxg-1C-MHi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K9B-4g-HYc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="-44"/>
+        </scene>
+        <!--LoseScreen-->
+        <scene sceneID="4wN-f2-mRC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WinLoss" referencedIdentifier="LoseScreen" id="FrP-IG-bV6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8AE-4u-IwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="85"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="End-wN-CjD">
+            <objects>
+                <viewControllerPlaceholder id="gYP-vR-lmf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Qw-ii-w6C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="83" y="352"/>
         </scene>
     </scenes>
 </document>
