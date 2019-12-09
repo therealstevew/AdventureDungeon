@@ -44,7 +44,6 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet var imgThree : UIImageView!
     @IBOutlet var imgFour : UIImageView!
     
-    @IBOutlet var buttonSubmit : UIButton!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         mainDelegate.UserData.Heroes!.count
@@ -62,7 +61,7 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         tableCharCell.primaryLabel.text = name
         tableCharCell.myImageView.image = imgName
-        
+        tableCharCell.backgroundColor = .brown
         tableCharCell.accessoryType = .disclosureIndicator
         
         return tableCharCell
@@ -88,4 +87,11 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
         mainDelegate.UserData.LocalSave()
         tableView.reloadData()
     }
+<<<<<<< HEAD
+    @IBAction func unwindToCharViewController(segue: UIStoryboardSegue)
+    {
+        
+    }
+=======
+>>>>>>> 2ff64592e96cdb5be5153b36614d2842598d026b
 }
