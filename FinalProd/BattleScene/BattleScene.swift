@@ -194,7 +194,7 @@
                     dataBattlefield!.Heroes.remove(at: dude)
                     OneDied = true
                     print(HeroDisplay.count)
-                    HeroDisplay[dude].alpha = CGFloat(0)
+                    HeroDisplay[dude].alpha = CGFloat(0.2)
                     HeroDisplay.remove(at: dude)
                     dude -= 1
                     print("Removed a guy, heroes is now \(Heroes!)")

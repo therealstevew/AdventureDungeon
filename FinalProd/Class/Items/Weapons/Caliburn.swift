@@ -10,7 +10,7 @@ import UIKit
 
 class Caliburn: Weapon {
 
-    let stat = 30
+    let stat = 6
     
     override init(){
         super.init()

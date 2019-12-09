@@ -58,9 +58,9 @@ class DataStore {
             break
         case 4: //
             heroData.id = 4
-            heroData.Attack = 3
-            heroData.MaxHealth = 60
-            heroData.CurHealth = 60
+            heroData.Attack = 1
+            heroData.MaxHealth = 45
+            heroData.CurHealth = 45
             heroData.Defense = 4
             heroData.Name = "Babtet"
             heroData.DisplayPic = "5Back.png"
@@ -146,7 +146,7 @@ class DataStore {
             enemyData.DisplayPic = "Ghost.png"
             enemyData.MaxHealth = 50
             enemyData.Attack = 3
-            enemyData.Defense = 10
+            enemyData.Defense = 8
             enemyData.Abilities = [AttackLowest()]
             break
         case 4: // Ninja

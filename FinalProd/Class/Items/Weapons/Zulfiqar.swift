@@ -10,7 +10,7 @@ import UIKit
 
 class Zulfiqar: Weapon {
 
-    let stat = 30
+    let stat = 5
     
     override init(){
         super.init()

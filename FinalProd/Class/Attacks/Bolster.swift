@@ -21,6 +21,9 @@ class Bolster: Attack {
         if(User is Hero){
             for Guy in Data.Heroes {
                 Guy.CurHealth += User.Defense
+                if Guy.CurHealth > Guy.MaxHealth{
+                    Guy.CurHealth = Guy.MaxHealth
+                }
             }
         } else {
             for Guy in Data.Enemies {
