@@ -10,7 +10,7 @@
         <!--Inventory View Controller-->
         <scene sceneID="vop-mu-i3p">
             <objects>
-                <viewController id="CEI-Bn-mMw" customClass="InventoryViewController" customModule="FinalProd" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Inventory" id="CEI-Bn-mMw" customClass="InventoryViewController" customModule="FinalProd" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZeP-ok-UVC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Inventory" id="UDL-MK-8pT">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="qX5-DQ-vXt"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="qX5-DQ-vXt">
+                                            <connections>
+                                                <segue destination="SUT-eg-ifl" kind="unwind" unwindAction="unwindToThisViewControllerWithSegue:" id="TF0-4D-Hkt"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -39,6 +43,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfa-cg-G9H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="SUT-eg-ifl" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="155.07246376811597" y="99.776785714285708"/>
         </scene>
