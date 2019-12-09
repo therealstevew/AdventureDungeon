@@ -183,7 +183,7 @@ class DataStore {
         return Enemy(Data: enemyData)
     }
     
-    /*static func getitem(Which : Int) -> Item {
+    static func getitem(Which : Int) -> Item {
         let itemData : Item?
         switch Which{
         case 0:
@@ -195,9 +195,42 @@ class DataStore {
         case 2:
             itemData = Kusanagi()
             break
+        case 3:
+            itemData = Asi()
+            break
+        case 4:
+            itemData = Chrysaor()
+            break
+        case 5:
+            itemData = Harpe()
+            break
+        case 6:
+            itemData = Secace()
+            break
+        case 7:
+            itemData = Usumidori()
+            break
+        case 8:
+            itemData = Zulfiqar()
+            break
+        case 9:
+            itemData = Caliburn()
+            break
+        case 10:
+            itemData = Muramasa()
+            break
+        case 11:
+            itemData = Dou()
+            break
+        case 12:
+            itemData = Karuta()
+            break
+        case 13:
+            itemData = Health()
+            break
         default:
             itemData = Sword()
         }
-        return itemData;
-    }*/
+        return itemData!
+    }
 }
