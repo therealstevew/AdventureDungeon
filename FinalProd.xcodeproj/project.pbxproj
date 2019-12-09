@@ -14,11 +14,13 @@
 		14141E652375FCB4009897CF /* Treasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14141E642375FCB4009897CF /* Treasure.swift */; };
 		1438E8D3239D883500238BC6 /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438E8D2239D883500238BC6 /* Weapon.swift */; };
 		1438E8D5239D8AF200238BC6 /* BattleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1438E8D4239D8AF200238BC6 /* BattleScene.swift */; };
+		1438E8D7239D93D800238BC6 /* BattleView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1438E8D6239D93D800238BC6 /* BattleView.storyboard */; };
+		1438E8DB239DA8FF00238BC6 /* dungeonfloor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1438E8DA239DA8FF00238BC6 /* dungeonfloor.jpg */; };
+		1438E8DD239DAA5B00238BC6 /* pngStone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1438E8DC239DAA5B00238BC6 /* pngStone.png */; };
 		143C5601239C9B56005BE4D4 /* AttackSteal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C5600239C9B56005BE4D4 /* AttackSteal.swift */; };
 		1443F06B239C359D008CB82A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1443F06A239C359D008CB82A /* GameKit.framework */; };
 		1443F06D239C35FC008CB82A /* BattleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */; };
-		1443F072239C36C2008CB82A /* BattleScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1443F071239C36C2008CB82A /* BattleScreen.sks */; };
-		1443F074239C383B008CB82A /* dungeon_floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1443F073239C383B008CB82A /* dungeon_floor.jpg */; };
+		1443F072239C36C2008CB82A /* BattleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1443F071239C36C2008CB82A /* BattleScene.sks */; };
 		14762BF6239C6B1400A1254F /* 8Front.png in Resources */ = {isa = PBXBuildFile; fileRef = 14762BE6239C6B1300A1254F /* 8Front.png */; };
 		14762BF7239C6B1400A1254F /* 5Front.png in Resources */ = {isa = PBXBuildFile; fileRef = 14762BE7239C6B1300A1254F /* 5Front.png */; };
 		14762BF8239C6B1400A1254F /* 5Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 14762BE8239C6B1300A1254F /* 5Back.png */; };
@@ -72,7 +74,6 @@
 		7117BB97239C88EC005BEC6B /* vendor.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB93239C88EC005BEC6B /* vendor.png */; };
 		7117BB98239C88EC005BEC6B /* tavern.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB94239C88EC005BEC6B /* tavern.png */; };
 		7117BB99239C88EC005BEC6B /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB95239C88EC005BEC6B /* battle.png */; };
-		4144FCE5239C9DD5003339C1 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4144FCE4239C9DD5003339C1 /* UserInfo.swift */; };
 		7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */; };
 		7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */; };
 		7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEE2375CFBA007F7A3C /* ViewController.swift */; };
@@ -174,11 +175,13 @@
 		14141E642375FCB4009897CF /* Treasure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treasure.swift; sourceTree = "<group>"; };
 		1438E8D2239D883500238BC6 /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		1438E8D4239D8AF200238BC6 /* BattleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleScene.swift; sourceTree = "<group>"; };
+		1438E8D6239D93D800238BC6 /* BattleView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BattleView.storyboard; sourceTree = "<group>"; };
+		1438E8DA239DA8FF00238BC6 /* dungeonfloor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dungeonfloor.jpg; sourceTree = "<group>"; };
+		1438E8DC239DAA5B00238BC6 /* pngStone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pngStone.png; sourceTree = "<group>"; };
 		143C5600239C9B56005BE4D4 /* AttackSteal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackSteal.swift; sourceTree = "<group>"; };
 		1443F06A239C359D008CB82A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleScreenViewController.swift; sourceTree = "<group>"; };
-		1443F071239C36C2008CB82A /* BattleScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BattleScreen.sks; sourceTree = "<group>"; };
-		1443F073239C383B008CB82A /* dungeon_floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dungeon_floor.jpg; sourceTree = "<group>"; };
+		1443F071239C36C2008CB82A /* BattleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BattleScene.sks; sourceTree = "<group>"; };
 		14762BE6239C6B1300A1254F /* 8Front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8Front.png; sourceTree = "<group>"; };
 		14762BE7239C6B1300A1254F /* 5Front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5Front.png; sourceTree = "<group>"; };
 		14762BE8239C6B1300A1254F /* 5Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5Back.png; sourceTree = "<group>"; };
@@ -236,7 +239,6 @@
 		7117BB93239C88EC005BEC6B /* vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendor.png; sourceTree = "<group>"; };
 		7117BB94239C88EC005BEC6B /* tavern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tavern.png; sourceTree = "<group>"; };
 		7117BB95239C88EC005BEC6B /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
-		4144FCE4239C9DD5003339C1 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		7198FDE72375CFBA007F7A3C /* FinalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -334,7 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				1443F06C239C35FC008CB82A /* BattleScreenViewController.swift */,
-				1443F071239C36C2008CB82A /* BattleScreen.sks */,
+				1443F071239C36C2008CB82A /* BattleScene.sks */,
 				1438E8D4239D8AF200238BC6 /* BattleScene.swift */,
 			);
 			path = BattleScene;
@@ -548,6 +550,7 @@
 				7198FDF02375CFBA007F7A3C /* Main.storyboard */,
 				753C7A6A239C356200E782FF /* InventoryScreen.storyboard */,
 				753C7A84239C873D00E782FF /* Party.storyboard */,
+				1438E8D6239D93D800238BC6 /* BattleView.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -575,7 +578,6 @@
 				14A88454239C772600169433 /* Hero.swift */,
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 				14141E642375FCB4009897CF /* Treasure.swift */,
-				412DD8802375E5CA008A1736 /* Weapon.swift */,
 				14A88456239C80E000169433 /* DataStore.swift */,
 				753C7A95239C93D100E782FF /* CharCell.swift */,
 				4144FCE4239C9DD5003339C1 /* UserInfo.swift */,
@@ -586,6 +588,8 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				1438E8DC239DAA5B00238BC6 /* pngStone.png */,
+				1438E8DA239DA8FF00238BC6 /* dungeonfloor.jpg */,
 				75165B48239D89320039B966 /* Loading.png */,
 				7117BB91239C88D3005BEC6B /* MapIcons */,
 				753C7A88239C8DB500E782FF /* update.png */,
@@ -595,7 +599,6 @@
 				753C7A8A239C8E2D00E782FF /* UpdatePartyButton.png */,
 				1443F076239C38CC008CB82A /* Heroes */,
 				1443F075239C38C6008CB82A /* Enemies */,
-				1443F073239C383B008CB82A /* dungeon_floor.jpg */,
 				75ABBB912375E379006585FA /* plank.png */,
 				75ABBB952375E634006585FA /* bag.png */,
 				75ABBB932375E45C006585FA /* Chars.png */,
@@ -764,11 +767,13 @@
 			files = (
 				7117BB99239C88EC005BEC6B /* battle.png in Resources */,
 				7117BB96239C88EC005BEC6B /* redcross.png in Resources */,
+				1438E8DD239DAA5B00238BC6 /* pngStone.png in Resources */,
 				7117BB98239C88EC005BEC6B /* tavern.png in Resources */,
 				7117BB97239C88EC005BEC6B /* vendor.png in Resources */,
 				14762C01239C6B1400A1254F /* 1Front.png in Resources */,
 				753C7A8B239C8E2D00E782FF /* UpdatePartyButton.png in Resources */,
 				14762BFD239C6B1400A1254F /* 4Front.png in Resources */,
+				1438E8D7239D93D800238BC6 /* BattleView.storyboard in Resources */,
 				75ABBB922375E379006585FA /* plank.png in Resources */,
 				75ABBB962375E634006585FA /* bag.png in Resources */,
 				14762BFC239C6B1400A1254F /* 2Front.png in Resources */,
@@ -778,7 +783,7 @@
 				75ABBB942375E45C006585FA /* Chars.png in Resources */,
 				14762C0F239C6B3800A1254F /* Samurai.png in Resources */,
 				14762BF7239C6B1400A1254F /* 5Front.png in Resources */,
-				1443F072239C36C2008CB82A /* BattleScreen.sks in Resources */,
+				1443F072239C36C2008CB82A /* BattleScene.sks in Resources */,
 				14762BFF239C6B1400A1254F /* 3Front.png in Resources */,
 				753C7A85239C873D00E782FF /* Party.storyboard in Resources */,
 				14762C12239C6B3800A1254F /* BeakThing.png in Resources */,
@@ -796,6 +801,7 @@
 				14762BFB239C6B1400A1254F /* 4Back.png in Resources */,
 				753C7A6B239C356200E782FF /* InventoryScreen.storyboard in Resources */,
 				7198FDF42375CFBB007F7A3C /* Assets.xcassets in Resources */,
+				1438E8DB239DA8FF00238BC6 /* dungeonfloor.jpg in Resources */,
 				14762C13239C6B3800A1254F /* Furry.png in Resources */,
 				14762BFE239C6B1400A1254F /* 3Back.png in Resources */,
 				753C7A81239C86A600E782FF /* stoneBack.jpg in Resources */,
@@ -806,7 +812,6 @@
 				14762C00239C6B1400A1254F /* 8Back.png in Resources */,
 				14762C04239C6B1400A1254F /* 6Back.png in Resources */,
 				7198FDF22375CFBA007F7A3C /* Main.storyboard in Resources */,
-				1443F074239C383B008CB82A /* dungeon_floor.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

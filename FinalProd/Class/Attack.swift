@@ -21,12 +21,11 @@ class Attack : NSObject {
         var TargetUnit : Actor
         if(User is Enemy){
             TargetUnit = Data.Heroes[Target(User:User, Data:Data)]
-            
         } else {
             TargetUnit = Data.Enemies[Target(User:User, Data:Data)]
         }
         if(TargetUnit.Defense < User.Attack){
-            Data.Heroes[Target(User:User, Data:Data)].CurHealth -= User.Attack - TargetUnit.Defense
+            TargetUnit.CurHealth -= User.Attack - TargetUnit.Defense
         }
     }
 }

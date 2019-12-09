@@ -15,19 +15,17 @@ class DataStore {
         case 0: //Dan
             heroData.Attack = 8
             heroData.MaxHealth = 35
+            heroData.CurHealth = 35
             heroData.Defense = 3
             heroData.Name = "Dan"
             heroData.DisplayPic = "1Back.png"
             heroData.ViewPic = "1Front.png"
-<<<<<<< HEAD
             heroData.Abilities = [Attack()]
-=======
-            //heroData.Abilities = [Jab()]
->>>>>>> d3be7ea37338e3c2848456c3db2c1400f21e6aa7
             break
         case 1: //Bre
             heroData.Attack = 5
             heroData.MaxHealth = 25
+            heroData.CurHealth = 25
             heroData.Defense = 2
             heroData.Name = "Bre"
             heroData.DisplayPic = "2Back.png"
@@ -37,6 +35,7 @@ class DataStore {
         case 2: //
             heroData.Attack = 6
             heroData.MaxHealth = 50
+            heroData.CurHealth = 50
             heroData.Defense = 4
             heroData.Name = "Ricard"
             heroData.DisplayPic = "3Back.png"
@@ -46,6 +45,7 @@ class DataStore {
         case 3: //
             heroData.Attack = 7
             heroData.MaxHealth = 30
+            heroData.CurHealth = 30
             heroData.Defense = 2
             heroData.Name = "Fundee"
             heroData.DisplayPic = "4Back.png"
@@ -55,6 +55,7 @@ class DataStore {
         case 4: //
             heroData.Attack = 3
             heroData.MaxHealth = 60
+            heroData.CurHealth = 60
             heroData.Defense = 4
             heroData.Name = "Babtet"
             heroData.DisplayPic = "5Back.png"
@@ -64,6 +65,7 @@ class DataStore {
         case 5: //
             heroData.Attack = 5
             heroData.MaxHealth = 30
+            heroData.CurHealth = 30
             heroData.Defense = 2
             heroData.Name = "Marina"
             heroData.DisplayPic = "6Back.png"
@@ -73,6 +75,7 @@ class DataStore {
         case 6: //
             heroData.Attack = 12
             heroData.MaxHealth = 24
+            heroData.CurHealth = 24
             heroData.Defense = 2
             heroData.Name = "Zoro"
             heroData.DisplayPic = "7Back.png"
@@ -82,6 +85,7 @@ class DataStore {
         case 7: //
             heroData.Attack = 12
             heroData.MaxHealth = 24
+            heroData.CurHealth = 24
             heroData.Defense = 2
             heroData.Name = "Handcock"
             heroData.DisplayPic = "8Back.png"
@@ -93,6 +97,7 @@ class DataStore {
             heroData.DisplayPic = "Furry.png"
             heroData.ViewPic = "Furry.png"
             heroData.MaxHealth = 420
+            heroData.CurHealth = 420
             heroData.Attack = 420
             heroData.Defense = 1000
             heroData.Abilities = [AttackSteal()]
