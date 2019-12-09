@@ -40,6 +40,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             let mainDelegate = UIApplication.shared.delegate as! AppDelegate
             let user : UserInfo = UserInfo()
             
+            user.UserName = txtName.text!
+            user.Password = txtPass.text!
+            
             user.Saveuser(Name: txtName.text!, Password: txtPass.text!, Hero1: 1, Hero2: 1, Hero3: 1, Hero4: 1, Weapon1: 0, Weapon2: 0, Weapon3: 0, Weapon4: 0, Armour1: 0, Armour2: 0, Armour3: 0, Armour4: 0)
             
             

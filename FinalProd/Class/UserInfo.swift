@@ -87,10 +87,7 @@ class UserInfo: NSObject {
         defaults.set(ItemData, forKey: "Items")
         defaults.set(PartyData, forKey: "Party")
         defaults.set(true, forKey: "Exists")
-<<<<<<< HEAD
         Saveuser(Name: UserName, Password: Password, Hero1: Party, Hero2: Party[1].id, Hero3: Party[2].id, Hero4: Party[3].id, Weapon1: 0, Weapon2: 0, Weapon3: 0, Weapon4: 0, Armour1: 0, Armour2: 0, Armour3: 0, Armour4: 0)
-=======
-        
->>>>>>> 0d1731614178026161fc8d4398612a408aca7483
+
     }
 }
