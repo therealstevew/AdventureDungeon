@@ -5,6 +5,7 @@
 //  Created by Alex Teodorescu on 2019-12-07.
 //  Copyright © 2019 Steven Winstanley. All rights reserved.
 //
+// Runs the sprite kit battle.
 
 import UIKit
 import SpriteKit
@@ -15,8 +16,12 @@ class BattleScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Enables game to exit
+        
         NotificationCenter.default.addObserver(self, selector: #selector(WinScreen), name: NSNotification.Name(rawValue: "WinScreen"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(LoseScreen), name: NSNotification.Name(rawValue: "LoseScreen"), object: nil)
+        
+        //Fires up game view with an instance of battlefield to hold all the data
         
         if let view = self.view as! SKView? {
             
@@ -40,8 +45,9 @@ class BattleScreenViewController: UIViewController {
                 view.presentScene(scene)
             }
         }
-        // Do any additional setup after loading the view.
     }
+    
+    // functions used to exit game
     
     @objc func WinScreen() {
         self.performSegue(withIdentifier: "WinScreen", sender: nil)
