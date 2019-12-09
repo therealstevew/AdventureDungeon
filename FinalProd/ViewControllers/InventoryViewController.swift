@@ -26,6 +26,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         tableInCell.primaryLabel.text = String(items[rowNum].Name)
         tableInCell.secondaryLabel.text = String(items[rowNum].Characteristic)
         tableInCell.thirdLabel.text = String(items[rowNum].ItemType)
+        tableInCell.backgroundColor = .brown
         return tableInCell
     }
     

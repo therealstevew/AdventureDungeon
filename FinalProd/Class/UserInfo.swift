@@ -41,7 +41,7 @@ class UserInfo: NSObject {
         Heroes = []
         Items = []
         Party = []
-        if(defaults.bool(forKey: "Exists") != nil) {
+        if(defaults.object(forKey: "Exists") != nil) {
             print("there is data")
             var HeroData : [Int] = defaults.array(forKey: "Heroes") as! [Int]
             var ItemData : [Int] = defaults.array(forKey: "Items") as! [Int]
