@@ -89,18 +89,5 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
         userDefaults.set(partyHeroes, forKey: "TheParty")
     }
-    @IBAction func inspect1(sender: UIButton){
-        
-    }
-    
-    @IBAction func inspect2(sender: UIButton){
-        
-    }
-    
-    @IBAction func inspect3(sender: UIButton){
-    }
-    
-    @IBAction func inspect4(sender: UIButton){
-    }
     
 }
