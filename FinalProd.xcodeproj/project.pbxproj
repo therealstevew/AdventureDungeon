@@ -602,11 +602,8 @@
 				4108EF91239D95F200C299FE /* InventoryViewController.swift */,
 				75165B4F239DE5790039B966 /* WinViewController.swift */,
 				75165B51239DE5870039B966 /* LossViewController.swift */,
-<<<<<<< HEAD
 				4108EFA1239E076A00C299FE /* LoginViewController.swift */,
-=======
 				75165B83239E02F30039B966 /* ExpandViewController.swift */,
->>>>>>> 0d1731614178026161fc8d4398612a408aca7483
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -660,15 +657,12 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
 				4108EFA3239E09D900C299FE /* login.png */,
-=======
 				75165B8F239E09E60039B966 /* partyData.png */,
 				75165B87239E08F60039B966 /* 1.png */,
 				75165B89239E09000039B966 /* 2.png */,
 				75165B8B239E09060039B966 /* 3.png */,
 				75165B8D239E090A0039B966 /* 4.png */,
->>>>>>> 0d1731614178026161fc8d4398612a408aca7483
 				75165B63239DEB070039B966 /* backToHome.png */,
 				75165B61239DE9790039B966 /* youWon.png */,
 				75165B5F239DE7E90039B966 /* tryAgain.png */,
@@ -911,11 +905,8 @@
 				14762C11239C6B3800A1254F /* Clown.png in Resources */,
 				75165B58239DE6C80039B966 /* win.png in Resources */,
 				753C7A8D239C8EC300E782FF /* InfoButton.png in Resources */,
-<<<<<<< HEAD
 				4108EFA4239E09D900C299FE /* login.png in Resources */,
-=======
 				75165B90239E09E60039B966 /* partyData.png in Resources */,
->>>>>>> 0d1731614178026161fc8d4398612a408aca7483
 				753C7A83239C86AB00E782FF /* Old_Paper_PNG_Image.png in Resources */,
 				14762BFA239C6B1400A1254F /* 7Front.png in Resources */,
 				75165B64239DEB070039B966 /* backToHome.png in Resources */,
