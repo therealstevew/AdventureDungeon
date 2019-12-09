@@ -7,11 +7,15 @@
 //
 
 import UIKit
-
+//Base Item Class
 class Item: NSObject {
+    //Define Item Name
     var Name : String = ""
+    //Define Item Characteristic
     var Characteristic : Int = 0
+    //Define Item type
     var ItemType : String = ""
     var Quantity : Int = 1
+    //define id
     var id : Int = 0
 }

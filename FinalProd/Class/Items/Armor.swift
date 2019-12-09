@@ -8,7 +8,10 @@
 
 import UIKit
 
+///Parent Class for Armor type objects
 class Armor: Item {
+    //define effects on adding armor
     func onEquip(User: Hero ) -> Void { }
+    //define effects on removing armor
     func onUnequip(User: Hero ) -> Void { }
 }

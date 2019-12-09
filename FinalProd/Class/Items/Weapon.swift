@@ -7,8 +7,10 @@
 //
 
 import UIKit
-
+//Define Base weapon class
 class Weapon: Item {
+    //Define on Equip to a party member
     func onEquip(User: Hero) -> Void {}
+    //Define on Unequip from a party member
     func onUnequip(User: Hero) -> Void {}
 }

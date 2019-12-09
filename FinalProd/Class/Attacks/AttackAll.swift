@@ -9,6 +9,7 @@
 import UIKit
 
 class AttackAll: Attack {
+    //Check if it should be used
     override func ShouldUse(User: Actor, Data: Battlefield) -> Int {
         if(User is Hero){
             return Data.Enemies.count * 2
@@ -16,7 +17,7 @@ class AttackAll: Attack {
             return Data.Heroes.count * 2
         }
     }
-    
+    //define effects of the ability
     override func OnUse(User: Actor, Data: Battlefield) {
         if(User is Hero){
             for Guy in Data.Enemies {
