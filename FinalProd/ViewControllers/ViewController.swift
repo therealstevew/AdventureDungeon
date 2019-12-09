@@ -14,15 +14,13 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     var locationManager = CLLocationManager()
     @IBOutlet var mapView:MKMapView!
     var mapIcons : Array<MapIcon> = [];
-
-
+    let mainDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
-        
          let locationManager = CLLocationManager()
            locationManager.delegate = self
            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-
+        
            // Check for Location Services
            if (CLLocationManager.locationServicesEnabled()) {
                locationManager.requestAlwaysAuthorization()
@@ -37,8 +35,9 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
 
            self.locationManager = locationManager
         
+        
            
-
+        
            DispatchQueue.main.async {
                self.locationManager.startUpdatingLocation()
                
@@ -60,18 +59,17 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {
-
         if control == view.rightCalloutAccessoryView {
             print(view.annotation?.subtitle!!)
             let pointBLocation = CLLocation(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
             let distance = Double((mapView.userLocation.location?.distance(from: pointBLocation))!)
             if (distance < 50){
                 annotationShowView(type: ((view.annotation?.subtitle)!)!)
+                mapView.removeAnnotation(view.annotation!)
             }else{
                 print("To far")
             }
         }
-
     }
     func annotationShowView(type : String){
         switch type {
@@ -79,6 +77,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             print("Dungeon")
         case "1":
             print("Tavern")
+            generateHeroRewards()
         case "2":
             print("Vendor")
         case "3":
@@ -86,6 +85,16 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         default:
             print("Uh oh Stinky")
         }
+    }
+    func generateHeroRewards(){
+        var rand = Int.random(in: 1 ..< 3)
+        for n in 0...rand{
+            var heroSelect = Int.random(in: 0 ..< 7)
+            mainDelegate.UserData.Heroes.append(DataStore.getHero(Which: heroSelect))
+        }
+
+
+        
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
