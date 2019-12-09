@@ -85,5 +85,6 @@ class UserInfo: NSObject {
         defaults.set(ItemData, forKey: "Items")
         defaults.set(PartyData, forKey: "Party")
         defaults.set(true, forKey: "Exists")
+        
     }
 }
