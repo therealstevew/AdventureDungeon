@@ -10,10 +10,10 @@ import UIKit
 
 class InventoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var items : Array<Item> = []
+    
     let mainDelegate = UIApplication.shared.delegate as! AppDelegate
     
-        
+    var items : Array<Item> = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -23,14 +23,15 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell()
         
         let rowNum = indexPath.row
-        //tableCell.textLabel?.text = items[rowNum].value(forKey: rowNum)
+        tableCell.textLabel?.text = String(items[0].Name)
+        tableCell.textLabel?.text = String(items[0].Characteristic)
         return tableCell
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         items = mainDelegate.UserData.Items
         
         
