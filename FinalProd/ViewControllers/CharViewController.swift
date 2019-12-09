@@ -48,7 +48,6 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let rowNum = indexPath.row
         let name = mainDelegate.UserData.Heroes[rowNum].Name
         let imgName = UIImage(named:mainDelegate.UserData.Heroes[rowNum].ViewPic)
-        let idHero = mainDelegate.UserData.Heroes[rowNum].id
         
         tableCharCell.primaryLabel.text = name
         tableCharCell.myImageView.image = imgName
@@ -72,7 +71,29 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
             partyHeroes.removeFirst()
             partyHeroes.append(DataStore.getHero(Which: mainDelegate.UserData.Heroes[indexPath.row].id))
         } else {
-            //partyHeroes.append()
+            partyHeroes.append(DataStore.getHero(Which: mainDelegate.UserData.Heroes[indexPath.row].id))
         }
     }
+    
+    @IBAction func updateParty(sender: UIButton){
+        mainDelegate.UserData.Party.removeAll()
+        for i in 0...partyHeroes.count-1{
+            mainDelegate.UserData.Party.append(partyHeroes[i])
+            print(mainDelegate.UserData.Party[i].Name)
+        }
+    }
+    @IBAction func inspect1(sender: UIButton){
+        
+    }
+    
+    @IBAction func inspect2(sender: UIButton){
+        
+    }
+    
+    @IBAction func inspect3(sender: UIButton){
+    }
+    
+    @IBAction func inspect4(sender: UIButton){
+    }
+    
 }

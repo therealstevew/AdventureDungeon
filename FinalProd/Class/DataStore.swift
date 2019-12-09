@@ -102,7 +102,7 @@ class DataStore {
             heroData.Abilities = [AttackSteal()]
         }
         
-        return heroData;
+        return heroData
     }
     
     static func getEnemy(Which : Int) -> Enemy {
