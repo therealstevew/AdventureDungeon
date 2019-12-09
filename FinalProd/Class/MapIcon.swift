@@ -7,7 +7,7 @@
 //
 
 import UIKit
-///
+//object used by map to represent clickable points
 class MapIcon: NSObject {
     //0 Dungeon
     //1 Tavern

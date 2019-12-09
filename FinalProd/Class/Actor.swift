@@ -9,7 +9,7 @@
 import Foundation
 
 protocol Actor {
-    
+    //Store enemy/hero
     var MaxHealth : Int {get set};
     var CurHealth : Int {get set};
     var DisplayPic : String {get set};

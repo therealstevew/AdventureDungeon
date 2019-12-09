@@ -8,6 +8,7 @@
 
 import UIKit
 
+//used for combat to store data
 class Battlefield: NSObject {
     
     var Enemies : [Enemy] = []

@@ -8,6 +8,7 @@
 
 import Foundation
 
+//not used
 class Treasure {
     
     public var Items : [Item] = [];

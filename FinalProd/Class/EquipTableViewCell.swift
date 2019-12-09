@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Stores info about the equipment in character screen
 class EquipTableViewCell: UITableViewCell {
 
         let primaryLabel = UILabel()

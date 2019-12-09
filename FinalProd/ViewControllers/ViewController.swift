@@ -178,13 +178,14 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         var herosGot : Array<Hero> = [];
         var rand = Int.random(in: 1 ..< 3)
         for n in 0...rand{
-            var heroSelect = Int.random(in: 0 ..< 7)
+            var heroSelect = Int.random(in: 0 ..< 8)
             herosGot.append(DataStore.getHero(Which: heroSelect))
             mainDelegate.UserData.Heroes!.append(DataStore.getHero(Which: heroSelect))
             let alert = UIAlertController(title: "New Heros!", message: "You Just got " + herosGot[0].Name + " And possibly some other friends", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Nice Dude", style: .default, handler: nil))
             self.present(alert, animated: true)
         }
+        mainDelegate.UserData.LocalSave()
     }
     //heal heros
     func healHeros(){
@@ -197,13 +198,14 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         var itemsGot : Array<Item> = []
         var rand = Int.random(in: 1 ..< 3)
         for n in 0...rand{
-            var itemSelect = Int.random(in: 0 ..< 13)
+            var itemSelect = Int.random(in: 0 ..< 14)
             itemsGot.append(DataStore.getitem(Which: itemSelect))
             mainDelegate.UserData.Items!.append(DataStore.getitem(Which: itemSelect))
             let alert = UIAlertController(title: "New Items!", message: "You Just got " + itemsGot[0].Name + " And possibly some other items", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Nice Dude", style: .default, handler: nil))
             self.present(alert, animated: true)
         }
+        mainDelegate.UserData.LocalSave()
     }
     //Sent annotation values, title, image, etc
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?

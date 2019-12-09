@@ -17,6 +17,7 @@ class AttackLowest: Attack {
     override func Target(User: Actor, Data : Battlefield) -> Int {
         var lowest : Int = 0
         var lowestVal : Int = 0
+        //determine lowest health opponent
         if(User is Enemy){
             lowestVal = Data.Heroes[0].CurHealth
             for i in 1..<Data.Heroes.count {

@@ -31,6 +31,9 @@ class AttackSteal: AttackLowest {
             }
         }
         lowest.CurHealth += User.Attack/2
+        if(lowest.CurHealth > lowest.MaxHealth){
+            lowest.CurHealth = lowest.MaxHealth
+        }
     }
     
 }
