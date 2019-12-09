@@ -63,7 +63,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             print(view.annotation?.subtitle!!)
             let pointBLocation = CLLocation(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
             let distance = Double((mapView.userLocation.location?.distance(from: pointBLocation))!)
-            if (distance < 50){
+            if (distance < 1000){
                 annotationShowView(type: ((view.annotation?.subtitle)!)!)
                 mapView.removeAnnotation(view.annotation!)
             }else{

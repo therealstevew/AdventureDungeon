@@ -10,6 +10,8 @@ import UIKit
 
 class CharViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    let userDefaults = UserDefaults.standard
+    
     var mainDelegate = UIApplication.shared.delegate as! AppDelegate
     
     var partyHeroes : Array<Hero> = []
@@ -18,6 +20,10 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        partyHeroes = userDefaults.object(forKey: "theParty") as? [Hero] ?? [Hero]()
+        if partyHeroes.count >= 1{
+            print("first hero is \(partyHeroes[0].Name)")
+        }
         if mainDelegate.UserData.Heroes.count == 0{
             mainDelegate.UserData.Heroes.append(DataStore.getHero(Which: 0))
         }
@@ -81,6 +87,7 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
             mainDelegate.UserData.Party.append(partyHeroes[i])
             print(mainDelegate.UserData.Party[i].Name)
         }
+        userDefaults.set(partyHeroes, forKey: "TheParty")
     }
     @IBAction func inspect1(sender: UIButton){
         
