@@ -9,14 +9,36 @@
 import UIKit
 import CoreLocation
 import MapKit
+import WatchConnectivity
 
-class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDelegate {
+class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDelegate, WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        
+    }
+
     var locationManager = CLLocationManager()
     @IBOutlet var mapView:MKMapView!
     var mapIcons : Array<MapIcon> = [];
+    var programs : [String] = []
+    var programOb : [ProgramObject] = []
+
+
     let mainDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
+        if WCSession.isSupported(){
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
          let locationManager = CLLocationManager()
            locationManager.delegate = self
            locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -35,6 +57,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
 
            self.locationManager = locationManager
         
+        loadData()
+        
         
            
         
@@ -44,6 +68,14 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
                
            }
         
+        
+    }
+    func loadData(){
+        for n in mainDelegate.UserData.Party{
+            var progObj3 = ProgramObject()
+            progObj3.initWithData(title: n.Name)
+            programOb.append(progObj3)
+        }
         
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -87,6 +119,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             generateItemRewards()
         case "3":
             print("Healer")
+            healHeros()
         default:
             print("Uh oh Stinky")
         }
@@ -101,6 +134,12 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             let alert = UIAlertController(title: "New Heros!", message: "You Just got " + herosGot[0].Name + " And possibly some other friends", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Nice Dude", style: .default, handler: nil))
             self.present(alert, animated: true)
+        }
+    }
+    
+    func healHeros(){
+        for hero in mainDelegate.UserData.Party{
+            hero.CurHealth = hero.MaxHealth
         }
     }
     func generateItemRewards(){
@@ -171,6 +210,19 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         }
     
     }
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+           
+           var replyValues = Dictionary<String, AnyObject>()
+           
+           if message["getProgData"] != nil{
+               NSKeyedArchiver.setClassName("ProgramObject", for: ProgramObject.self)
+            let progData = try? NSKeyedArchiver.archivedData(withRootObject: mainDelegate.UserData.Party, requiringSecureCoding: false)
+               replyValues["progData"] = progData as AnyObject?
+               replyHandler(replyValues)
+           }
+           
+       }
+
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue)
     {
         

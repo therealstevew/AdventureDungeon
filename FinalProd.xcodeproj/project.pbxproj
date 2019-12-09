@@ -76,6 +76,10 @@
 		7117BB97239C88EC005BEC6B /* vendor.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB93239C88EC005BEC6B /* vendor.png */; };
 		7117BB98239C88EC005BEC6B /* tavern.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB94239C88EC005BEC6B /* tavern.png */; };
 		7117BB99239C88EC005BEC6B /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB95239C88EC005BEC6B /* battle.png */; };
+		7117BBA9239DE3C2005BEC6B /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7117BBA8239DE3C2005BEC6B /* WatchConnectivity.framework */; };
+		7117BBAA239DE3F7005BEC6B /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117BBA6239DE2C7005BEC6B /* PartyViewController.swift */; };
+		7117BBAE239DEB37005BEC6B /* ProgramObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117BBAD239DEB37005BEC6B /* ProgramObject.swift */; };
+		7117BBAF239DF3B6005BEC6B /* ProgramObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117BBAD239DEB37005BEC6B /* ProgramObject.swift */; };
 		7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */; };
 		7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */; };
 		7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEE2375CFBA007F7A3C /* ViewController.swift */; };
@@ -243,6 +247,9 @@
 		7117BB93239C88EC005BEC6B /* vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendor.png; sourceTree = "<group>"; };
 		7117BB94239C88EC005BEC6B /* tavern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tavern.png; sourceTree = "<group>"; };
 		7117BB95239C88EC005BEC6B /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
+		7117BBA6239DE2C7005BEC6B /* PartyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
+		7117BBA8239DE3C2005BEC6B /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		7117BBAD239DEB37005BEC6B /* ProgramObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramObject.swift; sourceTree = "<group>"; };
 		7198FDE72375CFBA007F7A3C /* FinalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -295,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1443F06B239C359D008CB82A /* GameKit.framework in Frameworks */,
+				7117BBA9239DE3C2005BEC6B /* WatchConnectivity.framework in Frameworks */,
 				7198FE5E2375E2DB007F7A3C /* MapKit.framework in Frameworks */,
 				7198FE5C2375E1E8007F7A3C /* CoreLocation.framework in Frameworks */,
 			);
@@ -529,6 +537,7 @@
 		7198FE242375CFBC007F7A3C /* FinalProd WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7117BBA6239DE2C7005BEC6B /* PartyViewController.swift */,
 				7198FE462375D738007F7A3C /* Controllers */,
 				7198FE272375CFBC007F7A3C /* ExtensionDelegate.swift */,
 				7198FE2D2375CFBD007F7A3C /* Assets.xcassets */,
@@ -573,6 +582,7 @@
 		7198FE502375DC74007F7A3C /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				7117BBAD239DEB37005BEC6B /* ProgramObject.swift */,
 				4144FCE6239CB62D003339C1 /* Items */,
 				14141E612375F999009897CF /* Attacks */,
 				14141E622375FA2F009897CF /* Actor.swift */,
@@ -616,6 +626,7 @@
 		7198FE5A2375E1E7007F7A3C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7117BBA8239DE3C2005BEC6B /* WatchConnectivity.framework */,
 				1443F06A239C359D008CB82A /* GameKit.framework */,
 				7198FE5D2375E2DB007F7A3C /* MapKit.framework */,
 				7198FE5B2375E1E8007F7A3C /* CoreLocation.framework */,
@@ -861,6 +872,7 @@
 				14141E5E2375F725009897CF /* EnemyData.swift in Sources */,
 				4144FCF7239D848B003339C1 /* Asi.swift in Sources */,
 				412DD8872375E711008A1736 /* Consumables.swift in Sources */,
+				7117BBAE239DEB37005BEC6B /* ProgramObject.swift in Sources */,
 				14A8845D239C8E1400169433 /* HealAlly.swift in Sources */,
 				14141E5C2375F4F7009897CF /* Enemy.swift in Sources */,
 				4144FCEF239D7840003339C1 /* Durandal.swift in Sources */,
@@ -925,10 +937,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7117BBAF239DF3B6005BEC6B /* ProgramObject.swift in Sources */,
 				7198FE2A2375CFBC007F7A3C /* NotificationController.swift in Sources */,
 				7198FE2C2375CFBC007F7A3C /* ComplicationController.swift in Sources */,
 				7198FE282375CFBC007F7A3C /* ExtensionDelegate.swift in Sources */,
 				7198FE262375CFBC007F7A3C /* InterfaceController.swift in Sources */,
+				7117BBAA239DE3F7005BEC6B /* PartyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1114,6 +1128,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;
@@ -1135,6 +1150,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_ENABLE_BATCH_MODE = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.1;
