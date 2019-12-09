@@ -92,10 +92,19 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
                 mapIcons.append(MapIcon.init(coordLat: Float(locValue.latitude), coordLong: Float(locValue.longitude)))
             }
             if (mapIcons.count == 7){
+                let timer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true, block: { timer in
+                    self.refreshMap()
+                })
                 generateAnnotation()
             }
         }
-        
+    }
+    func refreshMap(){
+        let allAnnotations = self.mapView.annotations
+        self.mapView.removeAnnotations(allAnnotations)
+        mapIcons.removeAll()
+        self.locationManager.stopUpdatingLocation()
+        self.locationManager.startUpdatingLocation()
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
