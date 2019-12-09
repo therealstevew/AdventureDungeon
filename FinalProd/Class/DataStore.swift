@@ -240,6 +240,7 @@ class DataStore {
         default:
             itemData = Sword()
         }
+        itemData!.id = Which;
         return itemData!
     }
 }

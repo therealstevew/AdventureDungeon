@@ -13,4 +13,5 @@ class Item: NSObject {
     var Characteristic : Int = 0
     var ItemType : String = ""
     var Quantity : Int = 1
+    var id : Int = 0
 }

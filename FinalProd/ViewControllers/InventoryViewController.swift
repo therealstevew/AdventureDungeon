@@ -16,7 +16,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     var items : Array<Item> = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mainDelegate.UserData.Items.count
+        return mainDelegate.UserData.Items!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,7 +36,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        items = mainDelegate.UserData.Items
+        items = mainDelegate.UserData.Items!
         
         
          
