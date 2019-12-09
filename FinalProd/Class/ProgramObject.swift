@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//for watch, no work :(
 class ProgramObject: NSObject, NSCoding {
     var title : String?
     

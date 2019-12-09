@@ -152,6 +152,15 @@
                 print("Starting Turn")
                 var Attacker : Actor?
                 
+                //safety catch for if entire team dies at once
+                if(Heroes!.count == 0){
+                    finished = true
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "LoseScreen"), object: nil)
+                }
+                if(Enemies!.count == 0){
+                    finished = true
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WinScreen"), object: nil)
+                }
                 
                 // define animation
                 let moveUp = SKAction.move(by: CGVector(dx: 0, dy: 200), duration: TimeInterval(0.3))
