@@ -34,6 +34,9 @@
                                 <rect key="frame" x="328" y="757" width="66" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="bag.png"/>
+                                <connections>
+                                    <segue destination="i8m-9x-Srp" kind="presentation" id="UIB-Ad-jps"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lS-H8-VCG">
                                 <rect key="frame" x="20" y="757" width="76" height="60"/>
@@ -61,7 +64,15 @@
                 <viewControllerPlaceholder storyboardName="Party" referencedIdentifier="CharViewController" id="LDi-aj-q5O" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Me-dd-Ph2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="482"/>
+            <point key="canvasLocation" x="-60" y="491"/>
+        </scene>
+        <!--Inventory-->
+        <scene sceneID="dYO-wg-UQx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InventoryScreen" referencedIdentifier="Inventory" id="i8m-9x-Srp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMY-IS-86Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303" y="491"/>
         </scene>
     </scenes>
     <resources>

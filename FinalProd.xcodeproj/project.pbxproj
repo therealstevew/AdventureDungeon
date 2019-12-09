@@ -52,6 +52,7 @@
 		4108EF92239D95F200C299FE /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108EF91239D95F200C299FE /* InventoryViewController.swift */; };
 		4108EF94239D970D00C299FE /* backpack.png in Resources */ = {isa = PBXBuildFile; fileRef = 4108EF93239D970D00C299FE /* backpack.png */; };
 		4108EF96239DB30200C299FE /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108EF95239DB30200C299FE /* Sword.swift */; };
+		4108EF98239DC94B00C299FE /* InventoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108EF97239DC94B00C299FE /* InventoryCell.swift */; };
 		412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87C2375DDF5008A1736 /* ShopViewController.swift */; };
 		412DD87F2375E5A7008A1736 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87E2375E5A7008A1736 /* Item.swift */; };
 		412DD8832375E5E6008A1736 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8822375E5E6008A1736 /* Armor.swift */; };
@@ -214,6 +215,7 @@
 		4108EF91239D95F200C299FE /* InventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
 		4108EF93239D970D00C299FE /* backpack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backpack.png; sourceTree = "<group>"; };
 		4108EF95239DB30200C299FE /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
+		4108EF97239DC94B00C299FE /* InventoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryCell.swift; sourceTree = "<group>"; };
 		412DD87C2375DDF5008A1736 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		412DD87E2375E5A7008A1736 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		412DD8822375E5E6008A1736 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
@@ -554,7 +556,6 @@
 				7198FDF02375CFBA007F7A3C /* Main.storyboard */,
 				753C7A6A239C356200E782FF /* InventoryScreen.storyboard */,
 				753C7A84239C873D00E782FF /* Party.storyboard */,
-				7117BBA2239DA9F2005BEC6B /* AlertView.xib */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -584,8 +585,8 @@
 				14141E642375FCB4009897CF /* Treasure.swift */,
 				14A88456239C80E000169433 /* DataStore.swift */,
 				753C7A95239C93D100E782FF /* CharCell.swift */,
+				4108EF97239DC94B00C299FE /* InventoryCell.swift */,
 				4144FCE4239C9DD5003339C1 /* UserInfo.swift */,
-				7117BBA4239DACF1005BEC6B /* AlertView.swift */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -791,7 +792,6 @@
 				753C7A85239C873D00E782FF /* Party.storyboard in Resources */,
 				14762C12239C6B3800A1254F /* BeakThing.png in Resources */,
 				75165B49239D89320039B966 /* Loading.png in Resources */,
-				7117BBA3239DA9F2005BEC6B /* AlertView.xib in Resources */,
 				14762C0E239C6B3800A1254F /* Ninja.png in Resources */,
 				14762C14239C6B3800A1254F /* Vamp.png in Resources */,
 				14762C10239C6B3800A1254F /* Skele.png in Resources */,
@@ -883,10 +883,10 @@
 				4144FCF1239D7861003339C1 /* Karuta.swift in Sources */,
 				4144FD03239D851D003339C1 /* Caliburn.swift in Sources */,
 				143C5601239C9B56005BE4D4 /* AttackSteal.swift in Sources */,
-				7117BBA5239DACF1005BEC6B /* AlertView.swift in Sources */,
 				1438E8D5239D8AF200238BC6 /* BattleScene.swift in Sources */,
 				14A8845F239C91FA00169433 /* AttackAll.swift in Sources */,
 				14141E652375FCB4009897CF /* Treasure.swift in Sources */,
+				4108EF98239DC94B00C299FE /* InventoryCell.swift in Sources */,
 				14141E632375FA2F009897CF /* Actor.swift in Sources */,
 				14A88455239C772600169433 /* Hero.swift in Sources */,
 				7198FE562375DCF5007F7A3C /* MapIcon.swift in Sources */,

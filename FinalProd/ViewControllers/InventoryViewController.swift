@@ -16,16 +16,17 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     var items : Array<Item> = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return mainDelegate.UserData.Items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableCell = tableView.dequeueReusableCell(withIdentifier: "cell") ?? UITableViewCell()
+        let tableInCell : InventoryCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? InventoryCell ?? InventoryCell(style:UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         
         let rowNum = indexPath.row
-        tableCell.textLabel?.text = String(items[0].Name)
-        tableCell.textLabel?.text = String(items[0].Characteristic)
-        return tableCell
+        tableInCell.primaryLabel.text = String(items[rowNum].Name)
+        tableInCell.secondaryLabel.text = String(items[rowNum].Characteristic)
+        tableInCell.thirdLabel.text = String(items[rowNum].Characteristic)
+        return tableInCell
     }
     
     
