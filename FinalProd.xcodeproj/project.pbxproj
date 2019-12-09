@@ -101,6 +101,18 @@
 		7198FE5E2375E2DB007F7A3C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7198FE5D2375E2DB007F7A3C /* MapKit.framework */; };
 		75165B49239D89320039B966 /* Loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B48239D89320039B966 /* Loading.png */; };
 		75165B4B239D89B10039B966 /* Bolster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75165B4A239D89B10039B966 /* Bolster.swift */; };
+		75165B4E239DE5340039B966 /* WinLoss.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75165B4D239DE5340039B966 /* WinLoss.storyboard */; };
+		75165B50239DE5790039B966 /* WinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75165B4F239DE5790039B966 /* WinViewController.swift */; };
+		75165B52239DE5870039B966 /* LossViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75165B51239DE5870039B966 /* LossViewController.swift */; };
+		75165B54239DE63A0039B966 /* victory.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B53239DE63A0039B966 /* victory.png */; };
+		75165B56239DE6430039B966 /* defeat.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B55239DE6430039B966 /* defeat.png */; };
+		75165B58239DE6C80039B966 /* win.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B57239DE6C80039B966 /* win.png */; };
+		75165B5A239DE6EE0039B966 /* loss.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B59239DE6EE0039B966 /* loss.png */; };
+		75165B5C239DE7100039B966 /* loser.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B5B239DE7100039B966 /* loser.png */; };
+		75165B5E239DE7600039B966 /* winner.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B5D239DE7600039B966 /* winner.png */; };
+		75165B60239DE7E90039B966 /* tryAgain.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B5F239DE7E90039B966 /* tryAgain.png */; };
+		75165B62239DE97A0039B966 /* youWon.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B61239DE9790039B966 /* youWon.png */; };
+		75165B64239DEB070039B966 /* backToHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B63239DEB070039B966 /* backToHome.png */; };
 		753C7A6B239C356200E782FF /* InventoryScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A6A239C356200E782FF /* InventoryScreen.storyboard */; };
 		753C7A81239C86A600E782FF /* stoneBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A80239C86A600E782FF /* stoneBack.jpg */; };
 		753C7A83239C86AB00E782FF /* Old_Paper_PNG_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */; };
@@ -279,6 +291,18 @@
 		7198FE5D2375E2DB007F7A3C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		75165B48239D89320039B966 /* Loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loading.png; sourceTree = "<group>"; };
 		75165B4A239D89B10039B966 /* Bolster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bolster.swift; sourceTree = "<group>"; };
+		75165B4D239DE5340039B966 /* WinLoss.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WinLoss.storyboard; sourceTree = "<group>"; };
+		75165B4F239DE5790039B966 /* WinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinViewController.swift; sourceTree = "<group>"; };
+		75165B51239DE5870039B966 /* LossViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossViewController.swift; sourceTree = "<group>"; };
+		75165B53239DE63A0039B966 /* victory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = victory.png; sourceTree = "<group>"; };
+		75165B55239DE6430039B966 /* defeat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defeat.png; sourceTree = "<group>"; };
+		75165B57239DE6C80039B966 /* win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = win.png; sourceTree = "<group>"; };
+		75165B59239DE6EE0039B966 /* loss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loss.png; sourceTree = "<group>"; };
+		75165B5B239DE7100039B966 /* loser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loser.png; sourceTree = "<group>"; };
+		75165B5D239DE7600039B966 /* winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = winner.png; sourceTree = "<group>"; };
+		75165B5F239DE7E90039B966 /* tryAgain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tryAgain.png; sourceTree = "<group>"; };
+		75165B61239DE9790039B966 /* youWon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youWon.png; sourceTree = "<group>"; };
+		75165B63239DEB070039B966 /* backToHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backToHome.png; sourceTree = "<group>"; };
 		753C7A6A239C356200E782FF /* InventoryScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InventoryScreen.storyboard; sourceTree = "<group>"; };
 		753C7A80239C86A600E782FF /* stoneBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stoneBack.jpg; sourceTree = "<group>"; };
 		753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Old_Paper_PNG_Image.png; sourceTree = "<group>"; };
@@ -549,6 +573,8 @@
 				412DD87C2375DDF5008A1736 /* ShopViewController.swift */,
 				753C7A86239C879400E782FF /* CharViewController.swift */,
 				4108EF91239D95F200C299FE /* InventoryViewController.swift */,
+				75165B4F239DE5790039B966 /* WinViewController.swift */,
+				75165B51239DE5870039B966 /* LossViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -561,6 +587,7 @@
 				7198FDF02375CFBA007F7A3C /* Main.storyboard */,
 				753C7A84239C873D00E782FF /* Party.storyboard */,
 				1438E8D6239D93D800238BC6 /* BattleView.storyboard */,
+				75165B4D239DE5340039B966 /* WinLoss.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -599,6 +626,15 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				75165B63239DEB070039B966 /* backToHome.png */,
+				75165B61239DE9790039B966 /* youWon.png */,
+				75165B5F239DE7E90039B966 /* tryAgain.png */,
+				75165B5D239DE7600039B966 /* winner.png */,
+				75165B5B239DE7100039B966 /* loser.png */,
+				75165B59239DE6EE0039B966 /* loss.png */,
+				75165B57239DE6C80039B966 /* win.png */,
+				75165B55239DE6430039B966 /* defeat.png */,
+				75165B53239DE63A0039B966 /* victory.png */,
 				1438E8DC239DAA5B00238BC6 /* pngStone.png */,
 				1438E8DA239DA8FF00238BC6 /* dungeonfloor.jpg */,
 				4108EF93239D970D00C299FE /* backpack.png */,
@@ -787,11 +823,14 @@
 				14762BFD239C6B1400A1254F /* 4Front.png in Resources */,
 				1438E8D7239D93D800238BC6 /* BattleView.storyboard in Resources */,
 				75ABBB922375E379006585FA /* plank.png in Resources */,
+				75165B54239DE63A0039B966 /* victory.png in Resources */,
 				75ABBB962375E634006585FA /* bag.png in Resources */,
 				14762BFC239C6B1400A1254F /* 2Front.png in Resources */,
+				75165B5C239DE7100039B966 /* loser.png in Resources */,
 				14762BF9239C6B1400A1254F /* 6Front.png in Resources */,
 				14762BF8239C6B1400A1254F /* 5Back.png in Resources */,
 				14762C02239C6B1400A1254F /* 2Back.png in Resources */,
+				75165B5E239DE7600039B966 /* winner.png in Resources */,
 				75ABBB942375E45C006585FA /* Chars.png in Resources */,
 				14762C0F239C6B3800A1254F /* Samurai.png in Resources */,
 				14762BF7239C6B1400A1254F /* 5Front.png in Resources */,
@@ -805,7 +844,10 @@
 				14762C10239C6B3800A1254F /* Skele.png in Resources */,
 				753C7A89239C8DB500E782FF /* update.png in Resources */,
 				7198FDF72375CFBB007F7A3C /* LaunchScreen.storyboard in Resources */,
+				75165B56239DE6430039B966 /* defeat.png in Resources */,
 				14762C15239C6B3800A1254F /* Ghost.png in Resources */,
+				75165B5A239DE6EE0039B966 /* loss.png in Resources */,
+				75165B4E239DE5340039B966 /* WinLoss.storyboard in Resources */,
 				14762C03239C6B1400A1254F /* 7Back.png in Resources */,
 				7198FE592375DF73007F7A3C /* uisquare.png in Resources */,
 				14762C05239C6B1400A1254F /* 1Back.png in Resources */,
@@ -817,14 +859,18 @@
 				14762C13239C6B3800A1254F /* Furry.png in Resources */,
 				14762BFE239C6B1400A1254F /* 3Back.png in Resources */,
 				753C7A81239C86A600E782FF /* stoneBack.jpg in Resources */,
+				75165B60239DE7E90039B966 /* tryAgain.png in Resources */,
 				14762C11239C6B3800A1254F /* Clown.png in Resources */,
+				75165B58239DE6C80039B966 /* win.png in Resources */,
 				753C7A8D239C8EC300E782FF /* InfoButton.png in Resources */,
 				753C7A83239C86AB00E782FF /* Old_Paper_PNG_Image.png in Resources */,
 				14762BFA239C6B1400A1254F /* 7Front.png in Resources */,
+				75165B64239DEB070039B966 /* backToHome.png in Resources */,
 				14762C00239C6B1400A1254F /* 8Back.png in Resources */,
 				14762C04239C6B1400A1254F /* 6Back.png in Resources */,
 				4108EF94239D970D00C299FE /* backpack.png in Resources */,
 				7198FDF22375CFBA007F7A3C /* Main.storyboard in Resources */,
+				75165B62239DE97A0039B966 /* youWon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -901,6 +947,7 @@
 				1443F06D239C35FC008CB82A /* BattleScreenViewController.swift in Sources */,
 				4144FCFB239D84B6003339C1 /* Harpe.swift in Sources */,
 				412DD87F2375E5A7008A1736 /* Item.swift in Sources */,
+				75165B52239DE5870039B966 /* LossViewController.swift in Sources */,
 				4144FCF9239D84A5003339C1 /* Chrysaor.swift in Sources */,
 				4144FD05239D861E003339C1 /* Muramasa.swift in Sources */,
 				7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */,
@@ -908,6 +955,7 @@
 				14141E602375F833009897CF /* Attack.swift in Sources */,
 				4144FCFF239D8500003339C1 /* Usumidori.swift in Sources */,
 				412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */,
+				75165B50239DE5790039B966 /* WinViewController.swift in Sources */,
 				4144FCF5239D847C003339C1 /* Kusanagi.swift in Sources */,
 				753C7A96239C93D100E782FF /* CharCell.swift in Sources */,
 			);
