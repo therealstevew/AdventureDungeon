@@ -87,10 +87,9 @@ class UserInfo: NSObject {
         defaults.set(ItemData, forKey: "Items")
         defaults.set(PartyData, forKey: "Party")
         defaults.set(true, forKey: "Exists")
-<<<<<<< HEAD
-        Saveuser(Name: UserName, Password: Password, Hero1: Party, Hero2: Party[1].id, Hero3: Party[2].id, Hero4: Party[3].id, Weapon1: 0, Weapon2: 0, Weapon3: 0, Weapon4: 0, Armour1: 0, Armour2: 0, Armour3: 0, Armour4: 0)
+       
 
-=======
+
         
         var dude1 : Int = -1
         var dude2 : Int = -1
@@ -111,6 +110,6 @@ class UserInfo: NSObject {
         }
         
         Saveuser(Name: UserName, Password: Password, Hero1: dude1, Hero2: dude2, Hero3: dude3, Hero4: dude4, Weapon1: 0, Weapon2: 0, Weapon3: 0, Weapon4: 0, Armour1: 0, Armour2: 0, Armour3: 0, Armour4: 0)
->>>>>>> 8753c42dd8202ac78b427d9fdb9db4dd501ed5f6
+
     }
 }

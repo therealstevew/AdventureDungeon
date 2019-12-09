@@ -53,10 +53,11 @@ class BattleScreenViewController: UIViewController {
         var itemsGot : Array<Item> = []
         var rand = Int.random(in: 1 ..< 3)
         for n in 0...rand{
-            var itemSelect = Int.random(in: 0 ..< 13)
+            var itemSelect = Int.random(in: 0 ..< 14)
             itemsGot.append(DataStore.getitem(Which: itemSelect))
             AppDelegateRef.UserData.Items!.append(DataStore.getitem(Which: itemSelect))
         }
+        AppDelegateRef.UserData.LocalSave()
         self.performSegue(withIdentifier: "WinScreen", sender: nil)
     }
     
