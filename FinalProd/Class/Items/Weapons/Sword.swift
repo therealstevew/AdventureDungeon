@@ -1,5 +1,5 @@
 //
-//  Karuta.swift
+//  Sword.swift
 //  FinalProd
 //
 //  Created by Andrew Mckie on 2019-12-08.
@@ -8,25 +8,25 @@
 
 import UIKit
 
-class Karuta: Armor {
+class Sword: Weapon {
 
-    let stat = 15
+    let stat = 1
     
     override init(){
         super.init()
-        self.Name = "Karuta"
+        self.Name = "Sword"
         self.Characteristic = stat
-        self.ItemType = "Armour"
+        self.ItemType = "Weapon"
     }
     
     override func onEquip(User: Hero) {
         let hero = User
         
-        hero.Defense += stat
+        hero.Attack += stat
     }
     override func onUnequip(User: Hero) {
         let hero = User
         
-        hero.Defense -= stat
+        hero.Attack -= stat
     }
 }

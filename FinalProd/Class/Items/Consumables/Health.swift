@@ -15,6 +15,8 @@ class Health: Consumables {
     override init(){
         super.init()
         self.Name = "Health Potion"
+        self.Characteristic = stat
+        self.ItemType = "Consumable"
     }
     override func onUse(User: Hero) {
         let hero = User

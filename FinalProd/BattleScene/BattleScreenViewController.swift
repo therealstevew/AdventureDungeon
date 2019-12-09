@@ -36,6 +36,7 @@ class BattleScreenViewController: UIViewController {
                     battleData.Heroes.append(DataStore.getHero(Which: Int.random(in: 0...7)))
                 }
                 AppDelegateRef.currentBattlefield = battleData
+
                 scene.scaleMode = .aspectFit
                 view.presentScene(scene)
             }

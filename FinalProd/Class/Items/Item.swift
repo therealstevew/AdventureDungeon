@@ -10,5 +10,7 @@ import UIKit
 
 class Item: NSObject {
     var Name : String = ""
+    var Characteristic : Int = 0
+    var ItemType : String = ""
     var Quantity : Int = 1
 }
