@@ -8,6 +8,7 @@
 
 import Foundation
 
+//used to initialize enemy
 class EnemyData {
     
     var Name : String = ""

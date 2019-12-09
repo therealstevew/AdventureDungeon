@@ -10,6 +10,7 @@ import UIKit
 
 class AttackAll: Attack {
     //Check if it should be used
+    //doesn't target but hits all enemies
     override func ShouldUse(User: Actor, Data: Battlefield) -> Int {
         if(User is Hero){
             return Data.Enemies.count * 2
