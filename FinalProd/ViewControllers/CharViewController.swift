@@ -89,6 +89,15 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
         tableView.reloadData()
     }
     
+<<<<<<< HEAD
+    @IBAction func updateParty(sender: UIButton){
+        mainDelegate.UserData.Party.removeAll()
+        for i in 0...partyHeroes.count-1{
+            mainDelegate.UserData.Party.append(partyHeroes[i])
+            print(mainDelegate.UserData.Party[i].Name)
+        }
+        userDefaults.set(partyHeroes, forKey: "TheParty")
+=======
     @IBAction func inspect1(sender: UIButton){
         
     }
@@ -101,6 +110,7 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     @IBAction func inspect4(sender: UIButton){
+>>>>>>> b572afdd73c5acc613bdcbc8f9f3892c8a38aba2
     }
     
 }

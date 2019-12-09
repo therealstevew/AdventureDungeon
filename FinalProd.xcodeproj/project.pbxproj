@@ -117,6 +117,13 @@
 		75165B60239DE7E90039B966 /* tryAgain.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B5F239DE7E90039B966 /* tryAgain.png */; };
 		75165B62239DE97A0039B966 /* youWon.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B61239DE9790039B966 /* youWon.png */; };
 		75165B64239DEB070039B966 /* backToHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B63239DEB070039B966 /* backToHome.png */; };
+		75165B84239E02F30039B966 /* ExpandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75165B83239E02F30039B966 /* ExpandViewController.swift */; };
+		75165B86239E06290039B966 /* EquipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75165B85239E06290039B966 /* EquipTableViewCell.swift */; };
+		75165B88239E08F60039B966 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B87239E08F60039B966 /* 1.png */; };
+		75165B8A239E09000039B966 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B89239E09000039B966 /* 2.png */; };
+		75165B8C239E09060039B966 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B8B239E09060039B966 /* 3.png */; };
+		75165B8E239E090A0039B966 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B8D239E090A0039B966 /* 4.png */; };
+		75165B90239E09E60039B966 /* partyData.png in Resources */ = {isa = PBXBuildFile; fileRef = 75165B8F239E09E60039B966 /* partyData.png */; };
 		753C7A6B239C356200E782FF /* InventoryScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A6A239C356200E782FF /* InventoryScreen.storyboard */; };
 		753C7A81239C86A600E782FF /* stoneBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A80239C86A600E782FF /* stoneBack.jpg */; };
 		753C7A83239C86AB00E782FF /* Old_Paper_PNG_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = 753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */; };
@@ -310,6 +317,13 @@
 		75165B5F239DE7E90039B966 /* tryAgain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tryAgain.png; sourceTree = "<group>"; };
 		75165B61239DE9790039B966 /* youWon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youWon.png; sourceTree = "<group>"; };
 		75165B63239DEB070039B966 /* backToHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backToHome.png; sourceTree = "<group>"; };
+		75165B83239E02F30039B966 /* ExpandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandViewController.swift; sourceTree = "<group>"; };
+		75165B85239E06290039B966 /* EquipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipTableViewCell.swift; sourceTree = "<group>"; };
+		75165B87239E08F60039B966 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		75165B89239E09000039B966 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		75165B8B239E09060039B966 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		75165B8D239E090A0039B966 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		75165B8F239E09E60039B966 /* partyData.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = partyData.png; sourceTree = "<group>"; };
 		753C7A6A239C356200E782FF /* InventoryScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InventoryScreen.storyboard; sourceTree = "<group>"; };
 		753C7A80239C86A600E782FF /* stoneBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stoneBack.jpg; sourceTree = "<group>"; };
 		753C7A82239C86AB00E782FF /* Old_Paper_PNG_Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Old_Paper_PNG_Image.png; sourceTree = "<group>"; };
@@ -584,6 +598,7 @@
 				4108EF91239D95F200C299FE /* InventoryViewController.swift */,
 				75165B4F239DE5790039B966 /* WinViewController.swift */,
 				75165B51239DE5870039B966 /* LossViewController.swift */,
+				75165B83239E02F30039B966 /* ExpandViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -622,6 +637,7 @@
 				14A88452239C74AF00169433 /* Battlefield.swift */,
 				14141E5B2375F4F7009897CF /* Enemy.swift */,
 				14141E5D2375F725009897CF /* EnemyData.swift */,
+				75165B85239E06290039B966 /* EquipTableViewCell.swift */,
 				14A88454239C772600169433 /* Hero.swift */,
 				7198FE552375DCF5007F7A3C /* MapIcon.swift */,
 				14141E642375FCB4009897CF /* Treasure.swift */,
@@ -636,6 +652,11 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				75165B8F239E09E60039B966 /* partyData.png */,
+				75165B87239E08F60039B966 /* 1.png */,
+				75165B89239E09000039B966 /* 2.png */,
+				75165B8B239E09060039B966 /* 3.png */,
+				75165B8D239E090A0039B966 /* 4.png */,
 				75165B63239DEB070039B966 /* backToHome.png */,
 				75165B61239DE9790039B966 /* youWon.png */,
 				75165B5F239DE7E90039B966 /* tryAgain.png */,
@@ -845,9 +866,12 @@
 				75ABBB942375E45C006585FA /* Chars.png in Resources */,
 				14762C0F239C6B3800A1254F /* Samurai.png in Resources */,
 				14762BF7239C6B1400A1254F /* 5Front.png in Resources */,
+				75165B88239E08F60039B966 /* 1.png in Resources */,
 				1443F072239C36C2008CB82A /* BattleScene.sks in Resources */,
 				14762BFF239C6B1400A1254F /* 3Front.png in Resources */,
 				753C7A85239C873D00E782FF /* Party.storyboard in Resources */,
+				75165B8C239E09060039B966 /* 3.png in Resources */,
+				75165B8E239E090A0039B966 /* 4.png in Resources */,
 				14762C12239C6B3800A1254F /* BeakThing.png in Resources */,
 				75165B49239D89320039B966 /* Loading.png in Resources */,
 				14762C0E239C6B3800A1254F /* Ninja.png in Resources */,
@@ -865,6 +889,7 @@
 				14762BF6239C6B1400A1254F /* 8Front.png in Resources */,
 				14762BFB239C6B1400A1254F /* 4Back.png in Resources */,
 				753C7A6B239C356200E782FF /* InventoryScreen.storyboard in Resources */,
+				75165B8A239E09000039B966 /* 2.png in Resources */,
 				7198FDF42375CFBB007F7A3C /* Assets.xcassets in Resources */,
 				1438E8DB239DA8FF00238BC6 /* dungeonfloor.jpg in Resources */,
 				14762C13239C6B3800A1254F /* Furry.png in Resources */,
@@ -874,6 +899,7 @@
 				14762C11239C6B3800A1254F /* Clown.png in Resources */,
 				75165B58239DE6C80039B966 /* win.png in Resources */,
 				753C7A8D239C8EC300E782FF /* InfoButton.png in Resources */,
+				75165B90239E09E60039B966 /* partyData.png in Resources */,
 				753C7A83239C86AB00E782FF /* Old_Paper_PNG_Image.png in Resources */,
 				14762BFA239C6B1400A1254F /* 7Front.png in Resources */,
 				75165B64239DEB070039B966 /* backToHome.png in Resources */,
@@ -934,6 +960,7 @@
 				4108EF92239D95F200C299FE /* InventoryViewController.swift in Sources */,
 				4144FCE5239C9DD5003339C1 /* UserInfo.swift in Sources */,
 				4144FCED239D75B2003339C1 /* Dou.swift in Sources */,
+				75165B86239E06290039B966 /* EquipTableViewCell.swift in Sources */,
 				753C7A87239C879400E782FF /* CharViewController.swift in Sources */,
 				14A88453239C74AF00169433 /* Battlefield.swift in Sources */,
 				75165B4B239D89B10039B966 /* Bolster.swift in Sources */,
@@ -942,6 +969,7 @@
 				7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */,
 				14A88457239C80E000169433 /* DataStore.swift in Sources */,
 				7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */,
+				75165B84239E02F30039B966 /* ExpandViewController.swift in Sources */,
 				4144FCFD239D84C7003339C1 /* Secace.swift in Sources */,
 				4144FCF3239D82FC003339C1 /* Health.swift in Sources */,
 				14A88459239C86EA00169433 /* AttackLowest.swift in Sources */,
