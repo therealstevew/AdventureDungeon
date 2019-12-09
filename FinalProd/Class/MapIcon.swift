@@ -17,7 +17,7 @@ class MapIcon: NSObject {
     var lat : Float = 0.0
     var long : Float = 0.0
     
-    
+    //create a random point within the map
      init(coordLat: Float, coordLong: Float) {
         lat = coordLat
         long = coordLong

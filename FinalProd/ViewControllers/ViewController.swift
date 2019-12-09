@@ -13,7 +13,7 @@ import WatchConnectivity
 
 class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDelegate, WCSessionDelegate {
     
-    
+    //Define Basic WC functions
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
     }
@@ -25,24 +25,29 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     func sessionDidDeactivate(_ session: WCSession) {
         
     }
-
+    //Create locationManager for mapkit functions
     var locationManager = CLLocationManager()
+    //mapView Outlet
     @IBOutlet var mapView:MKMapView!
+    //Array of map icons
     var mapIcons : Array<MapIcon> = [];
-   
+   //Array to send data to Watch
     var programOb : [ProgramObject] = []
 
-
+    //referencing Appdelegate
     let mainDelegate = UIApplication.shared.delegate as! AppDelegate
+    //on viewLoad
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        
+            //define watch connectivity session
             let session = WCSession.default
             session.delegate = self
+            // activate watch session
             session.activate()
-        
+        //load Programob with party data
          loadData()
+        //assign locationManager
          let locationManager = CLLocationManager()
            locationManager.delegate = self
            locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -75,44 +80,61 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         
     }
     func loadData(){
+        //Pull userdata party
         for n in mainDelegate.UserData.Party!{
             var progObj3 = ProgramObject()
+            //Assign value to a program object
             progObj3.initWithData(title: n.Name)
             programOb.append(progObj3)
         }
         let programData = NSKeyedArchiver.archivedData(withRootObject: programOb)
+        //Send message
         sendWatchMessage(programData)
         
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         print("locations = \(locValue.latitude) \(locValue.longitude)")
+        //Generate 8 MapIcon
         for n in 0...7 {
+            //if there are less than 7 icons
             if(mapIcons.count <= 7){
+                //create new map icons and pass into array
                 mapIcons.append(MapIcon.init(coordLat: Float(locValue.latitude), coordLong: Float(locValue.longitude)))
             }
+            //if the max amount of icons exsit set the reset timer
             if (mapIcons.count == 7){
                 let timer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true, block: { timer in
+                    //call refreshMap Func
                     self.refreshMap()
                 })
+                //Generate MapView Annotations
                 generateAnnotation()
             }
         }
     }
+    //Refresh Map Function
     func refreshMap(){
+        //get all current annotations
         let allAnnotations = self.mapView.annotations
+        //remove all current annotations from map
         self.mapView.removeAnnotations(allAnnotations)
+        //clear mapIcon list
         mapIcons.removeAll()
+        //Stop location manager and restart
         self.locationManager.stopUpdatingLocation()
         self.locationManager.startUpdatingLocation()
     }
-    
+    //Annotation on clock
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                    calloutAccessoryControlTapped control: UIControl) {
           if control == view.rightCalloutAccessoryView {
               print(view.annotation?.subtitle!!)
+            //get location distance
               let pointBLocation = CLLocation(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
+            //compare user location with the annotation
               let distance = Double((mapView.userLocation.location?.distance(from: pointBLocation))!)
+            //if it within this range it can be clicked
               if (distance < 1000){
                   annotationShowView(type: (((view.annotation?.subtitle)!)!), anon: view.annotation!)
               
@@ -121,29 +143,37 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
               }
           }
       }
-    
+    //Annotation on click event
     func annotationShowView(type : String, anon : MKAnnotation){
+        // removeAnnotaion that was clicked
         mapView.removeAnnotation(anon)
         switch type {
         case "0":
             print("Dungeon")
+            //run battle screen
             runBattle()
         case "1":
             print("Tavern")
+            //create new heros for rewards
             generateHeroRewards()
         case "2":
             print("Vendor")
+            //create items for rewards
             generateItemRewards()
         case "3":
             print("Healer")
+            //heal heros
             healHeros()
         default:
             print("Uh oh Stinky")
         }
     }
+    //run battle function
     func runBattle(){
+        //open battle view
         self.performSegue(withIdentifier: "battleScene", sender: nil)
     }
+    //Generate Heros for user
     func generateHeroRewards(){
         var herosGot : Array<Hero> = [];
         var rand = Int.random(in: 1 ..< 3)
@@ -156,12 +186,13 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             self.present(alert, animated: true)
         }
     }
-    
+    //heal heros
     func healHeros(){
         for hero in mainDelegate.UserData.Party!{
             hero.CurHealth = hero.MaxHealth
         }
     }
+    //Generate Items for user
     func generateItemRewards(){
         var itemsGot : Array<Item> = []
         var rand = Int.random(in: 1 ..< 3)
@@ -174,7 +205,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             self.present(alert, animated: true)
         }
     }
-    
+    //Sent annotation values, title, image, etc
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
     {
         
@@ -207,7 +238,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         annotationView!.image = pinImage
         return annotationView
     }
-   
+   //create annotations 
     func generateAnnotation(){
         for mapicons in mapIcons{
             let annotation = MKPointAnnotation()
