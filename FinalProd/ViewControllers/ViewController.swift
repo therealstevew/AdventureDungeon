@@ -142,7 +142,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         }
     }
     func runBattle(){
-        self.performSegue(withIdentifier: "battleScreen", sender: nil)
+        self.performSegue(withIdentifier: "battleScene", sender: nil)
     }
     func generateHeroRewards(){
         var herosGot : Array<Hero> = [];

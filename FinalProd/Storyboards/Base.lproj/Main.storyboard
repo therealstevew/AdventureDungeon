@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,6 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="0Sx-Ws-H6t" id="2Fs-ep-GBJ"/>
+                        <segue destination="whM-km-H8g" kind="presentation" identifier="battleScene" id="Hqy-E1-OPA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -64,7 +65,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="BattleScene" storyboardName="BattleView" referencedIdentifier="BattleScene" id="whM-km-H8g" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATy-Nr-52A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="123"/>
+            <point key="canvasLocation" x="736" y="81"/>
         </scene>
         <!--CharViewController-->
         <scene sceneID="W3Q-Lw-Lny">

@@ -87,7 +87,6 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
         mainDelegate.UserData.LocalSave()
         tableView.reloadData()
     }
-
     @IBAction func unwindToCharViewController(segue: UIStoryboardSegue)
     {
         

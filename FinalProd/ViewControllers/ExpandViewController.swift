@@ -35,7 +35,6 @@ class ExpandViewController: UIViewController, UITableViewDataSource, UITableView
         lblWeapon.text = String(mainDelegate.UserData.Party![0].Weapon?.Name ?? "None Eqipped")
         lblArmour.text = String(mainDelegate.UserData.Party![0].Armor?.Name ?? "None Eqipped")
         imgIcon.image = UIImage(named: mainDelegate.UserData.Party![0].ViewPic)
-        
 
         let image: UIImage = UIImage(named: mainDelegate.UserData.Heroes![0].ViewPic)!
         imgIcon.image = image
