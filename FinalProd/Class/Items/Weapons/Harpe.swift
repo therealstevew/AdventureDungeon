@@ -10,7 +10,7 @@ import UIKit
 
 class Harpe: Weapon {
 
-    let stat = 30
+    let stat = 4
     
     override init(){
         super.init()

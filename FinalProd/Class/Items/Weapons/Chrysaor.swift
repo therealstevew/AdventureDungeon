@@ -10,7 +10,7 @@ import UIKit
 
 class Chrysaor: Weapon {
 
-    let stat = 30
+    let stat = 7
     
     override init(){
         super.init()

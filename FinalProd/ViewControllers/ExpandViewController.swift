@@ -94,6 +94,11 @@ class ExpandViewController: UIViewController, UITableViewDataSource, UITableView
             mainDelegate.UserData.Party![choice].Armor?.onEquip(User: mainDelegate.UserData.Party![choice])
             lblDefense.text = String(mainDelegate.UserData.Party![choice].Defense)
         }
+        if mainDelegate.UserData.Items![indexPath.row].ItemType == "Consumable" {
+            let alert = UIAlertController(title: "Used Consumable", message: "Potion has restored 5 health", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
     
         @IBAction func displayOne(sender: UIButton){

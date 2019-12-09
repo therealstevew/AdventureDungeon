@@ -10,7 +10,7 @@ import UIKit
 
 class Sword: Weapon {
 
-    let stat = 1
+    let stat = 3
     
     override init(){
         super.init()

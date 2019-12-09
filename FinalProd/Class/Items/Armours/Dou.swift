@@ -10,7 +10,7 @@ import UIKit
 
 class Dou: Armor {
 
-    let stat = 15
+    let stat = 2
     
     override init(){
         super.init()
