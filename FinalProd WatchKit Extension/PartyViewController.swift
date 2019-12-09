@@ -9,7 +9,7 @@
 import WatchKit
 
 class PartyViewController: NSObject {
-    @IBOutlet weak var img: WKInterfaceImage!
-    @IBOutlet weak var label: WKInterfaceLabel!
+    @IBOutlet var img: WKInterfaceImage!
+    @IBOutlet var label: WKInterfaceLabel!
     
 }

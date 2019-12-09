@@ -11,6 +11,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FinalProd_WatchKit_Extension">
                     <items>
+                        <label alignment="left" text="Nice" id="yG5-tD-hfk"/>
                         <table alignment="left" id="wzR-k8-rxe">
                             <items>
                                 <tableRow id="47I-hr-HXc" customClass="PartyViewController" customModule="FinalProd">
@@ -29,7 +30,7 @@
                         </table>
                     </items>
                     <connections>
-                        <outlet property="table" destination="wzR-k8-rxe" id="sVE-vX-mkM"/>
+                        <outlet property="progTable" destination="wzR-k8-rxe" id="Uep-TP-W4V"/>
                     </connections>
                 </controller>
             </objects>

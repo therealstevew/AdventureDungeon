@@ -12,6 +12,8 @@ import MapKit
 import WatchConnectivity
 
 class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDelegate, WCSessionDelegate {
+    
+    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         
     }
@@ -27,18 +29,20 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     var locationManager = CLLocationManager()
     @IBOutlet var mapView:MKMapView!
     var mapIcons : Array<MapIcon> = [];
-    var programs : [String] = []
+   
     var programOb : [ProgramObject] = []
 
 
     let mainDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
-        if WCSession.isSupported(){
+       
+        
             let session = WCSession.default
             session.delegate = self
             session.activate()
-        }
+        
+         loadData()
          let locationManager = CLLocationManager()
            locationManager.delegate = self
            locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -57,7 +61,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
 
            self.locationManager = locationManager
         
-        loadData()
+        
         
         
            
@@ -71,11 +75,13 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         
     }
     func loadData(){
-        for n in mainDelegate.UserData.Party{
+        for n in mainDelegate.UserData.Party!{
             var progObj3 = ProgramObject()
             progObj3.initWithData(title: n.Name)
             programOb.append(progObj3)
         }
+        let programData = NSKeyedArchiver.archivedData(withRootObject: programOb)
+        sendWatchMessage(programData)
         
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -139,7 +145,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     }
     
     func healHeros(){
-        for hero in mainDelegate.UserData.Party{
+        for hero in mainDelegate.UserData.Party!{
             hero.CurHealth = hero.MaxHealth
         }
     }
@@ -214,15 +220,35 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
            
            var replyValues = Dictionary<String, AnyObject>()
+            
            
-           if message["getProgData"] != nil{
-               NSKeyedArchiver.setClassName("ProgramObject", for: ProgramObject.self)
-            let progData = try? NSKeyedArchiver.archivedData(withRootObject: mainDelegate.UserData.Party, requiringSecureCoding: false)
-               replyValues["progData"] = progData as AnyObject?
-               replyHandler(replyValues)
-           }
+            if (message["getProgData"] != nil)
+            {
+                // step 8b - serialize and send the fake data to the watch for display
+                // note line of code below needed to prevent app crash.
+                NSKeyedArchiver.setClassName("ProgramObject", for: ProgramObject.self)
+                let programData = NSKeyedArchiver.archivedData(withRootObject: programOb)
+            
+            
+                replyValues["progData"] = programData as AnyObject?
+                replyHandler(replyValues)
+            }
            
        }
+    func sendWatchMessage(_ msgData:Data) {
+        
+        // if less than half a second has passed, bail out
+       
+        // send a message to the watch if it's reachable
+        if (WCSession.default.isReachable) {
+            
+            let message = ["progData": msgData]
+            WCSession.default.sendMessage(message, replyHandler: nil)
+        }
+        
+        // update our rate limiting property
+      
+    }
 
     @IBAction func unwindToThisViewController(segue: UIStoryboardSegue)
     {

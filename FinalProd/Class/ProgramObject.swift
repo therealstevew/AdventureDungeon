@@ -21,10 +21,13 @@ class ProgramObject: NSObject, NSCoding {
 
     }
     
-    required convenience init?(coder: NSCoder) {
-        let title = (coder.decodeObject(forKey: "title") as? String)!
-     self.init()
-     self.initWithData(title: title)
+    required convenience init?(coder decoder: NSCoder) {
+      guard let title = (decoder.decodeObject(forKey: "title") as? String)
+        else{
+            return nil
+        }
+        self.init()
+        self.initWithData(title: title)
     }
     
 
