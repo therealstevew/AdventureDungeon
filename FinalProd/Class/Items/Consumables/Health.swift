@@ -8,21 +8,26 @@
 
 import UIKit
 
+//Define Health Potion Object
 class Health: Consumables {
-
-    let stat = 10
     
+    let stat = 10
+    //ctor
     override init(){
         super.init()
         self.Name = "Health Potion"
         self.Characteristic = stat
         self.ItemType = "Consumable"
     }
+    //Define what happens on use
     override func onUse(User: Hero) {
+        //define hero
         let hero = User
         
+        //increase that heros health by stat
         hero.CurHealth += stat
         
+        //if it pushes health above max, make health max
         if hero.CurHealth > hero.MaxHealth{
             hero.CurHealth = hero.MaxHealth
         }

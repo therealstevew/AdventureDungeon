@@ -7,18 +7,18 @@
 //
 
 import UIKit
-
+//Define Weapon Excalibur
 class Excalibur: Weapon {
 
-    let stat = 30
-    
+    let stat = 10
+    //ctor
     override init(){
         super.init()
         self.Name = "Excalibur"
         self.Characteristic = stat
         self.ItemType = "Weapon"
     }
-    
+    //Define Effects
     override func onEquip(User: Hero) {
         let hero = User
         

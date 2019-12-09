@@ -8,17 +8,18 @@
 
 import UIKit
 
+//Define Item class Armor
 class Dou: Armor {
 
-    let stat = 15
-    
+    let stat = 2
+    //ctor
     override init(){
         super.init()
         self.Name = "Dou"
         self.Characteristic = stat
         self.ItemType = "Armour"
     }
-    
+    //Define effects
     override func onEquip(User: Hero) {
         let hero = User
         

@@ -120,20 +120,13 @@
                                     <segue destination="LDi-aj-q5O" kind="presentation" id="bZf-5g-kuM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jy-8e-jAO">
-                                <rect key="frame" x="184" y="775" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="whM-km-H8g" kind="presentation" id="JjP-WE-KJx"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                     </view>
                     <connections>
                         <outlet property="mapView" destination="0Sx-Ws-H6t" id="2Fs-ep-GBJ"/>
+                        <segue destination="whM-km-H8g" kind="presentation" identifier="battleScene" id="Hqy-E1-OPA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -146,7 +139,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="BattleScene" storyboardName="BattleView" referencedIdentifier="BattleScene" id="whM-km-H8g" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATy-Nr-52A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="123"/>
+            <point key="canvasLocation" x="736" y="81"/>
         </scene>
         <!--CharViewController-->
         <scene sceneID="W3Q-Lw-Lny">

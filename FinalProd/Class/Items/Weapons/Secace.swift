@@ -7,18 +7,18 @@
 //
 
 import UIKit
-
+//Define Secace Weapon class
 class Secace: Weapon {
 
-    let stat = 30
-    
+    let stat = 6
+    //ctor
     override init(){
         super.init()
         self.Name = "Secace"
         self.Characteristic = stat
         self.ItemType = "Weapon"
     }
-    
+    //Define Effects
     override func onEquip(User: Hero) {
         let hero = User
         

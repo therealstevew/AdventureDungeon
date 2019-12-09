@@ -7,18 +7,18 @@
 //
 
 import UIKit
-
+//Define Usumidori Weapon
 class Usumidori: Weapon {
 
-    let stat = 30
-    
+    let stat = 4
+    //ctor
     override init(){
         super.init()
         self.Name = "Usumidori"
         self.Characteristic = stat
         self.ItemType = "Weapon"
     }
-    
+    //Define Effects
     override func onEquip(User: Hero) {
         let hero = User
         
