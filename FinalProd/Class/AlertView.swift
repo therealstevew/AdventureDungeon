@@ -9,6 +9,9 @@
 import UIKit
 import Foundation
 class AlertView: UIView {
+    class func instanceFromNib() -> UIView {
+        return UINib(nibName: "AlertView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! UIView
+       }
     
     @IBOutlet var parentView: UIView!
     
@@ -19,17 +22,26 @@ class AlertView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame : frame)
-        Bundle.main.loadNibNamed("AlertView", owner: self, options: nil)
-        commonInit()
         
+  
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    func commonInit(){
-        imgView.layer.cornerRadius = 30
-        imgView.layer.borderColor = UIColor.white.cgColor
+  
+    func showAlert(Rewards: Array<String>, type: String){
+        let typeString : String? = type
+        switch typeString {
+        case "1":
+            imgView.image = UIImage(named: "tavern.png")
+        case "2":
+            imgView.image = UIImage(named: "vendor.png")
+        case "3":
+            imgView.image = UIImage(named: "redcross.png")
+        default:
+            imgView.image = UIImage(named: "battle.png")
+        }
         
     }
     
