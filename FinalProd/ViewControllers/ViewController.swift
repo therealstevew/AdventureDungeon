@@ -67,8 +67,13 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             let pointBLocation = CLLocation(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
             let distance = Double((mapView.userLocation.location?.distance(from: pointBLocation))!)
             if (distance < 1000){
+<<<<<<< HEAD
+                annotationShowView(type: ((view.annotation?.subtitle)!)!)
+                mapView.removeAnnotation(view.annotation!)
+=======
                 annotationShowView(type: (((view.annotation?.subtitle)!)!), anon: view.annotation!)
             
+>>>>>>> e385ef191e61e5389a7c25ee88eb0b4980b20c0f
             }else{
                 print("To far")
             }
