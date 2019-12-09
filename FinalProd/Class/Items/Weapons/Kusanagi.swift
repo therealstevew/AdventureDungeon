@@ -15,6 +15,8 @@ class Kusanagi: Weapon {
     override init(){
         super.init()
         self.Name = "Kusanagi"
+        self.Characteristic = stat
+        self.ItemType = "Weapon"
     }
     
     override func onEquip(User: Hero) {

@@ -49,6 +49,9 @@
 		14A88459239C86EA00169433 /* AttackLowest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A88458239C86EA00169433 /* AttackLowest.swift */; };
 		14A8845D239C8E1400169433 /* HealAlly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A8845C239C8E1400169433 /* HealAlly.swift */; };
 		14A8845F239C91FA00169433 /* AttackAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A8845E239C91FA00169433 /* AttackAll.swift */; };
+		4108EF92239D95F200C299FE /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108EF91239D95F200C299FE /* InventoryViewController.swift */; };
+		4108EF94239D970D00C299FE /* backpack.png in Resources */ = {isa = PBXBuildFile; fileRef = 4108EF93239D970D00C299FE /* backpack.png */; };
+		4108EF96239DB30200C299FE /* Sword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108EF95239DB30200C299FE /* Sword.swift */; };
 		412DD87D2375DDF5008A1736 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87C2375DDF5008A1736 /* ShopViewController.swift */; };
 		412DD87F2375E5A7008A1736 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD87E2375E5A7008A1736 /* Item.swift */; };
 		412DD8832375E5E6008A1736 /* Armor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412DD8822375E5E6008A1736 /* Armor.swift */; };
@@ -72,8 +75,6 @@
 		7117BB97239C88EC005BEC6B /* vendor.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB93239C88EC005BEC6B /* vendor.png */; };
 		7117BB98239C88EC005BEC6B /* tavern.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB94239C88EC005BEC6B /* tavern.png */; };
 		7117BB99239C88EC005BEC6B /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = 7117BB95239C88EC005BEC6B /* battle.png */; };
-		7117BBA3239DA9F2005BEC6B /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7117BBA2239DA9F2005BEC6B /* AlertView.xib */; };
-		7117BBA5239DACF1005BEC6B /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7117BBA4239DACF1005BEC6B /* AlertView.swift */; };
 		7198FDEB2375CFBA007F7A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */; };
 		7198FDED2375CFBA007F7A3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */; };
 		7198FDEF2375CFBA007F7A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7198FDEE2375CFBA007F7A3C /* ViewController.swift */; };
@@ -210,6 +211,9 @@
 		14A88458239C86EA00169433 /* AttackLowest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackLowest.swift; sourceTree = "<group>"; };
 		14A8845C239C8E1400169433 /* HealAlly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealAlly.swift; sourceTree = "<group>"; };
 		14A8845E239C91FA00169433 /* AttackAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttackAll.swift; sourceTree = "<group>"; };
+		4108EF91239D95F200C299FE /* InventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
+		4108EF93239D970D00C299FE /* backpack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backpack.png; sourceTree = "<group>"; };
+		4108EF95239DB30200C299FE /* Sword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sword.swift; sourceTree = "<group>"; };
 		412DD87C2375DDF5008A1736 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		412DD87E2375E5A7008A1736 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		412DD8822375E5E6008A1736 /* Armor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Armor.swift; sourceTree = "<group>"; };
@@ -237,8 +241,6 @@
 		7117BB93239C88EC005BEC6B /* vendor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vendor.png; sourceTree = "<group>"; };
 		7117BB94239C88EC005BEC6B /* tavern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tavern.png; sourceTree = "<group>"; };
 		7117BB95239C88EC005BEC6B /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
-		7117BBA2239DA9F2005BEC6B /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
-		7117BBA4239DACF1005BEC6B /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		7198FDE72375CFBA007F7A3C /* FinalProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7198FDEA2375CFBA007F7A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7198FDEC2375CFBA007F7A3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -408,6 +410,7 @@
 				4144FD00239D850D003339C1 /* Zulfiqar.swift */,
 				4144FD02239D851D003339C1 /* Caliburn.swift */,
 				4144FD04239D861E003339C1 /* Muramasa.swift */,
+				4108EF95239DB30200C299FE /* Sword.swift */,
 			);
 			path = Weapons;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				7198FDEE2375CFBA007F7A3C /* ViewController.swift */,
 				412DD87C2375DDF5008A1736 /* ShopViewController.swift */,
 				753C7A86239C879400E782FF /* CharViewController.swift */,
+				4108EF91239D95F200C299FE /* InventoryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -589,6 +593,7 @@
 		7198FE572375DF31007F7A3C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4108EF93239D970D00C299FE /* backpack.png */,
 				75165B48239D89320039B966 /* Loading.png */,
 				7117BB91239C88D3005BEC6B /* MapIcons */,
 				753C7A88239C8DB500E782FF /* update.png */,
@@ -809,6 +814,7 @@
 				14762BFA239C6B1400A1254F /* 7Front.png in Resources */,
 				14762C00239C6B1400A1254F /* 8Back.png in Resources */,
 				14762C04239C6B1400A1254F /* 6Back.png in Resources */,
+				4108EF94239D970D00C299FE /* backpack.png in Resources */,
 				7198FDF22375CFBA007F7A3C /* Main.storyboard in Resources */,
 				1443F074239C383B008CB82A /* dungeon_floor.jpg in Resources */,
 			);
@@ -859,6 +865,7 @@
 				14141E5C2375F4F7009897CF /* Enemy.swift in Sources */,
 				4144FCEF239D7840003339C1 /* Durandal.swift in Sources */,
 				1438E8D3239D883500238BC6 /* Weapon.swift in Sources */,
+				4108EF92239D95F200C299FE /* InventoryViewController.swift in Sources */,
 				4144FCE5239C9DD5003339C1 /* UserInfo.swift in Sources */,
 				4144FCED239D75B2003339C1 /* Dou.swift in Sources */,
 				753C7A87239C879400E782FF /* CharViewController.swift in Sources */,
@@ -872,6 +879,7 @@
 				4144FCFD239D84C7003339C1 /* Secace.swift in Sources */,
 				4144FCF3239D82FC003339C1 /* Health.swift in Sources */,
 				14A88459239C86EA00169433 /* AttackLowest.swift in Sources */,
+				4108EF96239DB30200C299FE /* Sword.swift in Sources */,
 				4144FCF1239D7861003339C1 /* Karuta.swift in Sources */,
 				4144FD03239D851D003339C1 /* Caliburn.swift in Sources */,
 				143C5601239C9B56005BE4D4 /* AttackSteal.swift in Sources */,

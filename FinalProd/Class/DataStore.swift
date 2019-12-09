@@ -13,18 +13,17 @@ class DataStore {
         let heroData : Hero = Hero()
         switch Which{
         case 0: //Dan
+            heroData.id = 0
             heroData.Attack = 8
             heroData.MaxHealth = 35
             heroData.Defense = 3
             heroData.Name = "Dan"
             heroData.DisplayPic = "1Back.png"
             heroData.ViewPic = "1Front.png"
-
             heroData.Abilities = [Attack()]
-
-
             break
         case 1: //Bre
+            heroData.id = 1
             heroData.Attack = 5
             heroData.MaxHealth = 25
             heroData.Defense = 2
@@ -34,6 +33,7 @@ class DataStore {
             heroData.Abilities = [AttackAll()]
             break
         case 2: //
+            heroData.id = 2
             heroData.Attack = 6
             heroData.MaxHealth = 50
             heroData.Defense = 4
@@ -43,6 +43,7 @@ class DataStore {
             heroData.Abilities = [Attack()]
             break
         case 3: //
+            heroData.id = 3
             heroData.Attack = 7
             heroData.MaxHealth = 30
             heroData.Defense = 2
@@ -52,6 +53,7 @@ class DataStore {
             heroData.Abilities = [AttackSteal()]
             break
         case 4: //
+            heroData.id = 4
             heroData.Attack = 3
             heroData.MaxHealth = 60
             heroData.Defense = 4
@@ -61,6 +63,7 @@ class DataStore {
             heroData.Abilities = [Bolster()]
             break
         case 5: //
+            heroData.id = 5
             heroData.Attack = 5
             heroData.MaxHealth = 30
             heroData.Defense = 2
@@ -70,6 +73,7 @@ class DataStore {
             heroData.Abilities = [HealAlly()]
             break
         case 6: //
+            heroData.id = 6
             heroData.Attack = 12
             heroData.MaxHealth = 24
             heroData.Defense = 2
@@ -79,6 +83,7 @@ class DataStore {
             heroData.Abilities = [AttackAll(),AttackLowest()]
             break
         case 7: //
+            heroData.id = 7
             heroData.Attack = 12
             heroData.MaxHealth = 24
             heroData.Defense = 2
@@ -97,7 +102,7 @@ class DataStore {
             heroData.Abilities = [AttackSteal()]
         }
         
-        return heroData;
+        return heroData
     }
     
     static func getEnemy(Which : Int) -> Enemy {
@@ -150,6 +155,7 @@ class DataStore {
             enemyData.Attack = 10
             enemyData.Defense = 5
             enemyData.Abilities = [AttackLowest()]
+            break
         case 6: // Skele
             enemyData.Name = "Flying Boner"
             enemyData.DisplayPic = "Skele.png"
@@ -157,6 +163,7 @@ class DataStore {
             enemyData.Attack = 10
             enemyData.Defense = 0
             enemyData.Abilities = [AttackAll(),HealAlly()]
+            break
         case 7: // Vamp
             enemyData.Name = "Vampire"
             enemyData.DisplayPic = "Vamp.png"
@@ -164,6 +171,7 @@ class DataStore {
             enemyData.Attack = 10
             enemyData.Defense = 0
             enemyData.Abilities = [AttackSteal()]
+            break
         default: //Code Broke
             enemyData.Name = "Glitch Boy"
             enemyData.DisplayPic = "Front1"
@@ -173,5 +181,56 @@ class DataStore {
             enemyData.Abilities = [AttackAll()]
         }
         return Enemy(Data: enemyData)
+    }
+    
+    static func getitem(Which : Int) -> Item {
+        let itemData : Item?
+        switch Which{
+        case 0:
+            itemData = Excalibur()
+            break
+        case 1:
+            itemData = Durandal()
+            break
+        case 2:
+            itemData = Kusanagi()
+            break
+        case 3:
+            itemData = Asi()
+            break
+        case 4:
+            itemData = Chrysaor()
+            break
+        case 5:
+            itemData = Harpe()
+            break
+        case 6:
+            itemData = Secace()
+            break
+        case 7:
+            itemData = Usumidori()
+            break
+        case 8:
+            itemData = Zulfiqar()
+            break
+        case 9:
+            itemData = Caliburn()
+            break
+        case 10:
+            itemData = Muramasa()
+            break
+        case 11:
+            itemData = Dou()
+            break
+        case 12:
+            itemData = Karuta()
+            break
+        case 13:
+            itemData = Health()
+            break
+        default:
+            itemData = Sword()
+        }
+        return itemData!
     }
 }

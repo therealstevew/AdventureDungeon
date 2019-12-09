@@ -132,7 +132,6 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
    
     func generateAnnotation(){
         for mapicons in mapIcons{
-            print (mapicons.long)
             let annotation = MKPointAnnotation()
                 annotation.coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(mapicons.lat), longitude: CLLocationDegrees(mapicons.long))
             switch mapicons.type {
@@ -152,6 +151,10 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
                 mapView.addAnnotation(annotation)
         }
     
+    }
+    @IBAction func unwindToThisViewController(segue: UIStoryboardSegue)
+    {
+        
     }
 }
 

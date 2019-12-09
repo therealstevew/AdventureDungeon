@@ -9,6 +9,7 @@
 import UIKit
 
 class Hero: Actor {
+    var id: Int = 0
     var Attack: Int = 0
     var Defense: Int = 0
     var MaxHealth: Int = 1
