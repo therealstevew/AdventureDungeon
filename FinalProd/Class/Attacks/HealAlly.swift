@@ -32,14 +32,14 @@ class HealAlly: Attack {
         var lowestVal : Int = 0
         if(User is Hero){
             lowestVal = Data.Heroes[0].CurHealth
-            for i in 1...Data.Heroes.count {
+            for i in 1..<Data.Heroes.count {
                 if Data.Heroes[i].CurHealth < lowestVal {
                     lowest = i
                     lowestVal = Data.Heroes[i].CurHealth
                 }
             }
         } else {
-            for i in 1...Data.Enemies.count {
+            for i in 1..<Data.Enemies.count {
                 if Data.Enemies[i].CurHealth < lowestVal {
                     lowest = i
                     lowestVal = Data.Enemies[i].CurHealth

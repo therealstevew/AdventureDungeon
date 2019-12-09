@@ -61,24 +61,20 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
-                 calloutAccessoryControlTapped control: UIControl) {
-        if control == view.rightCalloutAccessoryView {
-            print(view.annotation?.subtitle!!)
-            let pointBLocation = CLLocation(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
-            let distance = Double((mapView.userLocation.location?.distance(from: pointBLocation))!)
-            if (distance < 1000){
-<<<<<<< HEAD
-                annotationShowView(type: ((view.annotation?.subtitle)!)!)
-                mapView.removeAnnotation(view.annotation!)
-=======
-                annotationShowView(type: (((view.annotation?.subtitle)!)!), anon: view.annotation!)
-            
->>>>>>> e385ef191e61e5389a7c25ee88eb0b4980b20c0f
-            }else{
-                print("To far")
-            }
-        }
-    }
+                   calloutAccessoryControlTapped control: UIControl) {
+          if control == view.rightCalloutAccessoryView {
+              print(view.annotation?.subtitle!!)
+              let pointBLocation = CLLocation(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
+              let distance = Double((mapView.userLocation.location?.distance(from: pointBLocation))!)
+              if (distance < 1000){
+                  annotationShowView(type: (((view.annotation?.subtitle)!)!), anon: view.annotation!)
+              
+              }else{
+                  print("To far")
+              }
+          }
+      }
+    
     func annotationShowView(type : String, anon : MKAnnotation){
         mapView.removeAnnotation(anon)
         switch type {
