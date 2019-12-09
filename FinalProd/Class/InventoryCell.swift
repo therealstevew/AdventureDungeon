@@ -21,17 +21,19 @@ class InventoryCell: UITableViewCell {
         primaryLabel.textColor = UIColor.black
         
         secondaryLabel.textAlignment = NSTextAlignment.left
-        secondaryLabel.font = UIFont.systemFont(ofSize: 30)
+        secondaryLabel.font = UIFont.systemFont(ofSize: 20)
         secondaryLabel.backgroundColor = UIColor.clear
         secondaryLabel.textColor = UIColor.black
         
         thirdLabel.textAlignment = NSTextAlignment.left
-        thirdLabel.font = UIFont.systemFont(ofSize: 30)
+        thirdLabel.font = UIFont.systemFont(ofSize: 20)
         thirdLabel.backgroundColor = UIColor.clear
         thirdLabel.textColor = UIColor.black
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(primaryLabel)
+        contentView.addSubview(secondaryLabel)
+        contentView.addSubview(thirdLabel)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,14 +42,14 @@ class InventoryCell: UITableViewCell {
     
     override func layoutSubviews() {
         
-        let layout1 = CGRect(x: 100, y: 5, width: 460, height: 30)
-        primaryLabel.frame = layout1
+        var layout = CGRect(x: 10, y: 5, width: 300, height: 50)
+        primaryLabel.frame = layout
         
-        let layout2 = CGRect(x: 300, y: 5, width: 460, height: 30)
-        secondaryLabel.frame = layout2
+        layout = CGRect(x: 175, y: 20, width: 100, height: 20)
+        secondaryLabel.frame = layout
         
-        let layout3 = CGRect(x: 500, y: 10, width: 460, height: 30)
-        thirdLabel.frame = layout3
+        layout = CGRect(x: 275, y: 20, width: 100, height: 20)
+        thirdLabel.frame = layout
     }
     
     override func awakeFromNib() {

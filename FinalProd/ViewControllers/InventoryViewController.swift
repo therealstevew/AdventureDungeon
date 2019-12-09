@@ -16,7 +16,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     var items : Array<Item> = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mainDelegate.UserData.Items.count
+        return mainDelegate.UserData.Items!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -25,15 +25,18 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         let rowNum = indexPath.row
         tableInCell.primaryLabel.text = String(items[rowNum].Name)
         tableInCell.secondaryLabel.text = String(items[rowNum].Characteristic)
-        tableInCell.thirdLabel.text = String(items[rowNum].Characteristic)
+        tableInCell.thirdLabel.text = String(items[rowNum].ItemType)
         return tableInCell
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60;
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        items = mainDelegate.UserData.Items
+        items = mainDelegate.UserData.Items!
         
         
          

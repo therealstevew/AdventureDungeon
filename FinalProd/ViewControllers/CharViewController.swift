@@ -12,14 +12,25 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var mainDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    var partyHeroes : Array<Hero> = []
-    
     @IBOutlet var table : UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if mainDelegate.UserData.Heroes.count == 0{
-            mainDelegate.UserData.Heroes.append(DataStore.getHero(Which: 0))
+        if(mainDelegate.UserData.Party!.count > 3){
+            imgFour.image = UIImage(named: mainDelegate.UserData.Party![3].ViewPic)
+            lblFour.text = mainDelegate.UserData.Party![3].Name
+        }
+        if(mainDelegate.UserData.Party!.count > 2){
+            imgThree.image = UIImage(named: mainDelegate.UserData.Party![2].ViewPic)
+            lblThree.text = mainDelegate.UserData.Party![2].Name
+        }
+        if(mainDelegate.UserData.Party!.count > 1){
+            imgTwo.image = UIImage(named: mainDelegate.UserData.Party![1].ViewPic)
+            lblTwo.text = mainDelegate.UserData.Party![1].Name
+        }
+        if(mainDelegate.UserData.Party!.count > 0){
+            imgOne.image = UIImage(named: mainDelegate.UserData.Party![0].ViewPic)
+            lblOne.text = mainDelegate.UserData.Party![0].Name
         }
     }
     
@@ -36,7 +47,7 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBOutlet var buttonSubmit : UIButton!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        mainDelegate.UserData.Heroes.count
+        mainDelegate.UserData.Heroes!.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -46,8 +57,8 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableCharCell : CharCell = tableView.dequeueReusableCell(withIdentifier: "cell") as? CharCell ?? CharCell(style:UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
         let rowNum = indexPath.row
-        let name = mainDelegate.UserData.Heroes[rowNum].Name
-        let imgName = UIImage(named:mainDelegate.UserData.Heroes[rowNum].ViewPic)
+        let name = mainDelegate.UserData.Heroes![rowNum].Name
+        let imgName = UIImage(named:mainDelegate.UserData.Heroes![rowNum].ViewPic)
         
         tableCharCell.primaryLabel.text = name
         tableCharCell.myImageView.image = imgName
@@ -64,24 +75,20 @@ class CharViewController: UIViewController, UITableViewDataSource, UITableViewDe
         imgFour.image = imgThree.image
         imgThree.image = imgTwo.image
         imgTwo.image = imgOne.image
-        lblOne.text = mainDelegate.UserData.Heroes[indexPath.row].Name
-        let image: UIImage = UIImage(named: mainDelegate.UserData.Heroes[indexPath.row].ViewPic)!
-        imgOne.image = image
-        if partyHeroes.count == 4{
-            partyHeroes.removeFirst()
-            partyHeroes.append(DataStore.getHero(Which: mainDelegate.UserData.Heroes[indexPath.row].id))
+        lblOne.text = mainDelegate.UserData.Heroes![indexPath.row].Name
+        imgOne.image = UIImage(named: mainDelegate.UserData.Heroes![indexPath.row].ViewPic)!
+        if mainDelegate.UserData.Party!.count == 4 {
+            mainDelegate.UserData.Heroes!.append(mainDelegate.UserData.Party!.first!)
+            mainDelegate.UserData.Party!.removeFirst()
+            mainDelegate.UserData.Party!.append(mainDelegate.UserData.Heroes![indexPath.row])
         } else {
-            partyHeroes.append(DataStore.getHero(Which: mainDelegate.UserData.Heroes[indexPath.row].id))
+            mainDelegate.UserData.Party!.append(mainDelegate.UserData.Heroes![indexPath.row])
         }
+        mainDelegate.UserData.Heroes!.remove(at: indexPath.row)
+        mainDelegate.UserData.LocalSave()
+        tableView.reloadData()
     }
     
-    @IBAction func updateParty(sender: UIButton){
-        mainDelegate.UserData.Party.removeAll()
-        for i in 0...partyHeroes.count-1{
-            mainDelegate.UserData.Party.append(partyHeroes[i])
-            print(mainDelegate.UserData.Party[i].Name)
-        }
-    }
     @IBAction func inspect1(sender: UIButton){
         
     }
