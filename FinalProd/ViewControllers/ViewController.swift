@@ -118,6 +118,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         switch type {
         case "0":
             print("Dungeon")
+            runBattle()
         case "1":
             print("Tavern")
             generateHeroRewards()
@@ -130,6 +131,9 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         default:
             print("Uh oh Stinky")
         }
+    }
+    func runBattle(){
+        self.performSegue(withIdentifier: "battleScreen", sender: nil)
     }
     func generateHeroRewards(){
         var herosGot : Array<Hero> = [];

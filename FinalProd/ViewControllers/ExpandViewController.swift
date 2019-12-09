@@ -24,17 +24,17 @@ class ExpandViewController: UIViewController, UITableViewDataSource, UITableView
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        items = mainDelegate.UserData.Items
+        items = mainDelegate.UserData.Items!
         // Do any additional setup after loading the view.
-        lblName.text = mainDelegate.UserData.Party[0].Name
-        lblHealth.text = String(mainDelegate.UserData.Party[0].MaxHealth)
-        lblAttack.text = String(mainDelegate.UserData.Party[0].Attack)
-        lblDefense.text = String(mainDelegate.UserData.Party[0].Defense)
-        let image: UIImage = UIImage(named: mainDelegate.UserData.Heroes[0].ViewPic)!
+        lblName.text = mainDelegate.UserData.Party![0].Name
+        lblHealth.text = String(mainDelegate.UserData.Party![0].MaxHealth)
+        lblAttack.text = String(mainDelegate.UserData.Party![0].Attack)
+        lblDefense.text = String(mainDelegate.UserData.Party![0].Defense)
+        let image: UIImage = UIImage(named: mainDelegate.UserData.Heroes![0].ViewPic)!
         imgIcon.image = image
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mainDelegate.UserData.Items.count
+        return mainDelegate.UserData.Items!.count
     }
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
