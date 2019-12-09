@@ -17,6 +17,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
     let mainDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
+        
          let locationManager = CLLocationManager()
            locationManager.delegate = self
            locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -98,7 +99,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         for n in 0...rand{
             var heroSelect = Int.random(in: 0 ..< 7)
             herosGot.append(DataStore.getHero(Which: heroSelect))
-            mainDelegate.UserData.Heroes.append(DataStore.getHero(Which: heroSelect))
+            mainDelegate.UserData.Heroes!.append(DataStore.getHero(Which: heroSelect))
             let alert = UIAlertController(title: "New Heros!", message: "You Just got " + herosGot[0].Name + " And possibly some other friends", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Nice Dude", style: .default, handler: nil))
             self.present(alert, animated: true)
@@ -110,7 +111,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         for n in 0...rand{
             var itemSelect = Int.random(in: 0 ..< 13)
             itemsGot.append(DataStore.getitem(Which: itemSelect))
-            mainDelegate.UserData.Items.append(DataStore.getitem(Which: itemSelect))
+            mainDelegate.UserData.Items!.append(DataStore.getitem(Which: itemSelect))
             let alert = UIAlertController(title: "New Items!", message: "You Just got " + itemsGot[0].Name + " And possibly some other items", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Nice Dude", style: .default, handler: nil))
             self.present(alert, animated: true)
