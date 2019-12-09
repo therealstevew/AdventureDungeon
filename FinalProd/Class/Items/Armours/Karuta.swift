@@ -10,7 +10,7 @@ import UIKit
 
 class Karuta: Armor {
 
-    let stat = 15
+    let stat = 1
     
     override init(){
         super.init()

@@ -10,7 +10,7 @@ import UIKit
 
 class Excalibur: Weapon {
 
-    let stat = 30
+    let stat = 10
     
     override init(){
         super.init()

@@ -10,7 +10,7 @@ import UIKit
 
 class Durandal: Weapon {
 
-    let stat = 15
+    let stat = 9
     
     override init(){
         super.init()

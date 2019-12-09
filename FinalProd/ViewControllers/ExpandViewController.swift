@@ -32,15 +32,10 @@ class ExpandViewController: UIViewController, UITableViewDataSource, UITableView
         lblHealth.text = String(mainDelegate.UserData.Party![0].MaxHealth)
         lblAttack.text = String(mainDelegate.UserData.Party![0].Attack)
         lblDefense.text = String(mainDelegate.UserData.Party![0].Defense)
-<<<<<<< HEAD
         lblWeapon.text = String(mainDelegate.UserData.Party![0].Weapon?.Name ?? "None Eqipped")
         lblArmour.text = String(mainDelegate.UserData.Party![0].Armor?.Name ?? "None Eqipped")
         imgIcon.image = UIImage(named: mainDelegate.UserData.Party![0].ViewPic)
-        
-=======
-        let image: UIImage = UIImage(named: mainDelegate.UserData.Heroes![0].ViewPic)!
-        imgIcon.image = image
->>>>>>> 2ff64592e96cdb5be5153b36614d2842598d026b
+
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mainDelegate.UserData.Items!.count
@@ -94,6 +89,11 @@ class ExpandViewController: UIViewController, UITableViewDataSource, UITableView
             mainDelegate.UserData.Party![choice].Armor = mainDelegate.UserData.Items![indexPath.row] as! Armor
             mainDelegate.UserData.Party![choice].Armor?.onEquip(User: mainDelegate.UserData.Party![choice])
             lblDefense.text = String(mainDelegate.UserData.Party![choice].Defense)
+        }
+        if mainDelegate.UserData.Items![indexPath.row].ItemType == "Consumable" {
+            let alert = UIAlertController(title: "Used Consumable", message: "Potion has restored 5 health", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
         }
     }
     

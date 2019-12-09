@@ -10,7 +10,7 @@ import UIKit
 
 class Kusanagi: Weapon {
 
-    let stat = 30
+    let stat = 8
     
     override init(){
         super.init()
