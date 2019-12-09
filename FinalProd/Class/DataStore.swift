@@ -29,7 +29,7 @@ class DataStore {
             heroData.Attack = 5
             heroData.MaxHealth = 25
             heroData.CurHealth = 25
-            heroData.Defense = 2
+            heroData.Defense = 4
             heroData.Name = "Bre"
             heroData.DisplayPic = "2Back.png"
             heroData.ViewPic = "2Front.png"
