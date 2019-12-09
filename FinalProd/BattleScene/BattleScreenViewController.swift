@@ -30,9 +30,10 @@ class BattleScreenViewController: UIViewController {
                 for number in 0..<numEnemies {
                     battleData.Enemies.append(DataStore.getEnemy(Which: Int.random(in: 0...7)))
                 }
-                for numHeroes in 0..<AppDelegateRef.UserData.Party!.count {
-                    battleData.Heroes.append(DataStore.getHero(Which: AppDelegateRef.UserData.Party![numHeroes].id))
-                }
+                let tempParty = AppDelegateRef.UserData.Party!
+               
+                battleData.Heroes = tempParty
+                
                 AppDelegateRef.currentBattlefield = battleData
 
                 scene.scaleMode = .aspectFit
