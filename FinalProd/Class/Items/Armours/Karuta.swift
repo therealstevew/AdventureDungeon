@@ -11,7 +11,7 @@ import UIKit
 class Karuta: Armor {
 
     let stat = 1
-    //ctor
+    //set initial values
     override init(){
         super.init()
         self.Name = "Karuta"

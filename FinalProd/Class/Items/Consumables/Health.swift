@@ -12,7 +12,7 @@ import UIKit
 class Health: Consumables {
     
     let stat = 10
-    //ctor
+    //set initial values
     override init(){
         super.init()
         self.Name = "Health Potion"

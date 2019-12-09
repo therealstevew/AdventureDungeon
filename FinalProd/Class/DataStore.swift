@@ -8,6 +8,7 @@
 
 import UIKit
 
+// factory class which returns any needed item, enemy, or hero
 class DataStore {
     static func getHero(Which: Int) -> Hero {
         let heroData : Hero = Hero()

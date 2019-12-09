@@ -32,6 +32,7 @@ class HealAlly: Attack {
     override func Target(User: Actor, Data:Battlefield) -> Int {
         var lowest : Int = 0
         var lowestVal : Int = 0
+        //determine lowest health ally
         if(User is Hero){
             lowestVal = Data.Heroes[0].CurHealth
             for i in 1..<Data.Heroes.count {
@@ -52,6 +53,7 @@ class HealAlly: Attack {
     }
     //Define Effects on use
     override func OnUse(User: Actor, Data: Battlefield) {
+        //heal them but prevent overheal
         var myTarget : Actor
         if(User is Hero){
             myTarget = Data.Heroes[Target(User:User, Data:Data)]

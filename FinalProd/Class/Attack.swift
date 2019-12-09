@@ -8,6 +8,7 @@
 
 import Foundation
 
+//All of the functions are overwritten if needed
 class Attack : NSObject {
     
     //Returns a 1-10 score of whether or not this move should be used

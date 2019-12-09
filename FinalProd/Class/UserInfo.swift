@@ -10,11 +10,15 @@ import UIKit
 
 class UserInfo: NSObject {
     
+    // Holds all the data about the user
+    
     var Heroes : [Hero]?
     var Items : [Item]?
     var Party : [Hero]?
     var UserName: String = ""
     var Password: String = ""
+    
+    // Saves the user's progress to the sql to be viewed on TV
     
     func Saveuser(Name : String, Password : String, Hero1 : Int, Hero2 : Int, Hero3 : Int, Hero4 : Int, Weapon1 : Int, Weapon2 : Int, Weapon3 : Int, Weapon4 : Int, Armour1 : Int, Armour2 : Int, Armour3 : Int, Armour4 : Int){
         print("Saving the user data probally.")
@@ -36,6 +40,10 @@ class UserInfo: NSObject {
         })
         Task.resume()
     }
+    
+    // Initializes the user
+    
+    // If user data saved locally, loads that, else makes a new user
     
     override init() {
         print("loading")
@@ -65,8 +73,13 @@ class UserInfo: NSObject {
         }
     }
     
+    // Saves the user to both the online cloud and
+    
     func LocalSave(){
         print("Saving")
+        
+        // Saves data as ints because can't save custom objects easily
+        
         let defaults = UserDefaults.standard
         var HeroData : [Int] = []
         var ItemData : [Int] = []
@@ -80,13 +93,20 @@ class UserInfo: NSObject {
         for hero in Party! {
             PartyData.append(hero.id)
         }
+        
+        
         print(HeroData)
         print(ItemData)
         print(PartyData)
+        
+        // store stuff locally
+        
         defaults.set(HeroData, forKey: "Heroes")
         defaults.set(ItemData, forKey: "Items")
         defaults.set(PartyData, forKey: "Party")
         defaults.set(true, forKey: "Exists")
+        
+        // convert party into ints for online database, -1 denotes empty without sending null cause that's a pain in swift
         
         var dude1 : Int = -1
         var dude2 : Int = -1

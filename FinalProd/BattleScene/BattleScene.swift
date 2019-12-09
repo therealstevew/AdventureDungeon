@@ -151,13 +151,16 @@
            
                 print("Starting Turn")
                 var Attacker : Actor?
-                                
+                
+                
+                // define animation
                 let moveUp = SKAction.move(by: CGVector(dx: 0, dy: 200), duration: TimeInterval(0.3))
                 let moveDown = SKAction.move(by: CGVector(dx: 0, dy: -200), duration: TimeInterval(0.3))
                 let nextTurn = SKAction.run {
                     self.ProceedTurn()
                 }
                 
+                //determine who uses it
                 if(HeroTurn != true){
                     if(Enemies!.count > 1){
                         var Rando = Int.random(in: 0..<Enemies!.count)
@@ -184,9 +187,9 @@
                     HeroDisplay[prevHero].run(SKAction.sequence([moveUp, moveDown, nextTurn]))
                     Attacker = Heroes![prevHero]
                 }
-                
+                // give opposite team the turn
                 HeroTurn = !HeroTurn
-            
+                //use the actual move
                 print("Determine move to use.")
                 var moveToUse = 0;
                 var priority = 0;
@@ -202,7 +205,7 @@
 
                 Attacker!.Abilities[moveToUse].OnUse(User: Attacker!, Data: dataBattlefield!)
                 print("Used move.")
-            
+                // see if anyone died / if game is over
                 var OneDied = false
                 var heroesAlive = false
                 var enemiesAlive = false
@@ -211,6 +214,7 @@
                 print(Heroes!.count)
                 var dude = 0
         
+                //remove from team if they dead
                 while dude < Heroes!.count {
                     print("Hero being checked is number \(dude)")
                     print("His health is \(Heroes![dude].CurHealth)")
@@ -248,6 +252,8 @@
                     }
                     dude += 1
                 }
+                
+                //end battle if one team is dead
                 if(enemiesAlive != true){
                     finished = true
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue: "WinScreen"), object: nil)

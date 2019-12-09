@@ -12,7 +12,7 @@ import UIKit
 class Dou: Armor {
 
     let stat = 2
-    //ctor
+    //set initial values
     override init(){
         super.init()
         self.Name = "Dou"

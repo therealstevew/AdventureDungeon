@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//like actor but extra stuff like equip and id for database storage
 class Hero: Actor {
     var id: Int = 0
     var Attack: Int = 0

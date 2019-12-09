@@ -8,6 +8,7 @@
 
 import UIKit
 //Define Bolster Ability
+// Heals everyone same as attackall but for allies
 class Bolster: Attack {
     //Should be used
     override func ShouldUse(User: Actor, Data: Battlefield) -> Int {

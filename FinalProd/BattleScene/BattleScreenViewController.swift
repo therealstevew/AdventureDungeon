@@ -49,6 +49,7 @@ class BattleScreenViewController: UIViewController {
     
     // functions used to exit game
     
+    //give random items when win
     @objc func WinScreen() {
         var itemsGot : Array<Item> = []
         var rand = Int.random(in: 1 ..< 3)

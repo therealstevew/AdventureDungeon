@@ -8,6 +8,7 @@
 
 import UIKit
 
+//table view cell used by inventory view
 class InventoryCell: UITableViewCell {
 
     let primaryLabel = UILabel()
