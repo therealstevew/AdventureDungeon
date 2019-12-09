@@ -13,10 +13,12 @@ class UserInfo: NSObject {
     var Heroes : [Hero]?
     var Items : [Item]?
     var Party : [Hero]?
+    var UserName: String
+    var Password: String
     
     func Saveuser(Name : String, Password : String, Hero1 : Int, Hero2 : Int, Hero3 : Int, Hero4 : Int, Weapon1 : Int, Weapon2 : Int, Weapon3 : Int, Weapon4 : Int, Armour1 : Int, Armour2 : Int, Armour3 : Int, Armour4 : Int){
         print("Saving the user data probally.")
-        let Address : URL = URL(string: "http://mckieand.dev.fast.sheridanc.on.ca/finalprod/postUser.php?Name=" + Name + "&Password=" + Password + "&Hero1=" + String(Hero1) + "&Hero2=" + String(Hero2) + "&Hero3=" + String(Hero3) + "&Hero4=" + String(Hero4) + "&Weapon1=" + String(Weapon1) + "&Weapon2=" + String(Weapon2) + "&Weapon3=" + String(Weapon3) + "&Weapon4=" + String(Weapon4) + "&Armour1=" + String(Armour1) + "&Armour2=" + String(Armour2) + "&Armour3=" + String(Armour3) + "&Armour4=" + String(Armour4))!
+        let Address : URL = URL(string: "http://mckieand.dev.fast.sheridanc.on.ca/finalprod/postUserNew.php?Name=" + Name + "&Password=" + Password + "&Hero1=" + String(Hero1) + "&Hero2=" + String(Hero2) + "&Hero3=" + String(Hero3) + "&Hero4=" + String(Hero4) + "&Weapon1=" + String(Weapon1) + "&Weapon2=" + String(Weapon2) + "&Weapon3=" + String(Weapon3) + "&Weapon4=" + String(Weapon4) + "&Armour1=" + String(Armour1) + "&Armour2=" + String(Armour2) + "&Armour3=" + String(Armour3) + "&Armour4=" + String(Armour4))!
         let Request : URLRequest = URLRequest(url: Address)
         let Configuration : URLSessionConfiguration = URLSessionConfiguration.default
         let Session : URLSession = URLSession(configuration: Configuration)
@@ -41,11 +43,11 @@ class UserInfo: NSObject {
         Heroes = []
         Items = []
         Party = []
-        if(defaults.bool(forKey: "Exists") != nil) {
+        if(defaults.object(forKey: "Exists") != nil) {
             print("there is data")
-            var HeroData : [Int] = defaults.array(forKey: "Heroes") as! [Int]
-            var ItemData : [Int] = defaults.array(forKey: "Items") as! [Int]
-            var PartyData : [Int] =  defaults.array(forKey: "Party") as! [Int]
+            let HeroData : [Int] = defaults.array(forKey: "Heroes") as! [Int]
+            let ItemData : [Int] = defaults.array(forKey: "Items") as! [Int]
+            let PartyData : [Int] =  defaults.array(forKey: "Party") as! [Int]
             for datum in HeroData {
                 Heroes!.append(DataStore.getHero(Which: datum))
             }
@@ -85,5 +87,6 @@ class UserInfo: NSObject {
         defaults.set(ItemData, forKey: "Items")
         defaults.set(PartyData, forKey: "Party")
         defaults.set(true, forKey: "Exists")
+        Saveuser(Name: UserName, Password: Password, Hero1: Party, Hero2: Party[1].id, Hero3: Party[2].id, Hero4: Party[3].id, Weapon1: 0, Weapon2: 0, Weapon3: 0, Weapon4: 0, Armour1: 0, Armour2: 0, Armour3: 0, Armour4: 0)
     }
 }
