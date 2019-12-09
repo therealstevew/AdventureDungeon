@@ -41,7 +41,9 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
            DispatchQueue.main.async {
                self.locationManager.startUpdatingLocation()
                
+               
            }
+        
         
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -51,9 +53,10 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             if(mapIcons.count <= 7){
                 mapIcons.append(MapIcon.init(coordLat: Float(locValue.latitude), coordLong: Float(locValue.longitude)))
             }
+            if (mapIcons.count == 7){
+                generateAnnotation()
+            }
         }
-        generateAnnotation()
-        
         
     }
     
@@ -64,14 +67,20 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             let pointBLocation = CLLocation(latitude: (view.annotation?.coordinate.latitude)!, longitude: (view.annotation?.coordinate.longitude)!)
             let distance = Double((mapView.userLocation.location?.distance(from: pointBLocation))!)
             if (distance < 1000){
+<<<<<<< HEAD
                 annotationShowView(type: ((view.annotation?.subtitle)!)!)
                 mapView.removeAnnotation(view.annotation!)
+=======
+                annotationShowView(type: (((view.annotation?.subtitle)!)!), anon: view.annotation!)
+            
+>>>>>>> e385ef191e61e5389a7c25ee88eb0b4980b20c0f
             }else{
                 print("To far")
             }
         }
     }
-    func annotationShowView(type : String){
+    func annotationShowView(type : String, anon : MKAnnotation){
+        mapView.removeAnnotation(anon)
         switch type {
         case "0":
             print("Dungeon")
@@ -80,6 +89,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
             generateHeroRewards()
         case "2":
             print("Vendor")
+            generateItemRewards()
         case "3":
             print("Healer")
         default:
@@ -87,14 +97,28 @@ class ViewController: UIViewController,CLLocationManagerDelegate, MKMapViewDeleg
         }
     }
     func generateHeroRewards(){
+        var herosGot : Array<Hero> = [];
         var rand = Int.random(in: 1 ..< 3)
         for n in 0...rand{
             var heroSelect = Int.random(in: 0 ..< 7)
+            herosGot.append(DataStore.getHero(Which: heroSelect))
             mainDelegate.UserData.Heroes.append(DataStore.getHero(Which: heroSelect))
+            let alert = UIAlertController(title: "New Heros!", message: "You Just got " + herosGot[0].Name + " And possibly some other friends", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Nice Dude", style: .default, handler: nil))
+            self.present(alert, animated: true)
         }
-
-
-        
+    }
+    func generateItemRewards(){
+        var itemsGot : Array<Item> = []
+        var rand = Int.random(in: 1 ..< 3)
+        for n in 0...rand{
+            var itemSelect = Int.random(in: 0 ..< 13)
+            itemsGot.append(DataStore.getitem(Which: itemSelect))
+            mainDelegate.UserData.Items.append(DataStore.getitem(Which: itemSelect))
+            let alert = UIAlertController(title: "New Items!", message: "You Just got " + itemsGot[0].Name + " And possibly some other items", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Nice Dude", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?
