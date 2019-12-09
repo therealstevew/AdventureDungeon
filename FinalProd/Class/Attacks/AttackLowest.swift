@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//Attack Lowest Ability
 class AttackLowest: Attack {
     
     //Returns a 1-10 score of whether or not this move should be used

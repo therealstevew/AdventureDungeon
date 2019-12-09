@@ -12,6 +12,7 @@ import SpriteKit
 import GameplayKit
 
 class BattleScreenViewController: UIViewController {
+    let AppDelegateRef : AppDelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,6 @@ class BattleScreenViewController: UIViewController {
             
             if let scene = SKScene(fileNamed: "BattleScene") {
             
-                let AppDelegateRef : AppDelegate = UIApplication.shared.delegate as! AppDelegate
                 let battleData = Battlefield()
                 
                 
@@ -37,7 +37,7 @@ class BattleScreenViewController: UIViewController {
                 }
                 let tempParty = AppDelegateRef.UserData.Party!
                
-                battleData.Heroes = tempParty
+                    battleData.Heroes = tempParty
                 
                 AppDelegateRef.currentBattlefield = battleData
 
@@ -50,6 +50,13 @@ class BattleScreenViewController: UIViewController {
     // functions used to exit game
     
     @objc func WinScreen() {
+        var itemsGot : Array<Item> = []
+        var rand = Int.random(in: 1 ..< 3)
+        for n in 0...rand{
+            var itemSelect = Int.random(in: 0 ..< 13)
+            itemsGot.append(DataStore.getitem(Which: itemSelect))
+            AppDelegateRef.UserData.Items!.append(DataStore.getitem(Which: itemSelect))
+        }
         self.performSegue(withIdentifier: "WinScreen", sender: nil)
     }
     

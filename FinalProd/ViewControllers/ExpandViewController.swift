@@ -36,8 +36,7 @@ class ExpandViewController: UIViewController, UITableViewDataSource, UITableView
         lblArmour.text = String(mainDelegate.UserData.Party![0].Armor?.Name ?? "None Eqipped")
         imgIcon.image = UIImage(named: mainDelegate.UserData.Party![0].ViewPic)
 
-        let image: UIImage = UIImage(named: mainDelegate.UserData.Heroes![0].ViewPic)!
-        imgIcon.image = image
+      
 
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

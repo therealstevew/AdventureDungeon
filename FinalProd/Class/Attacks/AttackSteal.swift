@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+//Define LifeSteal Ability
 class AttackSteal: AttackLowest {
 
+    //define use effects
     override func OnUse(User: Actor, Data: Battlefield) {
         super.OnUse(User: User, Data: Data)
         var lowest : Actor = Hero()

@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+//Parent class for consumables
 class Consumables: Item {
+    //define on use
     func onUse(User : Hero) -> Void {} 
 }

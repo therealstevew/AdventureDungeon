@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+//Heal Ally Ability
 class HealAlly: Attack {
-
+    
+    //find if this should be used
     override func ShouldUse(User: Actor, Data : Battlefield) -> Int {
         if(User is Enemy){
             for Guy in Data.Enemies {
@@ -27,6 +28,7 @@ class HealAlly: Attack {
         return 3
     }
     
+    //Target specific Actor
     override func Target(User: Actor, Data:Battlefield) -> Int {
         var lowest : Int = 0
         var lowestVal : Int = 0
@@ -48,7 +50,7 @@ class HealAlly: Attack {
         }
         return lowest
     }
-    
+    //Define Effects on use
     override func OnUse(User: Actor, Data: Battlefield) {
         var myTarget : Actor
         if(User is Hero){

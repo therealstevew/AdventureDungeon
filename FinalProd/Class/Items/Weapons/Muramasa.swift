@@ -7,19 +7,19 @@
 //
 
 import UIKit
-
+//Define Muramasa Weapon class
 class Muramasa: Weapon {
 
     let stat = 100
     var maxHealth = 0
-    
+    //ctor
     override init(){
         super.init()
         self.Name = "Muramasa"
         self.Characteristic = stat
         self.ItemType = "Weapon"
     }
-    
+    //Define Effects
     override func onEquip(User: Hero) {
         let hero = User
         
