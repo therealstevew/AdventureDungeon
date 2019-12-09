@@ -13,8 +13,8 @@ class UserInfo: NSObject {
     var Heroes : [Hero]?
     var Items : [Item]?
     var Party : [Hero]?
-    var UserName: String
-    var Password: String
+    var UserName: String = ""
+    var Password: String = ""
     
     func Saveuser(Name : String, Password : String, Hero1 : Int, Hero2 : Int, Hero3 : Int, Hero4 : Int, Weapon1 : Int, Weapon2 : Int, Weapon3 : Int, Weapon4 : Int, Armour1 : Int, Armour2 : Int, Armour3 : Int, Armour4 : Int){
         print("Saving the user data probally.")
@@ -87,10 +87,25 @@ class UserInfo: NSObject {
         defaults.set(ItemData, forKey: "Items")
         defaults.set(PartyData, forKey: "Party")
         defaults.set(true, forKey: "Exists")
-<<<<<<< HEAD
-        Saveuser(Name: UserName, Password: Password, Hero1: Party, Hero2: Party[1].id, Hero3: Party[2].id, Hero4: Party[3].id, Weapon1: 0, Weapon2: 0, Weapon3: 0, Weapon4: 0, Armour1: 0, Armour2: 0, Armour3: 0, Armour4: 0)
-=======
         
->>>>>>> 0d1731614178026161fc8d4398612a408aca7483
+        var dude1 : Int = -1
+        var dude2 : Int = -1
+        var dude3 : Int = -1
+        var dude4 : Int = -1
+        
+        if(Party!.count > 3){
+            dude4 = Party![3].id
+        }
+        if(Party!.count > 2){
+            dude3 = Party![2].id
+        }
+        if(Party!.count > 1){
+            dude2 = Party![1].id
+        }
+        if(Party!.count > 0){
+            dude1 = Party![0].id
+        }
+        
+        Saveuser(Name: UserName, Password: Password, Hero1: dude1, Hero2: dude2, Hero3: dude3, Hero4: dude4, Weapon1: 0, Weapon2: 0, Weapon3: 0, Weapon4: 0, Armour1: 0, Armour2: 0, Armour3: 0, Armour4: 0)
     }
 }
