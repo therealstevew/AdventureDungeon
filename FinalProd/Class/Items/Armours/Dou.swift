@@ -18,6 +18,7 @@ class Dou: Armor {
         self.Name = "Dou"
         self.Characteristic = stat
         self.ItemType = "Armour"
+        self.rare = 7
     }
     //Define effects
     override func onEquip(User: Hero) {

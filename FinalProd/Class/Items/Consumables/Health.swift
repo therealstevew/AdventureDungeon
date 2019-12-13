@@ -18,6 +18,7 @@ class Health: Consumables {
         self.Name = "Health Potion"
         self.Characteristic = stat
         self.ItemType = "Consumable"
+        self.rare = 5
     }
     //Define what happens on use
     override func onUse(User: Hero) {

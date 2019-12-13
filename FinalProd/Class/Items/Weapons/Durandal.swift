@@ -17,6 +17,7 @@ class Durandal: Weapon {
         self.Name = "Durandal"
         self.Characteristic = stat
         self.ItemType = "Weapon"
+        self.rare = 4
     }
     //Define Effects
     override func onEquip(User: Hero) {
