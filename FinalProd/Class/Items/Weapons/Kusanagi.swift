@@ -17,6 +17,7 @@ class Kusanagi: Weapon {
         self.Name = "Kusanagi"
         self.Characteristic = stat
         self.ItemType = "Weapon"
+        self.rare = 5
     }
     //Define Effects
     override func onEquip(User: Hero) {

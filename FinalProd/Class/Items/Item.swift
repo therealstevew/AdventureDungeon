@@ -18,4 +18,6 @@ class Item: NSObject {
     var Quantity : Int = 1
     //define id
     var id : Int = 0
+    //Define Rarity lower the rearity lower chance of appearing 1-10
+    var rare : Int = 0
 }

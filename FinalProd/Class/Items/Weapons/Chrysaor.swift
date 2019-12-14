@@ -17,6 +17,7 @@ class Chrysaor: Weapon {
         self.Name = "Chrysaor"
         self.Characteristic = stat
         self.ItemType = "Weapon"
+        self.rare = 6
     }
     //Define Effects
     override func onEquip(User: Hero) {
