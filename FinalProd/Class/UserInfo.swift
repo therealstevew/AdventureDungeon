@@ -105,14 +105,11 @@ class UserInfo: NSObject {
         defaults.set(ItemData, forKey: "Items")
         defaults.set(PartyData, forKey: "Party")
         defaults.set(true, forKey: "Exists")
-<<<<<<< HEAD
-=======
-       
+
 
 
         
         // convert party into ints for online database, -1 denotes empty without sending null cause that's a pain in swift
->>>>>>> e6e8199bc0bd93f8a778f46ed3e1bf6878af302c
         
         var dude1 : Int = -1
         var dude2 : Int = -1
